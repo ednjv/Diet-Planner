@@ -1,0 +1,434 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.wp{padding:1rem 0;font-family:var(--font-sans);font-size:14px}
+.tabs{display:flex;gap:0;margin-bottom:1rem;border-bottom:0.5px solid var(--color-border-tertiary)}
+.tab{padding:8px 16px;border:none;background:transparent;cursor:pointer;font-size:13px;color:var(--color-text-secondary);border-bottom:2px solid transparent;margin-bottom:-1px}
+.tab.active{color:var(--color-text-primary);font-weight:500;border-bottom:2px solid var(--color-text-primary)}
+.days{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:1rem}
+.day-btn{padding:5px 10px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:transparent;cursor:pointer;font-size:12px;color:var(--color-text-secondary);display:flex;align-items:center;gap:4px}
+.day-btn.active{background:var(--color-background-secondary);border-color:var(--color-border-primary);color:var(--color-text-primary);font-weight:500}
+.badge{font-size:10px;padding:1px 5px;border-radius:4px}
+.b-padel{background:#EAF3DE;color:#3B6D11}
+.b-fut{background:#E6F1FB;color:#185FA5}
+.b-ofic{background:#FAEEDA;color:#633806}
+.meal-block{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:11px 13px;margin-bottom:9px}
+.meal-header{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.meal-icon{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+.meal-title{font-size:13px;font-weight:500;color:var(--color-text-primary)}
+.meal-time{font-size:11px;color:var(--color-text-secondary);margin-left:auto}
+.tupper-tag{font-size:10px;background:#FAEEDA;color:#633806;padding:1px 6px;border-radius:4px;margin-left:6px}
+.food-row{display:flex;justify-content:space-between;align-items:baseline;padding:3px 0;border-bottom:0.5px solid var(--color-border-tertiary)}
+.food-row:last-child{border-bottom:none}
+.food-name{font-size:13px;color:var(--color-text-primary)}
+.food-qty{font-size:11px;color:var(--color-text-secondary);margin-left:6px;white-space:nowrap}
+.mb{font-size:10px;padding:1px 4px;border-radius:3px;margin-left:3px}
+.mp{background:#EEEDFE;color:#3C3489}.mc{background:#E6F1FB;color:#0C447C}.mf{background:#EAF3DE;color:#27500A}.ml{background:#FAEEDA;color:#633806}.mfr{background:#FAECE7;color:#712B13}
+.note{font-size:12px;color:var(--color-text-secondary);margin-top:7px;padding:7px 9px;background:var(--color-background-secondary);border-radius:var(--border-radius-md);border-left:2px solid var(--color-border-secondary)}
+.shop-cat{font-size:11px;font-weight:500;color:var(--color-text-secondary);text-transform:uppercase;letter-spacing:0.05em;padding:12px 0 5px;border-bottom:0.5px solid var(--color-border-tertiary);margin-bottom:4px}
+table.shop{width:100%;border-collapse:collapse;font-size:12px}
+table.shop th{text-align:left;padding:6px 8px;font-weight:500;font-size:11px;color:var(--color-text-secondary);border-bottom:0.5px solid var(--color-border-tertiary)}
+table.shop td{padding:6px 8px;border-bottom:0.5px solid var(--color-border-tertiary);color:var(--color-text-primary);vertical-align:top}
+table.shop tr:last-child td{border-bottom:none}
+table.shop td.brand{color:var(--color-text-secondary);font-size:11px}
+table.shop td.qty{font-weight:500;white-space:nowrap}
+table.shop td.note-td{color:var(--color-text-secondary);font-size:11px}
+.tip-block{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:12px 14px;margin-bottom:10px}
+.tip-title{font-size:13px;font-weight:500;margin-bottom:7px;color:var(--color-text-primary)}
+.tip-row{font-size:13px;color:var(--color-text-primary);padding:3px 0}
+.tip-sub{font-size:12px;color:var(--color-text-secondary)}
+.pane{display:none}.pane.active{display:block}
+.macro-row{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-bottom:1rem}
+.mc2{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:7px;text-align:center}
+.mc2 .v{font-size:14px;font-weight:500;color:var(--color-text-primary)}
+.mc2 .l{font-size:10px;color:var(--color-text-secondary);margin-top:1px}
+</style>
+
+<div class="wp">
+<h2 class="sr-only">Plan semanal, lista de compras y tips oficina para Edwin</h2>
+
+<div class="tabs">
+  <button class="tab active" onclick="showTab('plan')">Plan semanal</button>
+  <button class="tab" onclick="showTab('shop')">Lista de compras</button>
+  <button class="tab" onclick="showTab('ofic')">Tips oficina</button>
+</div>
+
+<div class="pane active" id="pane-plan">
+  <div class="days" id="dayBtns"></div>
+  <div class="macro-row">
+    <div class="mc2"><div class="v">~1700</div><div class="l">kcal est.</div></div>
+    <div class="mc2"><div class="v">8P</div><div class="l">proteína</div></div>
+    <div class="mc2"><div class="v">2.5C</div><div class="l">carbo</div></div>
+    <div class="mc2"><div class="v">2D</div><div class="l">lácteo</div></div>
+    <div class="mc2"><div class="v">1.5F</div><div class="l">aceite</div></div>
+  </div>
+  <div id="mealView"></div>
+</div>
+
+<div class="pane" id="pane-shop">
+  <div id="shopView"></div>
+</div>
+
+<div class="pane" id="pane-ofic">
+  <div id="oficView"></div>
+</div>
+</div>
+
+<script>
+const days=[
+{name:"Lun",sport:"padel",ofic:true,meals:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{n:"Overnight oats (prep noche anterior)",a:"40g avena + 150ml leche desc.",b:"c",tip:"nana prepara noche anterior en tarro"},
+{n:"Pechuga pavo laminada",a:"100g",b:"p"},
+{n:"Nueces",a:"10 unidades (30g)",b:"f"},
+{n:"Café o té sin azúcar",a:"libre",b:""}
+],note:"Más rápido en mañana de oficina. Nana deja oats listos en el refri."},
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",tupper:true,foods:[
+{n:"Manzana verde",a:"1 mediana",b:"fr"},
+{n:"Yogurt griego Colun Skyr",a:"1 und. (110g)",b:"l",tip:"viene en envase individual, fácil llevar"}
+]},
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",tupper:true,foods:[
+{n:"Pechuga pollo",a:"150g",b:"p"},
+{n:"Arroz basmati cocido",a:"120g (¾ taza)",b:"c"},
+{n:"Brócoli salteado",a:"libre",b:""},
+{n:"Aceite oliva (agregar al servir)",a:"2 cdtas",b:"f"}
+],note:"Nana prepara tupper mañana o noche anterior. Come frío está bien, microondas si hay."},
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",tupper:true,foods:[
+{n:"Mandarina",a:"2 unidades",b:"fr"},
+{n:"Leche descremada tetrapak",a:"200ml individual",b:"l"}
+]},
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{n:"3 huevos enteros",a:"3 unidades",b:"p"},
+{n:"Papa cocida",a:"1 und. mediana (200g) = 1C",b:"c"},
+{n:"Zapallo italiano + espinaca",a:"libre",b:""},
+{n:"Palta",a:"50g",b:"f"}
+],note:"Post-padel: carbohidrato como papa es más saciante que cereal. Sin azúcar."}
+]},
+{name:"Mar",sport:"fútbol",ofic:true,meals:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{n:"2 huevos revueltos",a:"2 unidades",b:"p"},
+{n:"Pan integral",a:"2 rebanadas (60g)",b:"c"},
+{n:"Palta",a:"50g",b:"f"},
+{n:"Té o mate",a:"libre",b:""}
+],note:"10 minutos. Pan integral tostado + huevos revueltos + palta en el pan."},
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",tupper:true,foods:[
+{n:"Arándanos",a:"¾ taza (110g) en tupper pequeño",b:"fr"},
+{n:"Yogurt griego",a:"1 und. individual",b:"l"}
+]},
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",tupper:true,foods:[
+{n:"Merluza o reineta",a:"150g",b:"p"},
+{n:"Pasta integral cocida",a:"120g",b:"c"},
+{n:"Espinaca + tomate",a:"libre",b:""},
+{n:"Aceite oliva",a:"2 cdtas (llevar en gotero pequeño)",b:"f"}
+]},
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",tupper:true,foods:[
+{n:"Kiwi x2",a:"2 unidades",b:"fr"},
+{n:"Leche descremada tetrapak",a:"200ml",b:"l"}
+]},
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{n:"Tortilla nana (zapallo italiano, espinaca, cebolla, pimentón)",a:"2 porciones (~200g)",b:"p"},
+{n:"Papa pequeña",a:"1 und. chica (150g) = ½C",b:"c"},
+{n:"Lechuga + tomate",a:"libre",b:""},
+{n:"Frutos secos",a:"15g",b:"f"}
+],note:"Semana de fútbol: cena antes de ir o post-partido max 21h."}
+]},
+{name:"Mié",sport:null,ofic:true,meals:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{n:"Overnight oats",a:"40g avena + 150ml leche desc.",b:"c"},
+{n:"1 huevo + 3 claras",a:"batido encima del oats tibio",b:"p"},
+{n:"Almendras",a:"15g",b:"f"},
+{n:"Café",a:"libre",b:""}
+],note:"Segundo día de oats = nana deja preparado la noche anterior otra vez."},
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",tupper:true,foods:[
+{n:"Pera",a:"1 unidad (100g)",b:"fr"},
+{n:"Yogurt griego",a:"1 und. individual",b:"l"}
+]},
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",tupper:true,foods:[
+{n:"Lentejas cocidas",a:"¾ taza (150g) = 1P+1C",b:"p"},
+{n:"Pechuga pavo",a:"50g extra = 1P → total 2P",b:"p"},
+{n:"Zanahoria + pimentón cocidos",a:"libre",b:""},
+{n:"Aceite oliva",a:"2 cdtas",b:"f"}
+],note:"Lentejas viajan bien en tupper. NO agregar arroz, ya tienen 1C incluido."},
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",tupper:true,foods:[
+{n:"Frutillas",a:"1¼ taza (200g) en tupper",b:"fr"},
+{n:"Leche descremada tetrapak",a:"200ml",b:"l"}
+]},
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{n:"Tortilla nana",a:"2 porciones",b:"p"},
+{n:"2 tortillas maíz Saniito",a:"60g = ½C",b:"c"},
+{n:"Ensalada libre",a:"libre",b:""},
+{n:"Palta",a:"50g",b:"f"}
+]}
+]},
+{name:"Jue",sport:null,ofic:false,meals:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{n:"1 huevo + 3 claras revueltos",a:"",b:"p"},
+{n:"Avena cocida (porridge)",a:"40g",b:"c"},
+{n:"Semillas chía",a:"3 cdas (30g)",b:"f"},
+{n:"Té o mate",a:"libre",b:""}
+]},
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",foods:[
+{n:"Kiwi x2",a:"2 unidades",b:"fr"},
+{n:"Yogurt natural descremado",a:"120g",b:"l"}
+]},
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",foods:[
+{n:"Reineta o merluza",a:"150g",b:"p"},
+{n:"Arroz integral cocido",a:"130g",b:"c"},
+{n:"Coliflor + brócoli",a:"libre",b:""},
+{n:"Arándanos",a:"¾ taza",b:"fr"},
+{n:"Aceite oliva",a:"2 cdtas",b:"f"}
+]},
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",foods:[
+{n:"Manzana verde",a:"1 mediana",b:"fr"},
+{n:"Leche descremada",a:"200ml",b:"l"}
+]},
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{n:"Tortilla nana",a:"2 porciones",b:"p"},
+{n:"Papa mediana",a:"200g cocida",b:"c"},
+{n:"Ensalada de lechuga + tomate",a:"libre",b:""},
+{n:"Frutos secos mix",a:"15g",b:"f"}
+]}
+]},
+{name:"Vie",sport:"padel",ofic:false,meals:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{n:"2 huevos enteros",a:"",b:"p"},
+{n:"Pan integral",a:"2 rebanadas",b:"c"},
+{n:"Palta",a:"50g",b:"f"},
+{n:"Café",a:"libre",b:""}
+]},
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",foods:[
+{n:"Frutillas",a:"1¼ taza (200g)",b:"fr"},
+{n:"Yogurt griego",a:"1 und.",b:"l"}
+]},
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",foods:[
+{n:"Pechuga pollo",a:"150g",b:"p"},
+{n:"Arroz basmati",a:"120g",b:"c"},
+{n:"Mix verduras colores",a:"libre",b:""},
+{n:"Mandarina x2",a:"120g",b:"fr"},
+{n:"Aceite oliva",a:"2 cdtas",b:"f"}
+]},
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",foods:[
+{n:"Pera",a:"1 unidad",b:"fr"},
+{n:"Leche descremada",a:"200ml",b:"l"}
+]},
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{n:"Salmón o albacora",a:"150g",b:"p"},
+{n:"Arroz basmati",a:"60g",b:"c"},
+{n:"Espárragos o porotos verdes",a:"libre",b:""},
+{n:"Nueces",a:"15g",b:"f"}
+],note:"Post-padel viernes: si fue intenso sube arroz a 120g (1C completo)."}
+]},
+{name:"Sáb",sport:"padel",ofic:false,meals:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{n:"2 huevos + avena",a:"revueltos o por separado",b:"p"},
+{n:"Avena cocida",a:"40g",b:"c"},
+{n:"Nueces",a:"30g",b:"f"},
+{n:"Café o té",a:"libre",b:""}
+]},
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",foods:[
+{n:"Mango",a:"½ unidad (100g)",b:"fr"},
+{n:"Yogurt griego",a:"1 und.",b:"l"}
+]},
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",foods:[
+{n:"Garbanzos cocidos",a:"¾ taza (125g) = 1P+1C",b:"p"},
+{n:"Pechuga pavo",a:"100g = 2P extra → total 3P",b:"p"},
+{n:"Pimentón + zanahoria",a:"libre",b:""},
+{n:"Mandarina x2",a:"120g",b:"fr"},
+{n:"Aceite oliva",a:"2 cdtas",b:"f"}
+],note:"Alternativa sábado: 2 empanadas cazón/pavo (caseras idealmente) = ~2P+1C+1F. Complementar con ensalada. Sin Doritos."},
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",foods:[
+{n:"Arándanos",a:"¾ taza",b:"fr"},
+{n:"Leche descremada",a:"200ml",b:"l"}
+]},
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{n:"3 huevos",a:"",b:"p"},
+{n:"Arroz integral",a:"60g cocido = ½C",b:"c"},
+{n:"Verduras salteadas",a:"libre",b:""},
+{n:"Palta",a:"50g",b:"f"}
+]}
+]},
+{name:"Dom",sport:null,ofic:false,meals:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{n:"2 huevos revueltos",a:"",b:"p"},
+{n:"Pan masa madre",a:"1-2 rebanadas",b:"c"},
+{n:"Palta",a:"50g",b:"f"},
+{n:"Café",a:"libre",b:""}
+]},
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",foods:[
+{n:"Kiwi x2",a:"100g",b:"fr"},
+{n:"Yogurt natural descremado",a:"120g",b:"l"}
+]},
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",foods:[
+{n:"Vacuno magro (posta/filete)",a:"150g",b:"p"},
+{n:"Papa cocida",a:"1 unidad grande (200g)",b:"c"},
+{n:"Ensalada colorida (betarraga, lechuga, tomate)",a:"libre",b:""},
+{n:"Mandarina x2",a:"",b:"fr"},
+{n:"Aceite oliva",a:"2 cdtas",b:"f"}
+],note:"1-2x/semana vacuno magro OK. Sin arroz adicional, papa ya es 1C."},
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",foods:[
+{n:"Manzana verde",a:"1 mediana",b:"fr"},
+{n:"Leche descremada",a:"200ml",b:"l"}
+]},
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{n:"2 latas atún + 1 huevo",a:"= 3P total",b:"p"},
+{n:"2 tortillas maíz",a:"60g = ½C",b:"c"},
+{n:"Lechuga + pepino + tomate",a:"libre",b:""},
+{n:"Nueces",a:"15g",b:"f"}
+],note:"Domingo liviano. Sin actividad al día siguiente, cuerpo no necesita mucho CHO nocturno."}
+]}
+];
+
+const shopData=[
+{cat:"Proteínas",rows:[
+{p:"Pechuga de pollo (fresca)",br:"Sin marca / Agrosuper",q:"700g",n:"Nana cocina Mon, Mié, Vie. Pedir filetes sin piel."},
+{p:"Pechuga pavo laminada",br:"San Jorge / Agrosuper",q:"300g (1 paquete)",n:"Desayuno y complemento almuerzo. Comprar en fiambrería."},
+{p:"Huevos",br:"Don Pollo / Sopraval",q:"30 unidades (bandeja x30)",n:"Desayuno diario + tortilla nana + cenas. El item que más se usa."},
+{p:"Salmón / merluza / reineta",br:"Fresco (feria o Super)",q:"500g",n:"2 cenas/almuerzos. Merluza más económica. Reineta opción."},
+{p:"Atún en agua (enlatado)",br:"Buen Mar / Real",q:"4 latas",n:"Cenas rápidas Dom + backup. Solo en agua, no aceite."},
+{p:"Vacuno magro (posta/filete)",br:"Sin marca / carnicería",q:"200g",n:"Solo domingo almuerzo. No exceder 1-2x/semana."},
+{p:"Lentejas (cocidas o secas)",br:"Carozzi / La Crianza",q:"1 tarro 400g o 500g seco",n:"Miércoles almuerzo = 1P+1C. Cocidas ahorran tiempo a nana."},
+{p:"Garbanzos (cocidos o secos)",br:"Carozzi / La Crianza",q:"1 tarro 400g",n:"Sábado almuerzo. Tarro cocido más práctico."}
+]},
+{cat:"Carbohidratos",rows:[
+{p:"Arroz basmati",br:"Tucapel Basmati / La Crianza",q:"1 kg",n:"Base almuerzos y cenas. Basmati tiene menor índice glicémico que blanco."},
+{p:"Arroz integral",br:"Tucapel Integral",q:"500g",n:"Alternativa arroz jueves/sábado."},
+{p:"Avena cruda tradicional",br:"Quaker / Lefe",q:"500g",n:"Desayuno overnight oats Lun y Mié. Dura varias semanas."},
+{p:"Pan integral (molde)",br:"Artesano Integral (Ideal) / Bimbo 100% integral",q:"1 unidad",n:"Max 2 rebanadas por vez = 1C. Revisar que tenga <155kcal/porción."},
+{p:"Pasta integral",br:"Carozzi Integral / Barilla Integral",q:"500g",n:"Almuerzo martes. 1 pack dura 2-3 semanas."},
+{p:"Papa (corriente)",br:"Sin marca / feria",q:"6-7 unidades medianas",n:"Cenas Lun, Mar, Jue + Dom almuerzo. Fácil de preparar."},
+{p:"Tortillas de maíz Saniito",br:"Saniito (única marca lista)",q:"1 paquete (8 und.)",n:"Cenas Mié y Dom. Específicamente Saniito según lista porción."}
+]},
+{cat:"Verduras (libre, sin restricción)",rows:[
+{p:"Brócoli",br:"Sin marca",q:"1 cabeza grande",n:"Almuerzo Lun + Jue."},
+{p:"Zapallo italiano",br:"Sin marca / feria",q:"4 unidades",n:"Cenas tortilla nana toda la semana."},
+{p:"Espinaca",br:"Dole / Granel",q:"2 bolsas 200g",n:"Varios días. Congelada también funciona bien."},
+{p:"Lechuga",br:"Sin marca",q:"1 cogolla grande",n:"Cenas y ensaladas variadas."},
+{p:"Tomate",br:"Sin marca / feria",q:"500g",n:"Ensaladas diarias."},
+{p:"Cebolla",br:"Sin marca",q:"1 kg",n:"Nana usa bastante en tortilla y guisos."},
+{p:"Pimentón (rojo y verde)",br:"Sin marca",q:"4 unidades",n:"Tortilla nana + almuerzos."},
+{p:"Zanahoria",br:"Sin marca / bolsa",q:"1 bolsa 500g",n:"Almuerzo Mié + Sáb."},
+{p:"Coliflor",br:"Sin marca",q:"1 cabeza",n:"Almuerzo Jue. Opcional si consigues brócoli extra."},
+{p:"Betarraga",br:"Sin marca",q:"2-3 unidades",n:"Ensalada Dom almuerzo."}
+]},
+{cat:"Frutas",rows:[
+{p:"Manzana verde",br:"Sin marca / feria",q:"7 unidades",n:"La más práctica para llevar al trabajo. No se aplasta."},
+{p:"Arándanos",br:"Sans marca / Walmart granel",q:"3 packs 125g = 375g",n:"Mejor fruta del plan: antioxidante, bajo IG. Llevar en tupper."},
+{p:"Kiwi",br:"Sin marca",q:"6 unidades",n:"Colaciones Jue, Dom, Mar. Rico en vitamina C."},
+{p:"Frutillas",br:"Sin marca / feria",q:"1 pack 500g",n:"Colaciones Mié y Vie. Llevar en tupper al trabajo."},
+{p:"Pera",br:"Sin marca",q:"4 unidades",n:"Colaciones Mié y Vie. Fácil de llevar."},
+{p:"Mandarina",br:"Sin marca / feria",q:"10 unidades",n:"Reemplazo naranja. Fácil de pelar en oficina. Lun, Vie, Sáb, Dom."},
+{p:"Mango",br:"Sin marca",q:"1 unidad",n:"Solo sábado colación. Comprar semi maduro."},
+{p:"Durazno o ciruela (temporada)",br:"Sin marca / feria",q:"3-4 unidades",n:"Si no hay temporada, reemplazar con manzana o pera."}
+]},
+{cat:"Lácteos",rows:[
+{p:"Yogurt griego / Skyr (individual)",br:"Colun Skyr / Danone Oikos",q:"7 unidades",n:"1 por día colación mañana. Skyr Colun tiene más proteína. INDIVIDUAL = fácil llevar."},
+{p:"Yogurt natural descremado",br:"Colun Natural / Nestlé Natural",q:"3 unidades",n:"Días que no uses griego. Sin azúcar agregada."},
+{p:"Leche descremada tetrapak 200ml",br:"Soprole Tetrapak / Colun",q:"7 cajas individuales",n:"Colación tarde. Tetrapak individual = no necesita frío, ideal oficina."}
+]},
+{cat:"Aceites y Grasas",rows:[
+{p:"Palta",br:"Sin marca",q:"5 unidades",n:"Comprar 3 maduras + 2 verdes para que maduren en la semana. Desayuno + cenas."},
+{p:"Nueces mariposa",br:"Granel Jumbo / Lider / bolsa Carozzi",q:"200g",n:"Cenas y desayunos. Bolsa dura 2-3 semanas."},
+{p:"Almendras",br:"Granel / bolsa Carozzi",q:"100g",n:"Desayuno Mié. Mezclar con nueces si prefieres."},
+{p:"Semillas chía",br:"Nutriseed / granel",q:"250g",n:"Desayuno Jue. Bolsa dura meses, no te preocupes."},
+{p:"Aceite oliva extra virgen",br:"Borges / La Española / Olivi",q:"250-500ml",n:"Todos los almuerzos. Si ya tienes, no comprar esta semana."}
+]},
+{cat:"Condimentos y extras",rows:[
+{p:"Stevia en gotas",br:"NuStevia / Stevita / Organika",q:"1 gotero",n:"Reemplazo azúcar morena. Usar en avena o café si necesitas. Lista 7."},
+{p:"Aceite oliva spray (para tupper)",br:"Bertolli spray / Borges spray",q:"1 unidad opcional",n:"Práctico para que nana engrase la sartén de la tortilla y los almuerzos."},
+{p:"Mostaza (sin azúcar)",br:"Hellmann's / French's",q:"1 frasco",n:"Lista 7: condimento libre. Para agregar sabor a proteínas."},
+{p:"Salsa de soya baja sodio",br:"Kikkoman Bajo Sodio",q:"1 frasco pequeño",n:"Lista 7: aliño libre. Para salteados y pescados."}
+]}
+];
+
+const oficTips=[
+{title:"Lo que llevas en la mochila (Lun–Mié)",items:[
+{t:"Bolsa térmica pequeña",s:"Imprescindible. Lider/Jumbo tienen por $5.000-8.000. Mantiene tupper + yogurt frío."},
+{t:"Tupper hermético 750ml",s:"Para almuerzo nana. 1 solo compartimento está bien. Nana lo deja listo la noche anterior en el refri."},
+{t:"Tupper pequeño 300ml",s:"Para arándanos o frutillas colación mañana."},
+{t:"Yogurt griego individual",s:"Ya viene sellado, no necesita contenedor extra."},
+{t:"Fruta entera (manzana, pera, mandarina)",s:"Va suelta en la mochila. La manzana es la más resistente."},
+{t:"2x tetrapak leche 200ml",s:"Colación tarde. No necesita frío hasta abrir. Cabe en cualquier bolsillo."},
+{t:"Gotero aceite oliva 50ml",s:"Para aderezar el tupper en la oficina si no viene con aceite."}
+]},
+{title:"Sistema nana: qué pedirle que prepare",items:[
+{t:"Noche del domingo",s:"Prepara 2 overnight oats en tarros (Lun y Mié) con 40g avena + 150ml leche descremada cada uno. Tapar y al refri."},
+{t:"Noche del domingo o lunes AM",s:"Cocina arroz basmati de toda la semana de una vez (300-400g seco). Guardar en refri, dura 5 días."},
+{t:"Cada mañana (7-7:30am)",s:"Armar tupper almuerzo: proteína + arroz + verdura. Sin aceite (llevar gotero). Meter al refri hasta salir."},
+{t:"Tortilla huevos (Mar-Vie)",s:"Preparar 1 vez la tortilla grande con todos los ingredientes. Divide en 4 porciones. Guardar en refri. Dura 3-4 días."}
+]},
+{title:"Si no hay microondas en la oficina",items:[
+{t:"Arroz + pollo frío",s:"Está bien. Agregar aceite oliva y mostaza al momento = ensalada de arroz. Funciona."},
+{t:"Lentejas frías",s:"Funcionan perfecto. Agregar un chorrito de aceite oliva + mostaza."},
+{t:"Pasta fría con verduras",s:"Clásico. Llevar aceite y salsa soya en goteros pequeños."},
+{t:"Evitar pescado",s:"Olor en oficina → cambiar pescado a cena en casa esos días."}
+]},
+{title:"Qué NO llevar al trabajo (evitar tentaciones)",items:[
+{t:"No Doritos, no snacks bolsa",s:"Si tienes hambre fuera de hora: extra fruta (SOS de la pauta) o maní 30g (lista 6)."},
+{t:"No vending machine",s:"Las opciones sanas son raras. Tu tupper > cualquier cosa del casino."},
+{t:"Casino de la oficina: qué pedir si olvidas tupper",s:"Opción 1: pollo a la plancha + ensalada + sin papas fritas. Opción 2: ensalada con atún o huevo. Evitar salsas."}
+]}
+];
+
+let activeDay=0;
+
+function renderDays(){
+  document.getElementById('dayBtns').innerHTML=days.map((d,i)=>{
+    let badges='';
+    if(d.sport==="padel") badges+=`<span class="badge b-padel">padel</span>`;
+    if(d.sport==="fútbol") badges+=`<span class="badge b-fut">fútbol</span>`;
+    if(d.ofic) badges+=`<span class="badge b-ofic">oficina</span>`;
+    return `<button class="day-btn${i===activeDay?' active':''}" onclick="selDay(${i})">${d.name}${badges}</button>`;
+  }).join('');
+}
+
+function renderMeals(){
+  const d=days[activeDay];
+  const mb={p:'mp',c:'mc',f:'mf',l:'ml',fr:'mfr'};
+  const ml={p:'P',c:'C',f:'Ac',l:'L',fr:'Fr'};
+  let h='';
+  d.meals.forEach(m=>{
+    const tup=m.tupper?`<span class="tupper-tag">tupper</span>`:'';
+    h+=`<div class="meal-block"><div class="meal-header"><div class="meal-icon" style="background:${m.bg}">${m.icon}</div><span class="meal-title">${m.type}${tup}</span><span class="meal-time">${m.time}</span></div>`;
+    m.foods.forEach(f=>{
+      const b=f.b?`<span class="mb ${mb[f.b]}">${ml[f.b]}</span>`:'';
+      h+=`<div class="food-row"><span class="food-name">${f.n}${b}</span><span class="food-qty">${f.a||''}</span></div>`;
+    });
+    if(m.note) h+=`<div class="note">${m.note}</div>`;
+    h+='</div>';
+  });
+  document.getElementById('mealView').innerHTML=h;
+}
+
+function renderShop(){
+  let h='';
+  shopData.forEach(cat=>{
+    h+=`<div class="shop-cat">${cat.cat}</div><table class="shop"><thead><tr><th style="width:28%">Producto</th><th style="width:22%">Marca Chile</th><th style="width:12%">Cantidad</th><th>Notas</th></tr></thead><tbody>`;
+    cat.rows.forEach(r=>{
+      h+=`<tr><td>${r.p}</td><td class="brand">${r.br}</td><td class="qty">${r.q}</td><td class="note-td">${r.n}</td></tr>`;
+    });
+    h+=`</tbody></table>`;
+  });
+  document.getElementById('shopView').innerHTML=h;
+}
+
+function renderOfic(){
+  let h='';
+  oficTips.forEach(sec=>{
+    h+=`<div class="tip-block"><div class="tip-title">${sec.title}</div>`;
+    sec.items.forEach(it=>{
+      h+=`<div class="tip-row">— ${it.t}<br><span class="tip-sub">${it.s}</span></div>`;
+    });
+    h+='</div>';
+  });
+  document.getElementById('oficView').innerHTML=h;
+}
+
+window.selDay=function(i){activeDay=i;renderDays();renderMeals();}
+window.showTab=function(t){
+  document.querySelectorAll('.tab').forEach((b,i)=>{b.classList.toggle('active',['plan','shop','ofic'][i]===t)});
+  document.querySelectorAll('.pane').forEach(p=>p.classList.remove('active'));
+  document.getElementById('pane-'+t).classList.add('active');
+}
+
+renderDays();renderMeals();renderShop();renderOfic();
+</script>
