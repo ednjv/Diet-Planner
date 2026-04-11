@@ -1,66 +1,186 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Plan Nutricional — Edwin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-.wp{padding:1rem 0;font-family:var(--font-sans);font-size:14px}
-.tabs{display:flex;gap:0;margin-bottom:1rem;border-bottom:0.5px solid var(--color-border-tertiary)}
-.tab{padding:8px 16px;border:none;background:transparent;cursor:pointer;font-size:13px;color:var(--color-text-secondary);border-bottom:2px solid transparent;margin-bottom:-1px}
-.tab.active{color:var(--color-text-primary);font-weight:500;border-bottom:2px solid var(--color-text-primary)}
-.days{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:1rem}
-.day-btn{padding:5px 10px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:transparent;cursor:pointer;font-size:12px;color:var(--color-text-secondary);display:flex;align-items:center;gap:4px}
-.day-btn.active{background:var(--color-background-secondary);border-color:var(--color-border-primary);color:var(--color-text-primary);font-weight:500}
-.badge{font-size:10px;padding:1px 5px;border-radius:4px}
-.b-padel{background:#EAF3DE;color:#3B6D11}
-.b-fut{background:#E6F1FB;color:#185FA5}
-.b-ofic{background:#FAEEDA;color:#633806}
-.meal-block{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:11px 13px;margin-bottom:9px}
-.meal-header{display:flex;align-items:center;gap:9px;margin-bottom:7px}
-.meal-icon{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
-.meal-title{font-size:13px;font-weight:500;color:var(--color-text-primary)}
-.meal-time{font-size:11px;color:var(--color-text-secondary);margin-left:auto}
-.tupper-tag{font-size:10px;background:#FAEEDA;color:#633806;padding:1px 6px;border-radius:4px;margin-left:6px}
-.food-row{display:flex;justify-content:space-between;align-items:baseline;padding:3px 0;border-bottom:0.5px solid var(--color-border-tertiary)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-tap-highlight-color:transparent}
+body{font-family:'Roboto',system-ui,sans-serif;background:#F0F4F0;color:#1A1A1A;min-height:100vh;font-size:14px;line-height:1.4}
+
+:root{
+  --grn:#2E7D32;--grn2:#388E3C;--grn-lt:#E8F5E9;--grn-chip:#C8E6C9;
+  --ora:#E65100;--ora-lt:#FBE9E7;
+  --blu:#1565C0;--blu-lt:#E3F2FD;
+  --pur:#6A1B9A;--pur-lt:#F3E5F5;
+  --red:#AD1457;--red-lt:#FCE4EC;
+  --bg:#F0F4F0;--sur:#FFFFFF;
+  --t1:#1A1A1A;--t2:#4A4A4A;--t3:#999;
+  --bd:#E0E8E0;
+  --sh1:0 1px 3px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.06);
+  --sh2:0 4px 12px rgba(0,0,0,.1),0 2px 4px rgba(0,0,0,.07);
+  --r8:8px;--r12:12px;--r16:16px;--r20:20px;
+}
+
+.app{max-width:480px;margin:0 auto;min-height:100vh}
+
+/* HEADER */
+.hdr{
+  background:linear-gradient(135deg,#1B5E20 0%,#2E7D32 60%,#388E3C 100%);
+  color:#fff;padding:20px 16px 0;
+  position:sticky;top:0;z-index:100;
+  box-shadow:0 2px 10px rgba(0,0,0,.25);
+}
+.hdr-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px}
+.hdr-leaf{font-size:28px;line-height:1}
+.hdr-text{}
+.hdr-title{font-size:18px;font-weight:500;letter-spacing:.2px}
+.hdr-sub{font-size:11px;color:rgba(255,255,255,.7);margin-top:2px}
+
+/* TABS */
+.tabs{display:flex}
+.tab{
+  flex:1;padding:12px 4px;border:none;background:transparent;cursor:pointer;
+  font-size:12px;font-weight:500;color:rgba(255,255,255,.6);
+  border-bottom:3px solid transparent;transition:all .2s;
+  letter-spacing:.5px;text-transform:uppercase;font-family:inherit;
+}
+.tab.active{color:#fff;border-bottom-color:#fff}
+
+/* PANES */
+.pane{display:none;padding:16px}
+.pane.active{display:block}
+
+/* DAY CHIPS */
+.days{
+  display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;
+  margin-bottom:16px;scrollbar-width:none;-ms-overflow-style:none;
+}
+.days::-webkit-scrollbar{display:none}
+.day-btn{
+  flex-shrink:0;display:flex;flex-direction:column;align-items:center;
+  padding:8px 10px;gap:5px;min-width:52px;
+  border:2px solid var(--bd);border-radius:var(--r16);
+  background:var(--sur);cursor:pointer;
+  box-shadow:var(--sh1);transition:all .2s;
+}
+.day-btn.active{background:var(--grn);border-color:var(--grn);box-shadow:var(--sh2)}
+.day-btn .dn{font-size:15px;font-weight:700;color:var(--t1)}
+.day-btn.active .dn{color:#fff}
+.dbg{display:flex;gap:3px;flex-wrap:wrap;justify-content:center}
+.badge{font-size:9px;padding:2px 5px;border-radius:8px;font-weight:500;line-height:1.3}
+.b-padel{background:var(--grn-chip);color:var(--grn)}
+.b-fut{background:var(--blu-lt);color:var(--blu)}
+.b-ofic{background:#FFE0B2;color:#BF360C}
+.day-btn.active .b-padel,.day-btn.active .b-fut,.day-btn.active .b-ofic{background:rgba(255,255,255,.25);color:#fff}
+
+/* MACROS */
+.macros{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:16px}
+.mac{background:var(--sur);border-radius:var(--r12);padding:10px 4px;text-align:center;box-shadow:var(--sh1)}
+.mac-v{font-size:14px;font-weight:700;color:var(--grn)}
+.mac-l{font-size:9px;color:var(--t3);margin-top:2px;text-transform:uppercase;letter-spacing:.4px}
+
+/* MEAL CARD */
+.meal-card{background:var(--sur);border-radius:var(--r16);margin-bottom:12px;box-shadow:var(--sh1);overflow:hidden}
+.meal-hd{display:flex;align-items:center;gap:10px;padding:12px 14px 10px;border-bottom:1px solid var(--bd)}
+.meal-ic{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.meal-inf{flex:1;min-width:0}
+.meal-ttl{font-size:14px;font-weight:600;color:var(--t1);display:flex;align-items:center;flex-wrap:wrap;gap:5px}
+.meal-time{font-size:11px;color:var(--t3);margin-top:2px}
+.tupper{font-size:10px;background:#FFF3E0;color:#BF360C;padding:2px 7px;border-radius:10px;font-weight:500}
+
+/* FOOD ROWS */
+.food-row{display:flex;align-items:center;gap:10px;padding:9px 14px;border-bottom:1px solid var(--bd)}
 .food-row:last-child{border-bottom:none}
-.food-name{font-size:13px;color:var(--color-text-primary)}
-.food-qty{font-size:11px;color:var(--color-text-secondary);margin-left:6px;white-space:nowrap}
-.mb{font-size:10px;padding:1px 4px;border-radius:3px;margin-left:3px}
-.mp{background:#EEEDFE;color:#3C3489}.mc{background:#E6F1FB;color:#0C447C}.mf{background:#EAF3DE;color:#27500A}.ml{background:#FAEEDA;color:#633806}.mfr{background:#FAECE7;color:#712B13}
-.note{font-size:12px;color:var(--color-text-secondary);margin-top:7px;padding:7px 9px;background:var(--color-background-secondary);border-radius:var(--border-radius-md);border-left:2px solid var(--color-border-secondary)}
-.shop-cat{font-size:11px;font-weight:500;color:var(--color-text-secondary);text-transform:uppercase;letter-spacing:0.05em;padding:12px 0 5px;border-bottom:0.5px solid var(--color-border-tertiary);margin-bottom:4px}
-table.shop{width:100%;border-collapse:collapse;font-size:12px}
-table.shop th{text-align:left;padding:6px 8px;font-weight:500;font-size:11px;color:var(--color-text-secondary);border-bottom:0.5px solid var(--color-border-tertiary)}
-table.shop td{padding:6px 8px;border-bottom:0.5px solid var(--color-border-tertiary);color:var(--color-text-primary);vertical-align:top}
-table.shop tr:last-child td{border-bottom:none}
-table.shop td.brand{color:var(--color-text-secondary);font-size:11px}
-table.shop td.qty{font-weight:500;white-space:nowrap}
-table.shop td.note-td{color:var(--color-text-secondary);font-size:11px}
-.tip-block{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:12px 14px;margin-bottom:10px}
-.tip-title{font-size:13px;font-weight:500;margin-bottom:7px;color:var(--color-text-primary)}
-.tip-row{font-size:13px;color:var(--color-text-primary);padding:3px 0}
-.tip-sub{font-size:12px;color:var(--color-text-secondary)}
-.pane{display:none}.pane.active{display:block}
-.macro-row{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-bottom:1rem}
-.mc2{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:7px;text-align:center}
-.mc2 .v{font-size:14px;font-weight:500;color:var(--color-text-primary)}
-.mc2 .l{font-size:10px;color:var(--color-text-secondary);margin-top:1px}
+.food-em{font-size:22px;flex-shrink:0;width:28px;text-align:center}
+.food-inf{flex:1;min-width:0}
+.food-nm{font-size:13px;color:var(--t1);line-height:1.3;display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.food-q{font-size:11px;color:var(--t3);margin-top:2px}
+.mb{font-size:10px;font-weight:600;padding:2px 7px;border-radius:8px;flex-shrink:0}
+.mb-p{background:var(--pur-lt);color:var(--pur)}
+.mb-c{background:var(--blu-lt);color:var(--blu)}
+.mb-f{background:var(--grn-lt);color:var(--grn)}
+.mb-l{background:#FFF8E1;color:#E65100}
+.mb-fr{background:var(--red-lt);color:var(--red)}
+
+/* MEAL NOTE */
+.meal-note{
+  margin:0 14px 12px;padding:10px 12px;
+  background:#F5FBF5;border-radius:var(--r8);
+  border-left:3px solid var(--grn-chip);
+  font-size:12px;color:var(--t2);line-height:1.6;
+}
+
+/* SHOPPING */
+.shop-sec{margin-bottom:22px}
+.shop-cat-hd{display:flex;align-items:center;gap:10px;margin-bottom:10px;padding:0 2px}
+.shop-cat-ic{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.shop-cat-nm{font-size:13px;font-weight:700;color:var(--t1);letter-spacing:.3px}
+.shop-cnt{font-size:11px;color:var(--t3);font-weight:400;margin-left:2px}
+.shop-cards{background:var(--sur);border-radius:var(--r16);box-shadow:var(--sh1);overflow:hidden}
+.shop-row{display:flex;align-items:flex-start;gap:10px;padding:12px 14px;border-bottom:1px solid var(--bd)}
+.shop-row:last-child{border-bottom:none}
+.shop-em{font-size:24px;flex-shrink:0;width:32px;text-align:center;padding-top:1px}
+.shop-inf{flex:1;min-width:0}
+.shop-prod{font-size:13px;font-weight:500;color:var(--t1);line-height:1.3}
+.shop-br{font-size:11px;color:var(--t3);margin-top:2px}
+.shop-nt{font-size:11px;color:var(--t2);margin-top:5px;line-height:1.5;padding:6px 8px;background:#F9FBF9;border-radius:6px}
+.shop-qty{flex-shrink:0;background:var(--grn-lt);color:var(--grn);font-size:11px;font-weight:600;padding:4px 9px;border-radius:10px;white-space:nowrap;align-self:flex-start;margin-top:1px}
+
+/* TIPS */
+.tip-card{background:var(--sur);border-radius:var(--r16);box-shadow:var(--sh1);overflow:hidden;margin-bottom:14px}
+.tip-hd{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:2px solid var(--bd)}
+.tip-hd-ic{width:44px;height:44px;border-radius:var(--r8);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.tip-hd-ttl{font-size:14px;font-weight:700;color:var(--t1);line-height:1.3}
+.tip-row{display:flex;align-items:flex-start;gap:10px;padding:11px 16px;border-bottom:1px solid var(--bd)}
+.tip-row:last-child{border-bottom:none}
+.tip-dot{width:7px;height:7px;border-radius:50%;background:var(--grn2);margin-top:5px;flex-shrink:0}
+.tip-bd{flex:1}
+.tip-ttl{font-size:13px;font-weight:600;color:var(--t1);line-height:1.3}
+.tip-sub{font-size:12px;color:var(--t2);margin-top:3px;line-height:1.55}
+
+/* RESPONSIVE */
+@media(max-width:360px){
+  .macros{gap:4px}
+  .mac{padding:8px 2px}
+  .mac-v{font-size:12px}
+  .mac-l{font-size:8px}
+  .day-btn{padding:7px 7px;min-width:46px}
+  .hdr-leaf{font-size:22px}
+  .hdr-title{font-size:16px}
+}
 </style>
+</head>
+<body>
+<div class="app">
 
-<div class="wp">
-<h2 class="sr-only">Plan semanal, lista de compras y tips oficina para Edwin</h2>
-
-<div class="tabs">
-  <button class="tab active" onclick="showTab('plan')">Plan semanal</button>
-  <button class="tab" onclick="showTab('shop')">Lista de compras</button>
-  <button class="tab" onclick="showTab('ofic')">Tips oficina</button>
+<div class="hdr">
+  <div class="hdr-top">
+    <div class="hdr-leaf">🥗</div>
+    <div class="hdr-text">
+      <div class="hdr-title">Plan Nutricional</div>
+      <div class="hdr-sub">Recomendado por nutrióloga · Semana tipo · Edwin</div>
+    </div>
+  </div>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('plan')">📅 Plan</button>
+    <button class="tab" onclick="showTab('shop')">🛒 Compras</button>
+    <button class="tab" onclick="showTab('ofic')">💼 Oficina</button>
+  </div>
 </div>
 
 <div class="pane active" id="pane-plan">
   <div class="days" id="dayBtns"></div>
-  <div class="macro-row">
-    <div class="mc2"><div class="v">~1700</div><div class="l">kcal est.</div></div>
-    <div class="mc2"><div class="v">8P</div><div class="l">proteína</div></div>
-    <div class="mc2"><div class="v">2.5C</div><div class="l">carbo</div></div>
-    <div class="mc2"><div class="v">2D</div><div class="l">lácteo</div></div>
-    <div class="mc2"><div class="v">1.5F</div><div class="l">aceite</div></div>
+  <div class="macros">
+    <div class="mac"><div class="mac-v">~1700</div><div class="mac-l">kcal</div></div>
+    <div class="mac"><div class="mac-v">8P</div><div class="mac-l">proteína</div></div>
+    <div class="mac"><div class="mac-v">2.5C</div><div class="mac-l">carbo</div></div>
+    <div class="mac"><div class="mac-v">2D</div><div class="mac-l">lácteo</div></div>
+    <div class="mac"><div class="mac-v">1.5F</div><div class="mac-l">aceite</div></div>
   </div>
   <div id="mealView"></div>
 </div>
@@ -72,32 +192,32 @@ table.shop td.note-td{color:var(--color-text-secondary);font-size:11px}
 <div class="pane" id="pane-ofic">
   <div id="oficView"></div>
 </div>
-</div>
 
+</div>
 <script>
 const days=[
 {name:"Lun",sport:"padel",ofic:true,meals:[
-{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#E8F5E9",foods:[
 {n:"Overnight oats (prep noche anterior)",a:"40g avena + 150ml leche desc.",b:"c",tip:"nana prepara noche anterior en tarro"},
 {n:"Pechuga pavo laminada",a:"100g",b:"p"},
 {n:"Nueces",a:"10 unidades (30g)",b:"f"},
 {n:"Café o té sin azúcar",a:"libre",b:""}
 ],note:"Más rápido en mañana de oficina. Nana deja oats listos en el refri."},
-{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",tupper:true,foods:[
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FCE4EC",tupper:true,foods:[
 {n:"Manzana verde",a:"1 mediana",b:"fr"},
 {n:"Yogurt griego Colun Skyr",a:"1 und. (110g)",b:"l",tip:"viene en envase individual, fácil llevar"}
 ]},
-{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",tupper:true,foods:[
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E3F2FD",tupper:true,foods:[
 {n:"Pechuga pollo",a:"150g",b:"p"},
 {n:"Arroz basmati cocido",a:"120g (¾ taza)",b:"c"},
 {n:"Brócoli salteado",a:"libre",b:""},
 {n:"Aceite oliva (agregar al servir)",a:"2 cdtas",b:"f"}
 ],note:"Nana prepara tupper mañana o noche anterior. Come frío está bien, microondas si hay."},
-{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",tupper:true,foods:[
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FCE4EC",tupper:true,foods:[
 {n:"Mandarina",a:"2 unidades",b:"fr"},
 {n:"Leche descremada tetrapak",a:"200ml individual",b:"l"}
 ]},
-{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EDE7F6",foods:[
 {n:"3 huevos enteros",a:"3 unidades",b:"p"},
 {n:"Papa cocida",a:"1 und. mediana (200g) = 1C",b:"c"},
 {n:"Zapallo italiano + espinaca",a:"libre",b:""},
@@ -105,27 +225,27 @@ const days=[
 ],note:"Post-padel: carbohidrato como papa es más saciante que cereal. Sin azúcar."}
 ]},
 {name:"Mar",sport:"fútbol",ofic:true,meals:[
-{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#E8F5E9",foods:[
 {n:"2 huevos revueltos",a:"2 unidades",b:"p"},
 {n:"Pan integral",a:"2 rebanadas (60g)",b:"c"},
 {n:"Palta",a:"50g",b:"f"},
 {n:"Té o mate",a:"libre",b:""}
 ],note:"10 minutos. Pan integral tostado + huevos revueltos + palta en el pan."},
-{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",tupper:true,foods:[
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FCE4EC",tupper:true,foods:[
 {n:"Arándanos",a:"¾ taza (110g) en tupper pequeño",b:"fr"},
 {n:"Yogurt griego",a:"1 und. individual",b:"l"}
 ]},
-{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",tupper:true,foods:[
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E3F2FD",tupper:true,foods:[
 {n:"Merluza o reineta",a:"150g",b:"p"},
 {n:"Pasta integral cocida",a:"120g",b:"c"},
 {n:"Espinaca + tomate",a:"libre",b:""},
 {n:"Aceite oliva",a:"2 cdtas (llevar en gotero pequeño)",b:"f"}
 ]},
-{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",tupper:true,foods:[
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FCE4EC",tupper:true,foods:[
 {n:"Kiwi x2",a:"2 unidades",b:"fr"},
 {n:"Leche descremada tetrapak",a:"200ml",b:"l"}
 ]},
-{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EDE7F6",foods:[
 {n:"Tortilla nana (zapallo italiano, espinaca, cebolla, pimentón)",a:"2 porciones (~200g)",b:"p"},
 {n:"Papa pequeña",a:"1 und. chica (150g) = ½C",b:"c"},
 {n:"Lechuga + tomate",a:"libre",b:""},
@@ -133,27 +253,27 @@ const days=[
 ],note:"Semana de fútbol: cena antes de ir o post-partido max 21h."}
 ]},
 {name:"Mié",sport:null,ofic:true,meals:[
-{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#E8F5E9",foods:[
 {n:"Overnight oats",a:"40g avena + 150ml leche desc.",b:"c"},
 {n:"1 huevo + 3 claras",a:"batido encima del oats tibio",b:"p"},
 {n:"Almendras",a:"15g",b:"f"},
 {n:"Café",a:"libre",b:""}
 ],note:"Segundo día de oats = nana deja preparado la noche anterior otra vez."},
-{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",tupper:true,foods:[
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FCE4EC",tupper:true,foods:[
 {n:"Pera",a:"1 unidad (100g)",b:"fr"},
 {n:"Yogurt griego",a:"1 und. individual",b:"l"}
 ]},
-{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",tupper:true,foods:[
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E3F2FD",tupper:true,foods:[
 {n:"Lentejas cocidas",a:"¾ taza (150g) = 1P+1C",b:"p"},
 {n:"Pechuga pavo",a:"50g extra = 1P → total 2P",b:"p"},
 {n:"Zanahoria + pimentón cocidos",a:"libre",b:""},
 {n:"Aceite oliva",a:"2 cdtas",b:"f"}
 ],note:"Lentejas viajan bien en tupper. NO agregar arroz, ya tienen 1C incluido."},
-{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",tupper:true,foods:[
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FCE4EC",tupper:true,foods:[
 {n:"Frutillas",a:"1¼ taza (200g) en tupper",b:"fr"},
 {n:"Leche descremada tetrapak",a:"200ml",b:"l"}
 ]},
-{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EDE7F6",foods:[
 {n:"Tortilla nana",a:"2 porciones",b:"p"},
 {n:"2 tortillas maíz Saniito",a:"60g = ½C",b:"c"},
 {n:"Ensalada libre",a:"libre",b:""},
@@ -161,28 +281,28 @@ const days=[
 ]}
 ]},
 {name:"Jue",sport:null,ofic:false,meals:[
-{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#E8F5E9",foods:[
 {n:"1 huevo + 3 claras revueltos",a:"",b:"p"},
 {n:"Avena cocida (porridge)",a:"40g",b:"c"},
 {n:"Semillas chía",a:"3 cdas (30g)",b:"f"},
 {n:"Té o mate",a:"libre",b:""}
 ]},
-{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",foods:[
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FCE4EC",foods:[
 {n:"Kiwi x2",a:"2 unidades",b:"fr"},
 {n:"Yogurt natural descremado",a:"120g",b:"l"}
 ]},
-{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",foods:[
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E3F2FD",foods:[
 {n:"Reineta o merluza",a:"150g",b:"p"},
 {n:"Arroz integral cocido",a:"130g",b:"c"},
 {n:"Coliflor + brócoli",a:"libre",b:""},
 {n:"Arándanos",a:"¾ taza",b:"fr"},
 {n:"Aceite oliva",a:"2 cdtas",b:"f"}
 ]},
-{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",foods:[
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FCE4EC",foods:[
 {n:"Manzana verde",a:"1 mediana",b:"fr"},
 {n:"Leche descremada",a:"200ml",b:"l"}
 ]},
-{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EDE7F6",foods:[
 {n:"Tortilla nana",a:"2 porciones",b:"p"},
 {n:"Papa mediana",a:"200g cocida",b:"c"},
 {n:"Ensalada de lechuga + tomate",a:"libre",b:""},
@@ -190,28 +310,28 @@ const days=[
 ]}
 ]},
 {name:"Vie",sport:"padel",ofic:false,meals:[
-{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#E8F5E9",foods:[
 {n:"2 huevos enteros",a:"",b:"p"},
 {n:"Pan integral",a:"2 rebanadas",b:"c"},
 {n:"Palta",a:"50g",b:"f"},
 {n:"Café",a:"libre",b:""}
 ]},
-{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",foods:[
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FCE4EC",foods:[
 {n:"Frutillas",a:"1¼ taza (200g)",b:"fr"},
 {n:"Yogurt griego",a:"1 und.",b:"l"}
 ]},
-{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",foods:[
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E3F2FD",foods:[
 {n:"Pechuga pollo",a:"150g",b:"p"},
 {n:"Arroz basmati",a:"120g",b:"c"},
 {n:"Mix verduras colores",a:"libre",b:""},
 {n:"Mandarina x2",a:"120g",b:"fr"},
 {n:"Aceite oliva",a:"2 cdtas",b:"f"}
 ]},
-{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",foods:[
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FCE4EC",foods:[
 {n:"Pera",a:"1 unidad",b:"fr"},
 {n:"Leche descremada",a:"200ml",b:"l"}
 ]},
-{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EDE7F6",foods:[
 {n:"Salmón o albacora",a:"150g",b:"p"},
 {n:"Arroz basmati",a:"60g",b:"c"},
 {n:"Espárragos o porotos verdes",a:"libre",b:""},
@@ -219,28 +339,28 @@ const days=[
 ],note:"Post-padel viernes: si fue intenso sube arroz a 120g (1C completo)."}
 ]},
 {name:"Sáb",sport:"padel",ofic:false,meals:[
-{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#E8F5E9",foods:[
 {n:"2 huevos + avena",a:"revueltos o por separado",b:"p"},
 {n:"Avena cocida",a:"40g",b:"c"},
 {n:"Nueces",a:"30g",b:"f"},
 {n:"Café o té",a:"libre",b:""}
 ]},
-{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",foods:[
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FCE4EC",foods:[
 {n:"Mango",a:"½ unidad (100g)",b:"fr"},
 {n:"Yogurt griego",a:"1 und.",b:"l"}
 ]},
-{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",foods:[
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E3F2FD",foods:[
 {n:"Garbanzos cocidos",a:"¾ taza (125g) = 1P+1C",b:"p"},
 {n:"Pechuga pavo",a:"100g = 2P extra → total 3P",b:"p"},
 {n:"Pimentón + zanahoria",a:"libre",b:""},
 {n:"Mandarina x2",a:"120g",b:"fr"},
 {n:"Aceite oliva",a:"2 cdtas",b:"f"}
 ],note:"Alternativa sábado: 2 empanadas cazón/pavo (caseras idealmente) = ~2P+1C+1F. Complementar con ensalada. Sin Doritos."},
-{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",foods:[
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FCE4EC",foods:[
 {n:"Arándanos",a:"¾ taza",b:"fr"},
 {n:"Leche descremada",a:"200ml",b:"l"}
 ]},
-{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EDE7F6",foods:[
 {n:"3 huevos",a:"",b:"p"},
 {n:"Arroz integral",a:"60g cocido = ½C",b:"c"},
 {n:"Verduras salteadas",a:"libre",b:""},
@@ -248,28 +368,28 @@ const days=[
 ]}
 ]},
 {name:"Dom",sport:null,ofic:false,meals:[
-{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#EAF3DE",foods:[
+{type:"Desayuno",time:"7–9h",icon:"🌅",bg:"#E8F5E9",foods:[
 {n:"2 huevos revueltos",a:"",b:"p"},
 {n:"Pan masa madre",a:"1-2 rebanadas",b:"c"},
 {n:"Palta",a:"50g",b:"f"},
 {n:"Café",a:"libre",b:""}
 ]},
-{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FAECE7",foods:[
+{type:"Colación",time:"10–11h",icon:"🍎",bg:"#FCE4EC",foods:[
 {n:"Kiwi x2",a:"100g",b:"fr"},
 {n:"Yogurt natural descremado",a:"120g",b:"l"}
 ]},
-{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E6F1FB",foods:[
+{type:"Almuerzo",time:"14–15h",icon:"🍽",bg:"#E3F2FD",foods:[
 {n:"Vacuno magro (posta/filete)",a:"150g",b:"p"},
 {n:"Papa cocida",a:"1 unidad grande (200g)",b:"c"},
 {n:"Ensalada colorida (betarraga, lechuga, tomate)",a:"libre",b:""},
 {n:"Mandarina x2",a:"",b:"fr"},
 {n:"Aceite oliva",a:"2 cdtas",b:"f"}
 ],note:"1-2x/semana vacuno magro OK. Sin arroz adicional, papa ya es 1C."},
-{type:"Colación",time:"16h",icon:"🍊",bg:"#FAECE7",foods:[
+{type:"Colación",time:"16h",icon:"🍊",bg:"#FCE4EC",foods:[
 {n:"Manzana verde",a:"1 mediana",b:"fr"},
 {n:"Leche descremada",a:"200ml",b:"l"}
 ]},
-{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EEEDFE",foods:[
+{type:"Cena",time:"20–21h",icon:"🌙",bg:"#EDE7F6",foods:[
 {n:"2 latas atún + 1 huevo",a:"= 3P total",b:"p"},
 {n:"2 tortillas maíz",a:"60g = ½C",b:"c"},
 {n:"Lechuga + pepino + tomate",a:"libre",b:""},
@@ -333,10 +453,10 @@ const shopData=[
 {p:"Aceite oliva extra virgen",br:"Borges / La Española / Olivi",q:"250-500ml",n:"Todos los almuerzos. Si ya tienes, no comprar esta semana."}
 ]},
 {cat:"Condimentos y extras",rows:[
-{p:"Stevia en gotas",br:"NuStevia / Stevita / Organika",q:"1 gotero",n:"Reemplazo azúcar morena. Usar en avena o café si necesitas. Lista 7."},
+{p:"Stevia en gotas",br:"NuStevia / Stevita / Organika",q:"1 gotero",n:"Reemplazo azúcar morena. Usar en avena o café si necesitas."},
 {p:"Aceite oliva spray (para tupper)",br:"Bertolli spray / Borges spray",q:"1 unidad opcional",n:"Práctico para que nana engrase la sartén de la tortilla y los almuerzos."},
-{p:"Mostaza (sin azúcar)",br:"Hellmann's / French's",q:"1 frasco",n:"Lista 7: condimento libre. Para agregar sabor a proteínas."},
-{p:"Salsa de soya baja sodio",br:"Kikkoman Bajo Sodio",q:"1 frasco pequeño",n:"Lista 7: aliño libre. Para salteados y pescados."}
+{p:"Mostaza (sin azúcar)",br:"Hellmann's / French's",q:"1 frasco",n:"Condimento libre. Para agregar sabor a proteínas."},
+{p:"Salsa de soya baja sodio",br:"Kikkoman Bajo Sodio",q:"1 frasco pequeño",n:"Aliño libre. Para salteados y pescados."}
 ]}
 ];
 
@@ -369,31 +489,106 @@ const oficTips=[
 ]}
 ];
 
+// ─── Emoji mapping ────────────────────────────────────────────────────────────
+function foodEmoji(n){
+  const s=n.toLowerCase();
+  if(/pechuga.*(pollo)|pollo\b/.test(s))return'🍗';
+  if(/pechuga.*(pavo)|pavo\b/.test(s))return'🦃';
+  if(/huevo|clara/.test(s))return'🥚';
+  if(/salm[oó]n/.test(s))return'🐟';
+  if(/merluza|reineta|albacora/.test(s))return'🐠';
+  if(/at[uú]n/.test(s))return'🐟';
+  if(/vacuno|posta|filete/.test(s))return'🥩';
+  if(/lentejas/.test(s))return'🫘';
+  if(/garbanzos/.test(s))return'🫘';
+  if(/tortillas?\s+ma[ií]z|saniito/.test(s))return'🌮';
+  if(/tortilla/.test(s))return'🍳';
+  if(/palta/.test(s))return'🥑';
+  if(/nueces/.test(s))return'🌰';
+  if(/almendras/.test(s))return'🌰';
+  if(/ch[ií]a/.test(s))return'🌱';
+  if(/frutos\s+secos/.test(s))return'🥜';
+  if(/aceite/.test(s))return'🫒';
+  if(/arroz/.test(s))return'🍚';
+  if(/pasta|fideos/.test(s))return'🍝';
+  if(/avena|oats/.test(s))return'🌾';
+  if(/pan\b/.test(s))return'🍞';
+  if(/papa\b/.test(s))return'🥔';
+  if(/manzana/.test(s))return'🍎';
+  if(/ar[aá]ndanos/.test(s))return'🫐';
+  if(/kiwi/.test(s))return'🥝';
+  if(/frutillas/.test(s))return'🍓';
+  if(/pera\b/.test(s))return'🍐';
+  if(/mango\b/.test(s))return'🥭';
+  if(/mandarina/.test(s))return'🍊';
+  if(/durazno|ciruela/.test(s))return'🍑';
+  if(/yogurt|yogur/.test(s))return'🥛';
+  if(/leche/.test(s))return'🥛';
+  if(/br[oó]coli/.test(s))return'🥦';
+  if(/espinaca/.test(s))return'🥬';
+  if(/lechuga/.test(s))return'🥗';
+  if(/tomate/.test(s))return'🍅';
+  if(/zanahoria/.test(s))return'🥕';
+  if(/piment[oó]n/.test(s))return'🫑';
+  if(/zapallo/.test(s))return'🥒';
+  if(/coliflor/.test(s))return'🥦';
+  if(/betarraga/.test(s))return'🫐';
+  if(/esp[aá]rragos/.test(s))return'🌿';
+  if(/caf[eé]/.test(s))return'☕';
+  if(/t[eé]\b|mate\b/.test(s))return'🍵';
+  if(/agua\b/.test(s))return'💧';
+  if(/stevia/.test(s))return'🍃';
+  if(/mostaza/.test(s))return'🌭';
+  if(/soya/.test(s))return'🫙';
+  if(/cebolla/.test(s))return'🧅';
+  if(/spray/.test(s))return'🫙';
+  return'🍽';
+}
+
+// ─── Category icons ────────────────────────────────────────────────────────────
+const catMeta={
+  'Proteínas':{ic:'🥩',bg:'#FFEBEE'},
+  'Carbohidratos':{ic:'🌾',bg:'#FFF8E1'},
+  'Verduras (libre, sin restricción)':{ic:'🥦',bg:'#E8F5E9'},
+  'Frutas':{ic:'🍎',bg:'#FCE4EC'},
+  'Lácteos':{ic:'🥛',bg:'#E3F2FD'},
+  'Aceites y Grasas':{ic:'🫒',bg:'#F3E5F5'},
+  'Condimentos y extras':{ic:'🧂',bg:'#FFF3E0'},
+};
+const tipMeta=[
+  {ic:'🎒',bg:'#E3F2FD'},
+  {ic:'👩‍🍳',bg:'#E8F5E9'},
+  {ic:'🔧',bg:'#FFF3E0'},
+  {ic:'🚫',bg:'#FFEBEE'},
+];
+const mbMap={p:'mb-p',c:'mb-c',f:'mb-f',l:'mb-l',fr:'mb-fr'};
+const mlMap={p:'Prot',c:'Carbo',f:'Aceite',l:'Lác',fr:'Fruta'};
+
 let activeDay=0;
 
 function renderDays(){
   document.getElementById('dayBtns').innerHTML=days.map((d,i)=>{
-    let badges='';
-    if(d.sport==="padel") badges+=`<span class="badge b-padel">padel</span>`;
-    if(d.sport==="fútbol") badges+=`<span class="badge b-fut">fútbol</span>`;
-    if(d.ofic) badges+=`<span class="badge b-ofic">oficina</span>`;
-    return `<button class="day-btn${i===activeDay?' active':''}" onclick="selDay(${i})">${d.name}${badges}</button>`;
+    let b='';
+    if(d.sport==='padel')b+=`<span class="badge b-padel">🏸</span>`;
+    if(d.sport==='fútbol')b+=`<span class="badge b-fut">⚽</span>`;
+    if(d.ofic)b+=`<span class="badge b-ofic">💼</span>`;
+    return`<button class="day-btn${i===activeDay?' active':''}" onclick="selDay(${i})"><div class="dn">${d.name}</div><div class="dbg">${b}</div></button>`;
   }).join('');
 }
 
 function renderMeals(){
   const d=days[activeDay];
-  const mb={p:'mp',c:'mc',f:'mf',l:'ml',fr:'mfr'};
-  const ml={p:'P',c:'C',f:'Ac',l:'L',fr:'Fr'};
   let h='';
   d.meals.forEach(m=>{
-    const tup=m.tupper?`<span class="tupper-tag">tupper</span>`:'';
-    h+=`<div class="meal-block"><div class="meal-header"><div class="meal-icon" style="background:${m.bg}">${m.icon}</div><span class="meal-title">${m.type}${tup}</span><span class="meal-time">${m.time}</span></div>`;
+    const tup=m.tupper?`<span class="tupper">🧊 tupper</span>`:'';
+    h+=`<div class="meal-card"><div class="meal-hd"><div class="meal-ic" style="background:${m.bg}">${m.icon}</div><div class="meal-inf"><div class="meal-ttl">${m.type} ${tup}</div><div class="meal-time">⏰ ${m.time}</div></div></div><div>`;
     m.foods.forEach(f=>{
-      const b=f.b?`<span class="mb ${mb[f.b]}">${ml[f.b]}</span>`:'';
-      h+=`<div class="food-row"><span class="food-name">${f.n}${b}</span><span class="food-qty">${f.a||''}</span></div>`;
+      const badge=f.b?`<span class="mb ${mbMap[f.b]}">${mlMap[f.b]}</span>`:'';
+      const qty=f.a?`<div class="food-q">${f.a}</div>`:'';
+      h+=`<div class="food-row"><div class="food-em">${foodEmoji(f.n)}</div><div class="food-inf"><div class="food-nm">${f.n} ${badge}</div>${qty}</div></div>`;
     });
-    if(m.note) h+=`<div class="note">${m.note}</div>`;
+    h+='</div>';
+    if(m.note)h+=`<div class="meal-note">💡 ${m.note}</div>`;
     h+='</div>';
   });
   document.getElementById('mealView').innerHTML=h;
@@ -402,33 +597,37 @@ function renderMeals(){
 function renderShop(){
   let h='';
   shopData.forEach(cat=>{
-    h+=`<div class="shop-cat">${cat.cat}</div><table class="shop"><thead><tr><th style="width:28%">Producto</th><th style="width:22%">Marca Chile</th><th style="width:12%">Cantidad</th><th>Notas</th></tr></thead><tbody>`;
+    const cm=catMeta[cat.cat]||{ic:'🛒',bg:'#F5F5F5'};
+    h+=`<div class="shop-sec"><div class="shop-cat-hd"><div class="shop-cat-ic" style="background:${cm.bg}">${cm.ic}</div><span class="shop-cat-nm">${cat.cat}</span><span class="shop-cnt">(${cat.rows.length})</span></div><div class="shop-cards">`;
     cat.rows.forEach(r=>{
-      h+=`<tr><td>${r.p}</td><td class="brand">${r.br}</td><td class="qty">${r.q}</td><td class="note-td">${r.n}</td></tr>`;
+      h+=`<div class="shop-row"><div class="shop-em">${foodEmoji(r.p)}</div><div class="shop-inf"><div class="shop-prod">${r.p}</div><div class="shop-br">${r.br}</div><div class="shop-nt">${r.n}</div></div><div class="shop-qty">${r.q}</div></div>`;
     });
-    h+=`</tbody></table>`;
+    h+='</div></div>';
   });
   document.getElementById('shopView').innerHTML=h;
 }
 
 function renderOfic(){
   let h='';
-  oficTips.forEach(sec=>{
-    h+=`<div class="tip-block"><div class="tip-title">${sec.title}</div>`;
+  oficTips.forEach((sec,i)=>{
+    const tm=tipMeta[i]||{ic:'💡',bg:'#F5F5F5'};
+    h+=`<div class="tip-card"><div class="tip-hd"><div class="tip-hd-ic" style="background:${tm.bg}">${tm.ic}</div><div class="tip-hd-ttl">${sec.title}</div></div>`;
     sec.items.forEach(it=>{
-      h+=`<div class="tip-row">— ${it.t}<br><span class="tip-sub">${it.s}</span></div>`;
+      h+=`<div class="tip-row"><div class="tip-dot"></div><div class="tip-bd"><div class="tip-ttl">${it.t}</div><div class="tip-sub">${it.s}</div></div></div>`;
     });
     h+='</div>';
   });
   document.getElementById('oficView').innerHTML=h;
 }
 
-window.selDay=function(i){activeDay=i;renderDays();renderMeals();}
+window.selDay=function(i){activeDay=i;renderDays();renderMeals();};
 window.showTab=function(t){
   document.querySelectorAll('.tab').forEach((b,i)=>{b.classList.toggle('active',['plan','shop','ofic'][i]===t)});
   document.querySelectorAll('.pane').forEach(p=>p.classList.remove('active'));
   document.getElementById('pane-'+t).classList.add('active');
-}
+};
 
 renderDays();renderMeals();renderShop();renderOfic();
 </script>
+</body>
+</html>
