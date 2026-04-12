@@ -228,7 +228,7 @@ function renderImportExport() {
 function injectModal() {
   if (document.getElementById('prog-modal')) return;
   document.body.insertAdjacentHTML('beforeend', `
-    <div id="prog-modal" class="prog-overlay" onclick="if(event.target===this)closeProgressForm()">
+    <div id="prog-modal" class="prog-overlay" style="display:none" onclick="if(event.target===this)closeProgressForm()">
       <div class="prog-sheet">
         <div class="prog-sheet-hd">
           <span class="prog-sheet-ttl" id="pf-title">Nueva medición</span>
