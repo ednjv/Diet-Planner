@@ -9,15 +9,15 @@ const shopData = [
     { p:'Huevos', br:'Don Pollo Huevos Blancos — bandeja x30', q:'30 unidades', n:'El ítem que más se usa. Desayunos + tortilla nana + cenas. Buscar "Don Pollo bandeja".' },
     { p:'Salmón fresco o reineta', br:'Sección pescadería Lider — salmón filete o reineta fresca', q:'400g', n:'Para cena Vie (y backup). Pedir sin piel. Reineta más económica.' },
     { p:'Atún al natural (lata)', br:'Buen Mar Atún al Natural en Agua — lata 160g', q:'4 latas', n:'Cena Dom + backup semana. Solo "al natural" o "en agua". Buscar "Buen Mar atún".' },
-    { p:'Vacuno magro (posta negra o filete)', br:'Sección carnicería Lider — posta negra o filete', q:'200g', n:'Dom almuerzo — tú lo cocinas a la plancha o al horno. No es lo mismo que carne molida.' },
-    { p:'Carne molida magra (3–4% MG)', br:'Sección carnicería Lider — pedir "carne molida magra" o "sin grasa"', q:'300g', n:'Nana la usa como alternativa al pollo 1–2 veces en la semana. Comprar solo si vas a pedirle que la prepare.' },
+    { p:'Posta negra (vacuno magro)', br:'Sección carnicería Lider — posta negra en un trozo', q:'200g', n:'Nana la guisa el martes y la congela. Tú la descongelas el sábado en la noche para el almuerzo del domingo.' },
+    { p:'Carne molida magra (3–4% MG)', br:'Sección carnicería Lider — pedir "carne molida magra"', q:'300g', n:'Nana la guisa el martes como alternativa al pollo 1–2 veces en la semana.' },
     { p:'Lentejas', br:'Carozzi Lentejas — bolsa 500g', q:'1 bolsa', n:'Mié almuerzo = 1P+1C. Dura varias semanas. Buscar "Carozzi lentejas".' },
     { p:'Garbanzos cocidos (tarro)', br:'Carozzi Garbanzos Cocidos — tarro 400g', q:'1 tarro', n:'Sáb almuerzo. Tarro ya cocido = más práctico. Buscar "Carozzi garbanzos".' },
   ]},
 
   { cat:'Carbohidratos', rows:[
     { p:'Arroz basmati', br:'Tucapel Basmati — bolsa 1 kg', q:'1.5 kg (2 bolsas)', n:'Base de TODOS los almuerzos y algunas cenas. Buscar "Tucapel basmati" en Lider.' },
-    { p:'Avena cruda tradicional', br:'Quaker Avena Tradicional — caja o bolsa 500g', q:'1 caja', n:'Avena remojada en leche (Lun y Mié) + porridge cocida (Jue y Sáb). Buscar "Quaker avena tradicional".' },
+    { p:'Avena cruda tradicional', br:'Quaker Avena Tradicional — caja o bolsa 500g', q:'1 caja', n:'Avena remojada en leche para desayunos Lun, Mié, Jue y Sáb. Nana prepara tarros Dom y Mar en la noche. Buscar "Quaker avena tradicional".' },
     { p:'Pan integral molde', br:'Ideal Artesano Integral — bolsa', q:'1 bolsa', n:'Desayuno Mar, Vie, Dom. Máx 2 rebanadas = 1C. Verificar <155 kcal/porción en etiqueta. Buscar "Ideal Artesano Integral".' },
     { p:'Papa corriente', br:'Sin marca — feria o granel Lider sección verduras', q:'6 unidades medianas', n:'Cenas Lun, Jue + Dom almuerzo. 1 mediana ≈ 200g.' },
     { p:'Tortillas de maíz Saniito', br:'Saniito Tortillas de Maíz — paquete 8 und.', q:'1 paquete', n:'Cenas Mié y Dom. Buscar exactamente "Saniito tortillas" en Lider.' },
