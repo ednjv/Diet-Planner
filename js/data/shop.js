@@ -53,8 +53,8 @@ const shopData = [
 
   { cat:'Aceites y Grasas', rows:[
     { p:'Palta', br:'Sin marca — feria o granel Lider', q:'5 unidades', n:'3 maduras + 2 verdes para que maduren en la semana. Desayunos + cenas.' },
-    { p:'Nueces mariposa', br:'Granel Lider nueces / o Carozzi Nueces — bolsa 200g', q:'200g', n:'Cenas + desayunos. Bolsa dura 2–3 semanas.' },
-    { p:'Almendras', br:'Granel Lider almendras / o Carozzi Almendras 200g', q:'100g', n:'Desayuno Mié. Buscar granel en Lider.' },
+    { p:'Nueces mariposa', br:'Florida Nueces Mariposa — bolsa 200g', q:'200g', n:'Cenas + desayunos. Buscar "Florida nueces mariposa" en Lider. Bolsa dura 2–3 semanas.' },
+    { p:'Almendras naturales', br:'Florida Almendras Naturales — bolsa 200g', q:'100g', n:'Desayuno Mié. Buscar "Florida almendras" en Lider.' },
     { p:'Semillas de chía', br:'Nutriseed Chía — bolsa 200g / o granel Lider', q:'200g', n:'Desayuno Jue. Bolsa dura meses.' },
     { p:'Aceite de oliva extra virgen', br:'Borges Aceite Oliva Extra Virgen — botella 500ml', q:'500ml', n:'Todos los almuerzos. Buscar "Borges oliva extra virgen" en Lider. Si tienes, no comprar.' },
   ]},

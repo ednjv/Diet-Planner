@@ -44,7 +44,7 @@ const nanaData = {
     {
       title: 'Tortilla de huevos',
       icon: '🍳',
-      badge: 'Cenas martes a viernes (4 porciones)',
+      badge: 'Cenas miércoles a viernes (3 porciones dobles)',
       qty: '10–12 huevos, 2 zapallos italianos, 2 tazas espinaca, ½ cebolla, 1 pimentón rojo',
       steps: [
         'Cortar en cubitos: zapallo italiano, cebolla y pimentón.',
@@ -55,8 +55,8 @@ const nanaData = {
         'No hay que darle vuelta. Si el centro queda crudo, meter la sartén al horno 2–3 minutos.',
         'Enfriar y cortar en 4 partes iguales como una pizza.',
       ],
-      storage: 'Las 4 porciones en el refri tapadas. Él saca 2 porciones por cena. Dura 3–4 días.',
-      tip: 'Si no alcanza para 4 días, preparar otra tortilla el jueves.',
+      storage: 'Las 3 porciones dobles en el refri tapadas. Él saca 1 porción doble por cena (Mié, Jue, Vie). Dura 3–4 días.',
+      tip: 'Si no alcanza para los 3 días, preparar otra tortilla el jueves.',
     },
     {
       title: 'Huevos duros',
@@ -106,7 +106,7 @@ const nanaData = {
     {
       title: 'Salmón al horno',
       icon: '🐟',
-      badge: 'Cena del viernes (3 días desde el martes)',
+      badge: 'Cena del martes (día 1 — más fresco)',
       qty: '400g de filete de salmón (o reineta si no hay salmón)',
       steps: [
         'Precalentar el horno a 180°C.',
@@ -154,11 +154,6 @@ const nanaData = {
       title: 'Avena remojada (domingo y martes en la noche)',
       icon: '🌾',
       note: 'La noche del DOMINGO: preparar 2 tarros (para lunes y miércoles). La noche del MARTES: preparar 2 tarros más (para jueves y sábado). En cada tarro: 40g de avena Quaker cruda + 150ml de leche descremada. Tapar y al refri. A la mañana siguiente la avena ya está blanda y lista, sin cocinar.',
-    },
-    {
-      title: 'Armado del tupper para días de oficina (Lun, Mar, Mié)',
-      icon: '📦',
-      note: 'La noche anterior dejar el tupper armado en el refri: 150g de pollo + ¾ taza arroz + verdura. Sin aceite (él lleva el aceite en un gotero). Para el miércoles, el tupper lleva lentejas + pechuga pavo laminada (la pavo va fría, sin calentar).',
     },
     {
       title: 'Verduras al vapor para los almuerzos',
