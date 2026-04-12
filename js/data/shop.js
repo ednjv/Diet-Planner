@@ -19,8 +19,8 @@ const shopData = [
     { p:'Arroz basmati', br:'Tucapel Basmati — bolsa 1 kg', q:'1.5 kg (2 bolsas)', n:'Base de TODOS los almuerzos y algunas cenas. Buscar "Tucapel basmati" en Lider.' },
     { p:'Avena cruda tradicional', br:'Quaker Avena Tradicional — caja o bolsa 500g', q:'1 caja', n:'Avena remojada en leche para desayunos Lun, Mié, Jue y Sáb. Nana prepara tarros Dom y Mar en la noche. Buscar "Quaker avena tradicional".' },
     { p:'Pan integral molde', br:'Ideal Artesano Integral — bolsa', q:'1 bolsa', n:'Desayuno Mar, Vie, Dom. Máx 2 rebanadas = 1C. Verificar <155 kcal/porción en etiqueta. Buscar "Ideal Artesano Integral".' },
-    { p:'Papa corriente', br:'Sin marca — feria o granel Lider sección verduras', q:'2 unidades medianas', n:'Cenas Jue y Vie únicamente — 100g por cena (½ papa mediana por porción = 0.5C).' },
-    { p:'Tortillas de maíz Saniito', br:'Saniito Tortillas de Maíz — paquete 8 und.', q:'2 paquetes (16 und)', n:'Lun cena (2), Mié cena (2), Dom almuerzo (4), Dom cena (2) = 10 total. Buscar exactamente "Saniito tortillas" en Lider.' },
+    { p:'Papa corriente', br:'Sin marca — feria o granel Lider sección verduras', q:'1 unidad mediana', n:'Cena Vie únicamente — 100g (½ papa mediana = 0.5C). Jue cena ahora usa tortillas maíz.' },
+    { p:'Tortillas de maíz Saniito', br:'Saniito Tortillas de Maíz — paquete 8 und.', q:'2 paquetes (16 und)', n:'Lun cena (2), Mié cena (2), Jue cena (2), Dom almuerzo (2), Dom cena (2) = 10 total. Buscar exactamente "Saniito tortillas" en Lider.' },
   ]},
 
   { cat:'Verduras (sin restricción)', rows:[

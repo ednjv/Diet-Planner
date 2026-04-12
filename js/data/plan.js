@@ -120,11 +120,11 @@ const days = [
       { n:'Leche descremada', a:'200ml', b:'l' },
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
-      { n:'Tortilla de huevos (nana)', a:'2 porciones — día 3', b:'p' },
-      { n:'Papa cocida (nana)', a:'100g (½ porción = 0.5C) — día 3', b:'c' },
+      { n:'Reineta al horno (nana)', a:'150g — día 3, dentro del límite de 3 días (2do pescado semana)', b:'p' },
+      { n:'2 tortillas maíz Saniito', a:'60g = ½C', b:'c' },
       { n:'Ensalada lechuga + tomate', a:'libre', b:'' },
       { n:'Nueces Florida Mariposa', a:'15g', b:'f' },
-    ]},
+    ], note:'2do pescado de la semana — reineta del martes aguanta hasta hoy (día 3). Cumple prescripción médica 1–2x pescado/semana.' },
   ]},
 
   // ── VIERNES (día 4 — último día de pollo, tortilla y papas) ──────────────────
@@ -203,7 +203,7 @@ const days = [
     ]},
     { type:'Almuerzo', time:'14–15h', icon:'🍽', bg:'#E3F2FD', foods:[
       { n:'Posta negra guisada (nana — descongelada desde sábado noche)', a:'150g', b:'p' },
-      { n:'4 tortillas maíz Saniito', a:'120g = 1C — sin cocción (arroz y papa del martes ya expiraron)', b:'c' },
+      { n:'2 tortillas maíz Saniito', a:'60g = ½C — sin cocción (arroz y papa del martes ya expiraron)', b:'c' },
       { n:'Ensalada colorida (betarraga, lechuga, tomate)', a:'libre', b:'' },
       { n:'Mandarina x2', a:'', b:'fr' },
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },
