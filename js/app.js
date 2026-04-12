@@ -1,7 +1,7 @@
 // App init + routing
 
 window.showTab = function(t) {
-  const tabs  = ['plan','shop','nana','ofic'];
+  const tabs = ['plan', 'shop', 'nana', 'ofic', 'prog'];
   document.querySelectorAll('.tab').forEach((b, i) => {
     b.classList.toggle('active', tabs[i] === t);
   });
@@ -15,3 +15,4 @@ renderMeals();
 renderShop();
 renderNana();
 renderOfic();
+renderProgress();
