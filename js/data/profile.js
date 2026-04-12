@@ -51,12 +51,17 @@ const userProfile = {
   // Food preferences and restrictions
   preferences: {
     rice:      'Solo arroz basmati (índice glicémico más bajo)',
-    noPasta:   true,   // no le gusta / nana no la hace
+    noPasta:   true,
+    noArrozIntegral: true,
     noStevia:  true,
     noMostaza: true,
-    nanaCooks: 'Martes (batch semanal para la semana)',
-    nanaMakes: ['pollo mechado', 'pollo guisado', 'pollo salteado', 'carne molida', 'tortilla de huevos'],
-    shopping:  'Sábado o Domingo en Lider (una compra semanal)',
+    noCafe:    true,   // solo agua — no café, no té, no mate
+    noTe:      true,
+    drinks:    'Solo agua',
+    nanaCooks: 'Martes (batch semanal — todo cocinado de una vez, dura mar→lun)',
+    nanaMakes: ['pollo mechado', 'arroz basmati', 'tortilla de huevos', 'huevos duros', 'papas cocidas', 'posta negra guisada (freezer)', 'salmón al horno', 'lentejas cocidas', 'carne molida guisada', 'avena remojada (dom y mar noche)'],
+    nanaDoesNot: 'Armado de tuppers — Edwin los arma él mismo antes de salir al trabajo',
+    shopping:  'Sábado o Domingo en Lider (una compra semanal — usar app Lider, buscar por marca exacta)',
   },
 
   // Context for future modifications
@@ -65,5 +70,7 @@ const userProfile = {
     'El cuerpo entró en modo emergencia por ayuno intermitente + poca comida.',
     'Comiendo bien primero, después se agregará gym boutique.',
     'El plan actual establece la base. Los controles mensuales ajustan.',
+    'Nana cocina cada martes. Comida debe durar mar→lun (7 días). Orden del plan por perecibilidad: lo más fresco primero (salmón mar cena), lo más durable de último (huevos duros/latas lun).',
+    'Edwin arma sus propios tuppers. Lunes en oficina = solo productos no perecederos (atún lata, garbanzos tarro, huevos duros).',
   ],
 };
