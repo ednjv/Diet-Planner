@@ -134,7 +134,7 @@ const nanaData = {
         'Dividir en dos tuppers: uno para el miércoles, otro para el sábado.',
       ],
       storage: 'En el refri tapadas duran hasta 5 días — el sábado (día 5) es el límite. Usar el tarro de lentejas Carozzi solo para el lunes (día 7, lentejas frescas no aguantan 7 días).',
-      tip: '¾ taza de lentejas cocidas = 1 porción de proteína + 1 de carbohidrato. No agregar arroz esos días. Hacer una sola olla grande — es más fácil que dos cocciones separadas.',
+      tip: '¾ taza de lentejas cocidas = 1 porción de proteína + 1 de carbohidrato. No agregar arroz esos días. Hacer una sola olla grande — es más fácil que dos cocciones separadas. Preparar el tupper de lentejas del miércoles igual que siempre. Si Edwin come en la calle ese día, el tupper dura hasta el jueves en el refri (día 3 desde el martes = límite seguro). No es un tupper perdido — es el backup del jueves.',
     },
     {
       title: 'Carne molida guisada',
@@ -166,7 +166,7 @@ const nanaData = {
     {
       title: 'Orden sugerido para el martes',
       icon: '📋',
-      note: '1. Meter los 11 huevos a hervir primero (10 min). 2. Mientras: remojar el arroz. 3. Poner el arroz a cocinar (400g seco). 4. Mientras el arroz: hervir el pollo (700g). 5. Sellar la posta y poner a guisar (200g — si viene trozo grande, dividir crudo primero). 6. Mientras: cocinar la olla grande de lentejas (1¾ taza seca — para Mié y Sáb). 7. Hornear la reineta (300g de la bolsa 500g, 180°C, 20 min). 8. Desmechar el pollo y guisar. 9. Hacer la tortilla de huevos (9 huevos + verduras, cortar en 4). 10. Al final: 2 papas cocidas (Jue cena + Vie cena). 11. Preparar 1 tarro overnight oats para el jueves. 12. Congelar: 200g reineta cruda + exceso posta (si aplica). Todo en 2–2.5 horas máximo.',
+      note: 'El miércoles Edwin puede comer en la calle por tradición de oficina. Esto no cambia lo que preparas el martes. Prepara todo igual. | 1. Meter los 11 huevos a hervir primero (10 min). 2. Mientras: remojar el arroz. 3. Poner el arroz a cocinar (400g seco). 4. Mientras el arroz: hervir el pollo (700g). 5. Sellar la posta y poner a guisar (200g — si viene trozo grande, dividir crudo primero). 6. Mientras: cocinar la olla grande de lentejas (1¾ taza seca — para Mié y Sáb). 7. Hornear la reineta (300g de la bolsa 500g, 180°C, 20 min). 8. Desmechar el pollo y guisar. 9. Hacer la tortilla de huevos (9 huevos + verduras, cortar en 4). 10. Al final: 2 papas cocidas (Jue cena + Vie cena). 11. Preparar 1 tarro overnight oats para el jueves. 12. Congelar: 200g reineta cruda + exceso posta (si aplica). Todo en 2–2.5 horas máximo.',
     },
   ],
 };

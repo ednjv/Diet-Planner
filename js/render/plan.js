@@ -22,7 +22,7 @@ function renderMeals() {
   const d = days[activeDay];
   let h = '';
   d.meals.forEach(m => {
-    const tup = m.tupper ? `<span class="tupper">🧊 tupper</span>` : '';
+    const tup = m.tupper ? `<span class="tupper">🧊 ${m.tupper === true ? 'tupper' : m.tupper}</span>` : '';
     h += `<div class="meal-card">
       <div class="meal-hd">
         <div class="meal-ic" style="background:${m.bg}">${m.icon}</div>

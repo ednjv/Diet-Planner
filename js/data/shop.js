@@ -11,7 +11,7 @@ const shopData = [
     { p:'Atún al natural (lata)', br:'Buen Mar Atún al Natural en Agua — lata 160g', q:'3 latas', n:'Lun almuerzo (1 lata) + Dom cena (1 lata) + backup. Solo "al natural" o "en agua". Buscar "Buen Mar atún".' },
     { p:'Posta negra (vacuno magro)', br:'Sección carnicería Lider — pedir exactamente 200g en un trozo', q:'200g', n:'Si viene trozo grande (ej. 729g): dividir crudo antes de cocinar, congelar exceso en bolsas separadas. Nana guisa solo 200g y congela. Edwin descongela sábado noche para dom almuerzo.' },
     { p:'Carne molida magra (3–4% MG)', br:'Sección carnicería Lider — pedir "carne molida magra"', q:'300g', n:'Nana la guisa el martes como alternativa al pollo 1–2 veces en la semana.' },
-    { p:'Lentejas secas', br:'Carozzi Lentejas — bolsa 500g', q:'1 bolsa', n:'Nana cocina batch grande el martes: cubre Mié almuerzo (día 2) y Sáb almuerzo (día 5, límite 5 días refri). Buscar "Carozzi lentejas".' },
+    { p:'Lentejas secas', br:'Carozzi Lentejas — bolsa 500g', q:'1 bolsa', n:'Nana cocina batch grande el martes: cubre Mié almuerzo (día 2) y Sáb almuerzo (día 5, límite 5 días refri). Buscar "Carozzi lentejas". Si Edwin come hamburguesa el miércoles, el tupper de lentejas del miércoles se consume el jueves como almuerzo de reemplazo. Esto no afecta la compra semanal.' },
     { p:'Lentejas cocidas (tarro)', br:'Carozzi Lentejas Cocidas — tarro 400g', q:'1 tarro', n:'Lun almuerzo (día 7) — lentejas frescas no duran 7 días, usar tarro. Solo escurrir, sin cocción. Buscar "Carozzi lentejas cocidas".' },
   ]},
 

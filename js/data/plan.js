@@ -77,13 +77,13 @@ const days = [
       { n:'Mandarina x2', a:'2 unidades (120g)', b:'fr' },
       { n:'Yogurt Colun Skyr', a:'1 und. individual', b:'l' },
     ]},
-    { type:'Almuerzo', time:'14–15h', icon:'🍽', bg:'#E3F2FD', tupper:true, foods:[
+    { type:'Almuerzo', time:'14–15h', icon:'🍽', bg:'#E3F2FD', tupper:'tupper / calle', foods:[
       { n:'Lentejas cocidas (nana)', a:'¾ taza (150g) = 1P+1C', b:'p' },
       { n:'Pechuga pavo laminada San Jorge', a:'100g = 2P extra → total 3P', b:'p' },
       { n:'Arándanos', a:'¾ taza (110g)', b:'fr' },
       { n:'Zanahoria + pimentón (nana)', a:'libre', b:'' },
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },
-    ], note:'NO agregar arroz — las lentejas ya tienen 1C incluido.' },
+    ], note:'NO agregar arroz — las lentejas ya tienen 1C incluido. | TRADICIÓN MIÉRCOLES: Si comes hamburguesa en la calle con el equipo, deja el tupper en el refri para el día siguiente (aguanta hasta jueves). La hamburguesa reemplaza este almuerzo — no comas las dos cosas. En el restaurant: sin papas fritas, sin salsas extra (mayo/golf), sin doble carne. Con eso el almuerzo queda ~600-700 kcal. Contabiliza como: 3P + 1C + 1F aproximado.' },
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', tupper:true, foods:[
       { n:'Frutillas', a:'1¼ taza (200g) en tupper', b:'fr' },
       { n:'Yoghurt Soprole Protein+ Frutilla (155g)', a:'155g individual', b:'l' },
@@ -93,7 +93,7 @@ const days = [
       { n:'6 mini tortillas maíz Saniito', a:'60g = ½C', b:'c' },
       { n:'Ensalada libre', a:'libre', b:'' },
       { n:'Palta', a:'50g', b:'f' },
-    ]},
+    ], note:'SI COMISTE HAMBURGUESA AL ALMUERZO: cena sin tortillas de maíz este día. Solo tortilla de huevos (3P) + ensalada libre + palta (0.5A). Sin carbohidrato — ya lo consumiste al almuerzo.' },
   ]},
 
   // ── JUEVES (día 3) ────────────────────────────────────────────────────────────

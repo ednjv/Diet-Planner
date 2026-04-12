@@ -19,7 +19,7 @@ Mobile-first web app to follow a personalized nutritional plan from Benefit Heal
 |---|---|---|
 | Lun | Oficina | Padel after work |
 | Mar | Oficina | Fútbol (semanas alternas) |
-| Mié | Oficina | Tupper day |
+| Mié | Oficina | Tupper day + posible almuerzo calle (hamburguesa tradición) |
 | Jue | Casa | More flexible — can heat food |
 | Vie | Mixto | Padel Vie o Sáb |
 | Sáb | Casa | Padel Vie o Sáb. Shopping day |
@@ -51,6 +51,22 @@ Nana (Venezuelan housekeeper) comes **every Tuesday** for a single batch-cooking
 - Preps **Saturday overnight oats jar Thursday night** (4-day soak limit — nana's Tuesday jar would over-ferment by Saturday)
 - Thaws posta Saturday night for Sunday
 - All shopping
+
+---
+
+## Weekly exceptions
+
+### Miércoles — tradición oficina
+
+Edwin has a weekly Wednesday lunch tradition with coworkers (hamburgers). This is a planned exception, not a cheat.
+
+- Hamburger **replaces** the Wednesday tupper almuerzo entirely — do not eat both
+- Order: no fries, no extra sauces (mayo/golf/ketchup), no double meat, water only
+- Estimated: ~600–700 kcal, counts as ~3P + 1C
+- Wednesday cena: **remove tortillas maíz** — protein + vegetables only (CHO already consumed at lunch)
+- Wednesday tupper: nana prepares it anyway — moves to Thursday as backup almuerzo if not eaten Wednesday (day 3 fridge limit is safe)
+- Frequency: maximum 1× per week
+- **Doctor:** to be disclosed at 30.04.2026 control for official integration into plan
 
 ---
 

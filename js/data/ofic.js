@@ -9,7 +9,7 @@ const oficTips = [
       { t:'Tupper pequeño 300ml', s:'Para arándanos o frutillas de colación mañana.' },
       { t:'Yogurt Colun Skyr individual', s:'Ya viene sellado, no necesita contenedor extra.' },
       { t:'Fruta entera (manzana, pera, mandarina)', s:'Va suelta en la mochila. La manzana es la más resistente.' },
-      { t:'2x tetrapak Soprole 200ml', s:'Colación tarde. No necesita frío hasta abrir. Cabe en cualquier bolsillo.' },
+      { t:'Soprole Protein+ Frutilla 155g', s:'Colación tarde. No necesita frío hasta abrir. Cabe en cualquier bolsillo.' },
       { t:'Gotero aceite oliva 50ml', s:'Para aderezar el tupper en la oficina si no viene con aceite.' },
     ],
   },
@@ -27,6 +27,16 @@ const oficTips = [
       { t:'Opción 1', s:'Pollo a la plancha + ensalada. Sin papas fritas. Sin salsa.' },
       { t:'Opción 2', s:'Ensalada con atún o huevo duro. Sin aderezo cremoso.' },
       { t:'Lo que hay que evitar', s:'Frituras, salsas, pan, bebidas. El casino tiene opciones malas: tu tupper > casino siempre.' },
+    ],
+  },
+  {
+    title: 'Miércoles — tradición hamburguesa',
+    items: [
+      { t:'Una vez a la semana está OK', s:'Comer hamburguesa con el equipo no daña el progreso si el resto de la semana está bien. Es 1 de 35 comidas semanales — el 97% restante importa más.' },
+      { t:'Qué pedir en el restaurant', s:'Sin papas fritas → pide ensalada o sin acompañamiento. Sin salsas extra (mayo, salsa golf, ketchup). Sin doble carne. Sin bebida con azúcar → agua. Con esto: ~600-700 kcal total.' },
+      { t:'No lleves el tupper ese día', s:'El tupper de lentejas del miércoles queda en el refri de la casa. Aguanta hasta el jueves — lo comes al almuerzo del jueves en reemplazo si quieres, o lo descarta.' },
+      { t:'Ajuste de cena ese día', s:'Miércoles noche si comiste hamburguesa: solo tortilla de huevos + ensalada libre + palta. Sin tortillas de maíz. Ya consumiste el carbohidrato al almuerzo.' },
+      { t:'Díselo a la doctora el 30.04', s:'Mencionarle la tradición del miércoles. Ella puede integrarlo oficialmente al plan. Mejor que lo sepa a que lo ocultes — su objetivo es enseñarte a comer, no darte una dieta rígida.' },
     ],
   },
   {
