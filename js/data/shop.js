@@ -8,11 +8,11 @@ const shopData = [
     { p:'Pechuga pavo laminada', br:'San Jorge Pechuga de Pavo Ahumada — sobre 200g', q:'200g', n:'Desayuno Lun + complemento almuerzos. Sección fiambrería. Buscar "San Jorge pavo".' },
     { p:'Huevos', br:'Don Pollo Huevos Blancos — bandeja x30', q:'30 unidades', n:'El ítem que más se usa. Desayunos + tortilla nana + cenas. Buscar "Don Pollo bandeja".' },
     { p:'Salmón fresco o reineta', br:'Sección pescadería Lider — salmón filete o reineta fresca', q:'400g', n:'Para cena Vie (y backup). Pedir sin piel. Reineta más económica.' },
-    { p:'Atún al natural (lata)', br:'Buen Mar Atún al Natural en Agua — lata 160g', q:'4 latas', n:'Cena Dom + backup semana. Solo "al natural" o "en agua". Buscar "Buen Mar atún".' },
+    { p:'Atún al natural (lata)', br:'Buen Mar Atún al Natural en Agua — lata 160g', q:'3 latas', n:'Lun almuerzo (1 lata) + Dom cena (1 lata) + backup. Solo "al natural" o "en agua". Buscar "Buen Mar atún".' },
     { p:'Posta negra (vacuno magro)', br:'Sección carnicería Lider — posta negra en un trozo', q:'200g', n:'Nana la guisa el martes y la congela. Tú la descongelas el sábado en la noche para el almuerzo del domingo.' },
     { p:'Carne molida magra (3–4% MG)', br:'Sección carnicería Lider — pedir "carne molida magra"', q:'300g', n:'Nana la guisa el martes como alternativa al pollo 1–2 veces en la semana.' },
-    { p:'Lentejas', br:'Carozzi Lentejas — bolsa 500g', q:'1 bolsa', n:'Mié almuerzo = 1P+1C. Dura varias semanas. Buscar "Carozzi lentejas".' },
-    { p:'Garbanzos cocidos (tarro)', br:'Carozzi Garbanzos Cocidos — tarro 400g', q:'1 tarro', n:'Sáb almuerzo. Tarro ya cocido = más práctico. Buscar "Carozzi garbanzos".' },
+    { p:'Lentejas secas', br:'Carozzi Lentejas — bolsa 500g', q:'1 bolsa', n:'Nana cocina batch grande el martes: cubre Mié almuerzo (día 2) y Sáb almuerzo (día 5, límite 5 días refri). Buscar "Carozzi lentejas".' },
+    { p:'Lentejas cocidas (tarro)', br:'Carozzi Lentejas Cocidas — tarro 400g', q:'1 tarro', n:'Lun almuerzo (día 7) — lentejas frescas no duran 7 días, usar tarro. Solo escurrir, sin cocción. Buscar "Carozzi lentejas cocidas".' },
   ]},
 
   { cat:'Carbohidratos', rows:[
@@ -37,11 +37,11 @@ const shopData = [
 
   { cat:'Frutas', rows:[
     { p:'Manzana verde (Granny Smith)', br:'Sin marca — feria o granel Lider', q:'7 unidades', n:'Más práctica: no se aplasta en mochila. Colación AM varios días.' },
-    { p:'Arándanos', br:"Driscoll's Arándanos — pack 125g (fresco o congelado Lider)", q:'3 packs (375g)', n:'Mejor fruta del plan. Bajo índice glicémico. Llevar en tupper. Buscar "Driscoll blueberry".' },
+    { p:'Arándanos', br:"Driscoll's Arándanos — pack 125g (fresco o congelado Lider)", q:'5 packs (625g)', n:'Mejor fruta del plan. Bajo índice glicémico. Llevar en tupper. Mar AM + Lun almuerzo + Mié almuerzo + Jue almuerzo + Sáb PM. Buscar "Driscoll blueberry".' },
     { p:'Kiwi', br:'Sin marca — granel Lider', q:'6 unidades', n:'Colaciones Mar, Jue, Dom.' },
-    { p:'Frutillas', br:'Sin marca — pack 500g temporada o congelado Lider', q:'1 pack 500g', n:'Colaciones Mié y Vie. Llevar en tupper al trabajo.' },
+    { p:'Frutillas', br:'Sin marca — pack 750g temporada o congelado Lider', q:'1 pack 750g', n:'Mar almuerzo + Mié PM + Vie AM. Llevar en tupper al trabajo.' },
     { p:'Mandarina', br:'Sin marca — bolsa malla feria o Lider', q:'10 unidades', n:'Fácil de pelar en oficina. Lun, Vie, Sáb, Dom.' },
-    { p:'Pera', br:'Sin marca — granel Lider', q:'4 unidades', n:'Colaciones Mié y Vie.' },
+    { p:'Naranja', br:'Sin marca — granel Lider', q:'2 unidades', n:'Reemplaza la pera. Mié colación AM + Vie colación PM. Alta en fibra y vitamina C. Sin necesidad de tupper.' },
     { p:'Mango', br:'Sin marca — granel Lider (1 unidad semi maduro)', q:'1 unidad', n:'Solo Sáb colación. Comprar semi maduro.' },
   ]},
 

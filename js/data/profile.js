@@ -55,6 +55,8 @@ const userProfile = {
     noArrozIntegral: true,
     noStevia:  true,
     noMostaza: true,
+    noPera:    true,   // Edwin no le gustan las peras — reemplazadas con naranja
+    preferLentejas: true,  // preferir lentejas sobre garbanzos en todo el plan
     noCafe:    true,   // solo agua — no café, no té, no mate
     noTe:      true,
     drinks:    'Solo agua',

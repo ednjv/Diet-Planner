@@ -17,7 +17,8 @@ const days = [
     ]},
     { type:'Almuerzo', time:'14–15h', icon:'🍽', bg:'#E3F2FD', tupper:true, foods:[
       { n:'Atún Buen Mar al natural (lata)', a:'1 lata = 2P — sin cocción, directo de la lata', b:'p' },
-      { n:'Garbanzos Carozzi (tarro)', a:'¾ taza = 1P+1C — solo escurrir, sin cocción', b:'p' },
+      { n:'Lentejas Carozzi cocidas (tarro)', a:'¾ taza = 1P+1C — solo escurrir, sin cocción', b:'p' },
+      { n:'Arándanos', a:'¾ taza (110g)', b:'fr' },
       { n:'Ensalada libre (lechuga, tomate, pepino)', a:'libre', b:'' },
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },
     ], note:'Sin cocción: todo de lata o tarro. Perfecto para día 7 — nada de lo cocinado el martes pasado aguanta hasta hoy.' },
@@ -48,6 +49,7 @@ const days = [
     { type:'Almuerzo', time:'14–15h', icon:'🍽', bg:'#E3F2FD', tupper:true, foods:[
       { n:'Pollo guisado (nana — recién hecho)', a:'150g', b:'p' },
       { n:'Arroz basmati cocido (nana)', a:'120g (¾ taza)', b:'c' },
+      { n:'Frutillas', a:'1¼ taza (200g) en tupper', b:'fr' },
       { n:'Espinaca + tomate', a:'libre', b:'' },
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },
     ]},
@@ -72,12 +74,13 @@ const days = [
       { n:'Agua', a:'libre', b:'' },
     ], note:'Tarro del domingo en la noche — 3 días de remojo, todavía está bien.' },
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', tupper:true, foods:[
-      { n:'Pera', a:'1 unidad (100g)', b:'fr' },
+      { n:'Naranja', a:'1 unidad (130g)', b:'fr' },
       { n:'Yogurt Colun Skyr', a:'1 und. individual', b:'l' },
     ]},
     { type:'Almuerzo', time:'14–15h', icon:'🍽', bg:'#E3F2FD', tupper:true, foods:[
       { n:'Lentejas cocidas (nana)', a:'¾ taza (150g) = 1P+1C', b:'p' },
-      { n:'Pechuga pavo laminada San Jorge', a:'50g = 1P extra → total 2P', b:'p' },
+      { n:'Pechuga pavo laminada San Jorge', a:'100g = 2P extra → total 3P', b:'p' },
+      { n:'Arándanos', a:'¾ taza (110g)', b:'fr' },
       { n:'Zanahoria + pimentón (nana)', a:'libre', b:'' },
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },
     ], note:'NO agregar arroz — las lentejas ya tienen 1C incluido.' },
@@ -144,7 +147,7 @@ const days = [
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },
     ]},
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', foods:[
-      { n:'Pera', a:'1 unidad', b:'fr' },
+      { n:'Naranja', a:'1 unidad (130g)', b:'fr' },
       { n:'Leche descremada', a:'200ml', b:'l' },
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
@@ -168,12 +171,12 @@ const days = [
       { n:'Yogurt Colun Skyr', a:'1 und.', b:'l' },
     ]},
     { type:'Almuerzo', time:'14–15h', icon:'🍽', bg:'#E3F2FD', foods:[
-      { n:'Garbanzos Carozzi (tarro)', a:'¾ taza = 1P+1C — solo escurrir, sin cocción', b:'p' },
+      { n:'Lentejas cocidas (nana — batch del martes, día 5)', a:'¾ taza (150g) = 1P+1C', b:'p' },
       { n:'Pechuga pavo laminada San Jorge', a:'100g = 2P extra → total 3P', b:'p' },
       { n:'Pimentón + zanahoria', a:'libre', b:'' },
       { n:'Mandarina x2', a:'120g', b:'fr' },
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },
-    ], note:'Sin cocción: garbanzos del tarro + pavo frío. No usar pollo cocinado el martes — ya pasaron 5 días.' },
+    ], note:'Lentejas del batch del martes — duran hasta 5 días en refri (límite). No usar pollo cocinado el martes — ya pasaron 5 días.' },
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', foods:[
       { n:'Arándanos', a:'¾ taza', b:'fr' },
       { n:'Leche descremada', a:'200ml', b:'l' },
@@ -210,8 +213,8 @@ const days = [
       { n:'Leche descremada', a:'200ml', b:'l' },
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
-      { n:'2 latas atún Buen Mar al natural', a:'sin cocción', b:'p' },
-      { n:'1 huevo duro (nana)', a:'día 6 — sin cocción', b:'p' },
+      { n:'Atún Buen Mar al natural (lata)', a:'1 lata = 2P — sin cocción', b:'p' },
+      { n:'1 huevo duro (nana)', a:'día 6 — sin cocción = 1P → total 3P', b:'p' },
       { n:'2 tortillas maíz Saniito', a:'60g = ½C', b:'c' },
       { n:'Lechuga + pepino + tomate', a:'libre', b:'' },
       { n:'Nueces Florida Mariposa', a:'15g', b:'f' },

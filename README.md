@@ -41,7 +41,7 @@ Nana (Venezuelan housekeeper) comes **every Tuesday** for a single batch-cooking
 - Huevos duros (12 eggs — last 7 days unpeeled)
 - Papas cocidas (7–8 medium — last 4–5 days)
 - Salmón al horno (400g — eaten Tuesday cena, day 1, most perishable)
-- Lentejas cocidas (1 cup dry — Mié almuerzo)
+- Lentejas cocidas (1¾ cup dry — Mié almuerzo day 2 + Sáb almuerzo day 5; canned tarro used for Lun day 7)
 - Posta negra guisada (200g — **frozen**, thawed Saturday night for Sunday lunch)
 - Carne molida guisada (300g — optional pollo substitute 1–2x/week)
 - Avena remojada: 2 jars **Sunday night** (Mon + Wed); 2 jars **Tuesday night** (Thu + Sat)
@@ -104,6 +104,8 @@ Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals are ordere
 - No arroz integral (only basmati — lower glycemic index)
 - No stevia
 - No mostaza
+- No peras (preference — replaced with naranja throughout plan)
+- Prefer lentejas over garbanzos — nana makes one single batch of lentejas; canned lentejas (tarro) used only on Lunes day 7 when fresh batch doesn't last
 - No café, no té, no mate — only water
 
 ### Doctor's context

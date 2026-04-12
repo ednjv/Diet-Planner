@@ -121,17 +121,18 @@ const nanaData = {
     {
       title: 'Lentejas cocidas',
       icon: '🫘',
-      badge: 'Almuerzo del miércoles',
-      qty: '1 taza de lentejas secas (Carozzi)',
+      badge: 'Almuerzo miércoles (día 2) y sábado (día 5)',
+      qty: '1¾ tazas de lentejas secas Carozzi (rinde para los dos días)',
       steps: [
         'Remojar las lentejas en agua fría desde la noche del lunes (o al menos 1 hora antes).',
-        'Escurrir el agua del remojo. Poner en olla con agua nueva, 1 diente de ajo, sal y comino.',
+        'Escurrir el agua del remojo. Poner en olla grande con agua nueva, 1 diente de ajo, sal y comino.',
         'Hervir a fuego alto, luego bajar a fuego medio. Cocinar 25–30 minutos hasta que estén blandas.',
         'Escurrir el exceso de agua. Condimentar con sal al gusto.',
         'Opcional: saltear ½ cebolla y ½ zanahoria en cubitos con aceite y mezclar con las lentejas para dar más sabor.',
+        'Dividir en dos tuppers: uno para el miércoles, otro para el sábado.',
       ],
-      storage: 'En el refri tapadas duran 4–5 días. Perfectas para el miércoles.',
-      tip: '¾ taza de lentejas cocidas = 1 porción de proteína + 1 de carbohidrato a la vez. No agregar arroz ese día.',
+      storage: 'En el refri tapadas duran hasta 5 días — el sábado (día 5) es el límite. Usar el tarro de lentejas Carozzi solo para el lunes (día 7, lentejas frescas no aguantan 7 días).',
+      tip: '¾ taza de lentejas cocidas = 1 porción de proteína + 1 de carbohidrato. No agregar arroz esos días. Hacer una sola olla grande — es más fácil que dos cocciones separadas.',
     },
     {
       title: 'Carne molida guisada',
@@ -163,7 +164,7 @@ const nanaData = {
     {
       title: 'Orden sugerido para el martes',
       icon: '📋',
-      note: '1. Meter los huevos a hervir primero (10 min). 2. Mientras: remojar el arroz. 3. Poner el arroz a cocinar. 4. Mientras el arroz: hervir el pollo. 5. Meter la posta al horno. 6. Mientras: cocinar lentejas. 7. Desmechar el pollo y guisar. 8. Hacer la tortilla de huevos. 9. Al final: papas cocidas. Todo en 2–2.5 horas máximo.',
+      note: '1. Meter los huevos a hervir primero (10 min). 2. Mientras: remojar el arroz. 3. Poner el arroz a cocinar. 4. Mientras el arroz: hervir el pollo. 5. Meter la posta al horno. 6. Mientras: cocinar la olla grande de lentejas (1¾ taza seca — para Mié y Sáb). 7. Desmechar el pollo y guisar. 8. Hacer la tortilla de huevos. 9. Al final: papas cocidas. Todo en 2–2.5 horas máximo.',
     },
   ],
 };
