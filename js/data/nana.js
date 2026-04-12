@@ -156,7 +156,7 @@ const nanaData = {
     {
       title: 'Avena remojada (domingo y martes en la noche)',
       icon: '🌾',
-      note: 'La noche del DOMINGO: preparar 2 tarros (para lunes y miércoles). La noche del MARTES: preparar 1 tarro (para jueves). El tarro del sábado lo prepara Edwin el JUEVES en la noche (5 minutos). En cada tarro: 40g de avena Quaker cruda + 150ml de leche descremada. Tapar y al refri. A la mañana siguiente la avena ya está blanda y lista, sin cocinar.',
+      note: 'La noche del DOMINGO: preparar 1 tarro (para el lunes). La noche del MARTES: preparar 1 tarro (para el jueves). El tarro del sábado lo prepara Edwin el JUEVES en la noche (5 minutos). En cada tarro: 40g avena Quaker Tradicional + 150ml leche reconstituida (mezclar 20g polvo Colun descremada con agua fría). Tapar y al refri. A la mañana siguiente la avena ya está blanda y lista, sin cocinar. La bolsa de leche en polvo está en la despensa, no en el refri. Edwin la mezcla solo — nana no necesita preparar esto.',
     },
     {
       title: 'Verduras al vapor para los almuerzos',

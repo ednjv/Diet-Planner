@@ -45,8 +45,9 @@ const shopData = [
   ]},
 
   { cat:'Lácteos', rows:[
-    { p:'Yogurt sin azúcar', br:'Colun Light Sin Azúcar Sabor Frutilla — 120g individual', q:'10 unidades', n:'Esta semana: Colun Light Frutilla (sin azúcar, cumple Lista 5). PRÓXIMA SEMANA: cambiar a Colun Skyr Natural (más proteína). Buscar "Colun light" en Lider.' },
-    { p:'Leche descremada tetrapak 200ml', br:'Soprole Descremada Tetrapak 200ml individual', q:'7 cajas mínimo', n:'⚠️ CRÍTICO — faltó esta semana. Sin esto: avena va con agua y no hay lácteo en colación tarde. 1 caja/día (colación PM + overnight oats). Buscar "Soprole tetrapak 200ml".' },
+    { p:'Yogurt sin azúcar', br:'Colun Light Sin Azúcar Sabor Frutilla — 120g individual', q:'10 unidades', n:'Colación AM (mañana). Distinto del Soprole Protein que es para la tarde. Esta semana: Colun Light Frutilla (sin azúcar, cumple Lista 5). PRÓXIMA SEMANA: cambiar a Colun Skyr Natural (más proteína). Buscar "Colun light" en Lider.' },
+    { p:'Leche descremada en polvo', br:'Colun Descremada Instantánea en Polvo — bolsa 800g', q:'1 bolsa (dura 4-6 semanas, no comprar cada semana)', n:'Para overnight oats en casa. 20g polvo + agua = 150ml leche reconstituida. No necesita frío hasta abrir. Buscar "Colun descremada polvo" en Lider.' },
+    { p:'Yoghurt proteico individual', br:'Soprole Protein+ Sabor Frutilla — 155g individual', q:'7 unidades', n:'Colación PM diaria. 10g proteína por unidad. Reemplaza tetrapak. Buscar "Soprole Protein" en Lider.' },
   ]},
 
   { cat:'Aceites y Grasas', rows:[

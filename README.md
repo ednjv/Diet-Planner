@@ -44,7 +44,7 @@ Nana (Venezuelan housekeeper) comes **every Tuesday** for a single batch-cooking
 - Lentejas cocidas (1¾ cup dry — Mié almuerzo day 2 + Sáb almuerzo day 5; tarro Carozzi for Lun day 7)
 - Posta negra guisada (**exactly 200g** — if piece is larger, divide raw first, freeze excess; guised portion goes to freezer, thaw Saturday night for Sunday lunch)
 - Carne molida guisada (300g — optional pollo substitute 1–2x/week)
-- Avena remojada: 2 jars **Sunday night** (Mon + Wed); 1 jar **Tuesday night** (Thu only)
+- Avena remojada: 1 jar **Sunday night** (Mon only); 1 jar **Tuesday night** (Thu only) — uses 150ml leche reconstituida desde polvo Colun (Edwin manages milk powder himself, nana only preps the oats jars)
 
 **Edwin does himself:**
 - Arms tuppers before leaving for work
@@ -116,8 +116,11 @@ Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals ordered fr
 - No mostaza
 - No peras
 - No café, no té, no mate — only water
+- No leche tetrapak (not available locally)
 - Prefer lentejas over garbanzos (nana makes one single batch of lentejas; tarro Carozzi for Lun day 7)
-- Avena: must be **traditional Quaker** (caja azul) — NOT instantánea (higher GI, disintegrates in overnight oats)
+- Avena: must be **traditional Quaker** (caja azul) — NOT instantánea (higher GI, dissolves poorly in overnight oats)
+- **Leche descremada en polvo Colun 800g** for overnight oats at home (20g powder + water = 150ml reconstituted milk per jar) — monthly purchase
+- **Soprole Protein+ Frutilla 155g** for daily PM colación at 16h (replaces tetrapak) — 10g protein per unit, 7 units/week
 
 ### Doctor's context
 - Goal is to teach healthy eating, not a strict diet.
@@ -145,8 +148,9 @@ Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals ordered fr
 | Arroz | `Tucapel basmati` | 1 bolsa 1kg = suficiente |
 | Huevos | `bandeja x30` | Cintazul o equivalente. 20 para nana, 10 para Edwin |
 | Avena | `Quaker avena tradicional` | Caja azul — NO instantánea |
-| Leche tetrapak | `Soprole tetrapak 200ml` | ⚠️ CRÍTICO — 7 cajas/semana mínimo |
-| Yogurt (actual) | `Colun light` | Colun Light Sin Azúcar Sabor Frutilla 120g. Próxima semana: cambiar a Colun Skyr Natural |
+| Leche en polvo (oats) | `Colun descremada polvo` | 800g — compra mensual, no semanal |
+| Yogurt PM (Protein+) | `Soprole Protein` | 7 unidades × 155g — compra semanal |
+| Yogurt AM | `Colun light` | Colun Light Sin Azúcar Sabor Frutilla 120g. Próxima semana: cambiar a Colun Skyr Natural |
 | Atún | `Buen Mar atún` | Solo "al natural" o "en agua" |
 | Aceite oliva | `Borges oliva extra virgen` | Si hay stock, no comprar |
 

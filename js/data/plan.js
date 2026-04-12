@@ -6,11 +6,11 @@ const days = [
   // ── LUNES (día 7 desde el martes anterior — solo productos duraderos) ────────
   { name:'Lun', sport:'padel', ofic:true, meals:[
     { type:'Desayuno', time:'7–9h', icon:'🌅', bg:'#E8F5E9', foods:[
-      { n:'Avena remojada en leche (nana — tarro prep dom. en la noche)', a:'40g avena cruda + 150ml leche desc.', b:'c' },
+      { n:'Avena remojada en leche (nana — tarro prep dom. en la noche)', a:'40g avena cruda Quaker + 150ml leche descremada reconstituida (20g polvo Colun + agua)', b:'c' },
       { n:'Pechuga pavo laminada San Jorge', a:'100g (fiambrería — sin cocción)', b:'p' },
       { n:'Nueces Florida Mariposa', a:'5 unidades (15g)', b:'f' },
       { n:'Agua', a:'libre', b:'' },
-    ], note:'Tarro del domingo en la noche — 1 día de remojo, listo para sacar del refri.' },
+    ], note:'Tarro del domingo en la noche — 1 día de remojo, listo para sacar del refri. Mezclar polvo de leche con agua fría la noche anterior en el tarro. Agregar avena. Tapar y refrigerar.' },
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', tupper:true, foods:[
       { n:'Manzana verde', a:'1 mediana', b:'fr' },
       { n:'Yogurt Colun Skyr natural', a:'1 und. (110g)', b:'l' },
@@ -24,7 +24,7 @@ const days = [
     ], note:'Sin cocción: todo de lata o tarro. Perfecto para día 7 — nada de lo cocinado el martes pasado aguanta hasta hoy.' },
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', tupper:true, foods:[
       { n:'Mandarina', a:'2 unidades', b:'fr' },
-      { n:'Leche descremada Soprole tetrapak', a:'200ml individual', b:'l' },
+      { n:'Yoghurt Soprole Protein+ Frutilla (155g)', a:'155g individual', b:'l' },
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
       { n:'3 huevos duros (nana)', a:'día 7 — los huevos duros son lo único que aguanta 7 días', b:'p' },
@@ -55,7 +55,7 @@ const days = [
     ]},
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', tupper:true, foods:[
       { n:'Kiwi x2', a:'2 unidades', b:'fr' },
-      { n:'Leche descremada Soprole tetrapak', a:'200ml', b:'l' },
+      { n:'Yoghurt Soprole Protein+ Frutilla (155g)', a:'155g individual', b:'l' },
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
       { n:'Reineta al horno (nana)', a:'150g — día 1, más fresco, aguanta máx 3 días', b:'p' },
@@ -68,11 +68,11 @@ const days = [
   // ── MIÉRCOLES (día 2) ─────────────────────────────────────────────────────────
   { name:'Mié', sport:null, ofic:true, meals:[
     { type:'Desayuno', time:'7–9h', icon:'🌅', bg:'#E8F5E9', foods:[
-      { n:'Avena remojada en leche (nana — tarro prep dom. en la noche)', a:'40g avena cruda + 150ml leche desc.', b:'c' },
+      { n:'Avena remojada en leche (nana — tarro prep dom. en la noche)', a:'40g avena cruda Quaker + 150ml leche descremada reconstituida (20g polvo Colun + agua)', b:'c' },
       { n:'2 huevos duros (nana)', a:'día 2', b:'p' },
       { n:'Florida Almendras Naturales', a:'15g', b:'f' },
       { n:'Agua', a:'libre', b:'' },
-    ], note:'Tarro del domingo en la noche — 3 días de remojo, todavía está bien.' },
+    ], note:'Tarro del domingo en la noche — 3 días de remojo, todavía está bien. Mezclar polvo de leche con agua fría la noche anterior en el tarro. Agregar avena. Tapar y refrigerar.' },
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', tupper:true, foods:[
       { n:'Mandarina x2', a:'2 unidades (120g)', b:'fr' },
       { n:'Yogurt Colun Skyr', a:'1 und. individual', b:'l' },
@@ -86,7 +86,7 @@ const days = [
     ], note:'NO agregar arroz — las lentejas ya tienen 1C incluido.' },
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', tupper:true, foods:[
       { n:'Frutillas', a:'1¼ taza (200g) en tupper', b:'fr' },
-      { n:'Leche descremada Soprole tetrapak', a:'200ml', b:'l' },
+      { n:'Yoghurt Soprole Protein+ Frutilla (155g)', a:'155g individual', b:'l' },
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
       { n:'Tortilla de huevos (nana)', a:'2 porciones — día 2', b:'p' },
@@ -99,11 +99,11 @@ const days = [
   // ── JUEVES (día 3) ────────────────────────────────────────────────────────────
   { name:'Jue', sport:null, ofic:false, meals:[
     { type:'Desayuno', time:'7–9h', icon:'🌅', bg:'#E8F5E9', foods:[
-      { n:'Avena remojada en leche (nana — tarro prep mar. en la noche)', a:'40g avena cruda + 150ml leche desc.', b:'c' },
+      { n:'Avena remojada en leche (nana — tarro prep mar. en la noche)', a:'40g avena cruda Quaker + 150ml leche descremada reconstituida (20g polvo Colun + agua)', b:'c' },
       { n:'2 huevos duros (nana)', a:'día 3', b:'p' },
       { n:'Semillas chía', a:'3 cdas (30g)', b:'f' },
       { n:'Agua', a:'libre', b:'' },
-    ]},
+    ], note:'Tarro del martes en la noche. Mezclar polvo de leche con agua fría la noche anterior en el tarro. Agregar avena. Tapar y refrigerar.' },
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', foods:[
       { n:'Kiwi x2', a:'2 unidades', b:'fr' },
       { n:'Yogurt natural descremado Colun', a:'120g', b:'l' },
@@ -117,7 +117,7 @@ const days = [
     ]},
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', foods:[
       { n:'Manzana verde', a:'1 mediana', b:'fr' },
-      { n:'Leche descremada', a:'200ml', b:'l' },
+      { n:'Yoghurt Soprole Protein+ Frutilla (155g)', a:'155g individual', b:'l' },
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
       { n:'Reineta al horno (nana)', a:'150g — día 3, dentro del límite de 3 días (2do pescado semana)', b:'p' },
@@ -148,7 +148,7 @@ const days = [
     ]},
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', foods:[
       { n:'Mandarina x2', a:'2 unidades (120g)', b:'fr' },
-      { n:'Leche descremada', a:'200ml', b:'l' },
+      { n:'Yoghurt Soprole Protein+ Frutilla (155g)', a:'155g individual', b:'l' },
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
       { n:'Tortilla de huevos (nana)', a:'2 porciones — día 4, última porción', b:'p' },
@@ -161,11 +161,11 @@ const days = [
   // ── SÁBADO (día 5 — huevos duros y arroz aguantan, pollo y tortilla ya no) ───
   { name:'Sáb', sport:'padel', ofic:false, meals:[
     { type:'Desayuno', time:'7–9h', icon:'🌅', bg:'#E8F5E9', foods:[
-      { n:'Avena remojada en leche (Edwin — tarro prep jue. en la noche)', a:'40g avena cruda + 150ml leche desc.', b:'c' },
+      { n:'Avena remojada en leche (Edwin — tarro prep jue. en la noche)', a:'40g avena cruda Quaker + 150ml leche descremada reconstituida (20g polvo Colun + agua)', b:'c' },
       { n:'2 huevos duros (nana)', a:'día 5 — huevos aguantan 7 días', b:'p' },
       { n:'Nueces Florida Mariposa', a:'15g', b:'f' },
       { n:'Agua', a:'libre', b:'' },
-    ]},
+    ], note:'Tarro del jueves en la noche (Edwin). Mezclar polvo de leche con agua fría la noche anterior en el tarro. Agregar avena. Tapar y refrigerar.' },
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', foods:[
       { n:'Mango', a:'½ unidad (100g)', b:'fr' },
       { n:'Yogurt Colun Skyr', a:'1 und.', b:'l' },
@@ -179,7 +179,7 @@ const days = [
     ], note:'Lentejas del batch del martes — duran hasta 5 días en refri (límite). No usar pollo cocinado el martes — ya pasaron 5 días.' },
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', foods:[
       { n:'Arándanos', a:'¾ taza', b:'fr' },
-      { n:'Leche descremada', a:'200ml', b:'l' },
+      { n:'Yoghurt Soprole Protein+ Frutilla (155g)', a:'155g individual', b:'l' },
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
       { n:'3 huevos duros (nana)', a:'día 5', b:'p' },
@@ -210,7 +210,7 @@ const days = [
     ], note:'Arroz y papa cocinados el martes ya no son seguros al día 6. Tortilla maíz como carbo.' },
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', foods:[
       { n:'Manzana verde', a:'1 mediana', b:'fr' },
-      { n:'Leche descremada', a:'200ml', b:'l' },
+      { n:'Yoghurt Soprole Protein+ Frutilla (155g)', a:'155g individual', b:'l' },
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
       { n:'Atún Buen Mar al natural (lata)', a:'1 lata = 2P — sin cocción', b:'p' },
