@@ -1,0 +1,54 @@
+// Food emoji mapping utility
+
+function foodEmoji(n) {
+  const s = n.toLowerCase();
+  if (/pechuga.*(pollo)|pollo\b/.test(s))         return '🍗';
+  if (/pechuga.*(pavo)|pavo\b/.test(s))           return '🦃';
+  if (/huevo|clara/.test(s))                       return '🥚';
+  if (/salm[oó]n/.test(s))                        return '🐟';
+  if (/merluza|reineta|albacora/.test(s))          return '🐠';
+  if (/at[uú]n/.test(s))                          return '🐟';
+  if (/vacuno|posta|filete|carne\s+molida/.test(s))return '🥩';
+  if (/lentejas/.test(s))                          return '🫘';
+  if (/garbanzos/.test(s))                         return '🫘';
+  if (/tortillas?\s+ma[ií]z|saniito/.test(s))      return '🌮';
+  if (/tortilla/.test(s))                          return '🍳';
+  if (/palta/.test(s))                             return '🥑';
+  if (/nueces/.test(s))                            return '🌰';
+  if (/almendras/.test(s))                         return '🌰';
+  if (/ch[ií]a/.test(s))                          return '🌱';
+  if (/frutos\s+secos/.test(s))                    return '🥜';
+  if (/aceite/.test(s))                            return '🫒';
+  if (/arroz/.test(s))                             return '🍚';
+  if (/avena|oats/.test(s))                        return '🌾';
+  if (/pan\b/.test(s))                             return '🍞';
+  if (/papa\b/.test(s))                            return '🥔';
+  if (/manzana/.test(s))                           return '🍎';
+  if (/ar[aá]ndanos/.test(s))                     return '🫐';
+  if (/kiwi/.test(s))                              return '🥝';
+  if (/frutillas/.test(s))                         return '🍓';
+  if (/pera\b/.test(s))                            return '🍐';
+  if (/mango\b/.test(s))                           return '🥭';
+  if (/mandarina/.test(s))                         return '🍊';
+  if (/durazno|ciruela/.test(s))                   return '🍑';
+  if (/yogurt|yogur|skyr/.test(s))                 return '🥛';
+  if (/leche/.test(s))                             return '🥛';
+  if (/br[oó]coli/.test(s))                       return '🥦';
+  if (/espinaca/.test(s))                          return '🥬';
+  if (/lechuga/.test(s))                           return '🥗';
+  if (/tomate/.test(s))                            return '🍅';
+  if (/zanahoria/.test(s))                         return '🥕';
+  if (/piment[oó]n/.test(s))                      return '🫑';
+  if (/zapallo/.test(s))                           return '🥒';
+  if (/coliflor/.test(s))                          return '🥦';
+  if (/betarraga/.test(s))                         return '🫐';
+  if (/esp[aá]rragos/.test(s))                    return '🌿';
+  if (/caf[eé]/.test(s))                          return '☕';
+  if (/t[eé]\b|mate\b/.test(s))                   return '🍵';
+  if (/agua\b/.test(s))                            return '💧';
+  if (/soya/.test(s))                              return '🫙';
+  if (/cebolla/.test(s))                           return '🧅';
+  if (/spray/.test(s))                             return '🫙';
+  if (/semillas/.test(s))                          return '🌱';
+  return '🍽';
+}
