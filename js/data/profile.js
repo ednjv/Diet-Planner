@@ -39,7 +39,7 @@ const userProfile = {
   keyRules: [
     'Legumbres = 1P + 1C por porción (no agregar otro carbo)',
     'No dejar pasar más de 4h sin comer',
-    '2L agua diaria (infusiones cuentan)',
+    '2L agua diaria — solo agua, sin infusiones, sin café, sin mate',
     'Carnes rojas máx 1–2x/semana',
     'Pescado mín 1–2x/semana',
     'Legumbres 2–3x/semana',
@@ -50,21 +50,33 @@ const userProfile = {
 
   // Food preferences and restrictions
   preferences: {
-    rice:      'Solo arroz basmati (índice glicémico más bajo)',
-    noPasta:   true,
+    rice:            'Solo arroz basmati (índice glicémico más bajo)',
+    noPasta:         true,
     noArrozIntegral: true,
-    noStevia:  true,
-    noMostaza: true,
-    noPera:    true,   // Edwin no le gustan las peras — reemplazadas con naranja
-    preferLentejas: true,  // preferir lentejas sobre garbanzos en todo el plan
-    noCafe:    true,   // solo agua — no café, no té, no mate
-    noTe:      true,
-    drinks:    'Solo agua',
+    noStevia:        true,
+    noMostaza:       true,
+    noPera:          true,  // Edwin no le gustan las peras — reemplazadas con mandarina (2 unidades = 1 porción)
+    noNaranja:       true,  // reemplazar siempre con mandarina (2 unidades = 1 porción de fruta)
+    noQuinoa:        true,  // reemplazar con arroz basmati, papa, o tortillas maíz
+    preferLentejas:  true,  // preferir lentejas sobre garbanzos en todo el plan
+    noCafe:          true,
+    noTe:            true,
+    noMate:          true,
+    drinks:          'Solo agua',
     nanaCooks: 'Martes (batch semanal — todo cocinado de una vez, dura mar→lun)',
-    nanaMakes: ['pollo mechado', 'arroz basmati', 'tortilla de huevos', 'huevos duros', 'papas cocidas', 'posta negra guisada (freezer)', 'salmón al horno', 'lentejas cocidas', 'carne molida guisada', 'avena remojada (dom y mar noche)'],
-    nanaDoesNot: 'Armado de tuppers — Edwin los arma él mismo antes de salir al trabajo',
+    nanaMakes: ['pollo mechado', 'arroz basmati', 'tortilla de huevos (Mié+Vie cenas)', 'huevos duros (11 unidades)', 'papas cocidas (2 unidades — Jue+Vie cenas)', 'posta negra guisada (freezer — máx 200g)', 'reineta al horno (300g — Mar+Jue cenas)', 'lentejas cocidas', 'carne molida guisada (opcional)', 'avena remojada (dom noche: 2 tarros Lun+Mié; mar noche: 1 tarro Jue)'],
+    nanaDoesNot: 'Armado de tuppers — Edwin los arma él mismo antes de salir al trabajo. Tarro avena Sáb lo prepara Edwin el jue en la noche.',
     shopping:  'Sábado o Domingo en Lider (una compra semanal — usar app Lider, buscar por marca exacta)',
   },
+
+  // Critical portion rules (to avoid common mistakes)
+  portionRules: [
+    'Tortillas de maíz: usar tortillas MINI Saniito (10g c/u) — 6 unidades = 60g = ½C. NO 2 unidades.',
+    'Papa: 100g por porción = ½C. Media papa mediana. NUNCA 200g en una porción.',
+    'Legumbres: ¾ taza = 1P + 1C simultáneamente. NO agregar arroz, papa ni tortilla ese tiempo.',
+    'Nueces: 15g = 5 unidades = ½A en desayuno. NO 30g (eso es 1A completo).',
+    'Posta negra: pedir máximo 200g. Si viene trozo grande, dividir crudo y congelar exceso inmediatamente.',
+  ],
 
   // Context for future modifications
   context: [

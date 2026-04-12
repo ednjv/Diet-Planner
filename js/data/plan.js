@@ -28,7 +28,7 @@ const days = [
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
       { n:'3 huevos duros (nana)', a:'día 7 — los huevos duros son lo único que aguanta 7 días', b:'p' },
-      { n:'2 tortillas maíz Saniito', a:'60g = ½C — sin cocción', b:'c' },
+      { n:'6 mini tortillas maíz Saniito', a:'60g = ½C — sin cocción', b:'c' },
       { n:'Ensalada libre', a:'libre', b:'' },
       { n:'Palta', a:'50g', b:'f' },
     ], note:'Post-padel lunes: cena liviana. Solo armar con lo que hay. Mañana la nana cocina todo de nuevo.' },
@@ -58,11 +58,11 @@ const days = [
       { n:'Leche descremada Soprole tetrapak', a:'200ml', b:'l' },
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
-      { n:'Salmón al horno (nana)', a:'150g — día 1, más fresco, aguanta máx 3 días', b:'p' },
+      { n:'Reineta al horno (nana)', a:'150g — día 1, más fresco, aguanta máx 3 días', b:'p' },
       { n:'Arroz basmati cocido (nana)', a:'60g = ½C', b:'c' },
       { n:'Espárragos o porotos verdes', a:'libre', b:'' },
       { n:'Nueces Florida Mariposa', a:'15g', b:'f' },
-    ], note:'Salmón el día que la nana cocina = máxima frescura. No dejar para el viernes.' },
+    ], note:'Reineta el día que la nana cocina = máxima frescura. Aguanta hasta jue (día 3). No dejar para el viernes.' },
   ]},
 
   // ── MIÉRCOLES (día 2) ─────────────────────────────────────────────────────────
@@ -90,7 +90,7 @@ const days = [
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
       { n:'Tortilla de huevos (nana)', a:'2 porciones — día 2', b:'p' },
-      { n:'2 tortillas maíz Saniito', a:'60g = ½C', b:'c' },
+      { n:'6 mini tortillas maíz Saniito', a:'60g = ½C', b:'c' },
       { n:'Ensalada libre', a:'libre', b:'' },
       { n:'Palta', a:'50g', b:'f' },
     ]},
@@ -121,7 +121,7 @@ const days = [
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
       { n:'Reineta al horno (nana)', a:'150g — día 3, dentro del límite de 3 días (2do pescado semana)', b:'p' },
-      { n:'2 tortillas maíz Saniito', a:'60g = ½C', b:'c' },
+      { n:'Papa cocida (nana)', a:'100g = 0.5C — día 3', b:'c' },
       { n:'Ensalada lechuga + tomate', a:'libre', b:'' },
       { n:'Nueces Florida Mariposa', a:'15g', b:'f' },
     ], note:'2do pescado de la semana — reineta del martes aguanta hasta hoy (día 3). Cumple prescripción médica 1–2x pescado/semana.' },
@@ -161,7 +161,7 @@ const days = [
   // ── SÁBADO (día 5 — huevos duros y arroz aguantan, pollo y tortilla ya no) ───
   { name:'Sáb', sport:'padel', ofic:false, meals:[
     { type:'Desayuno', time:'7–9h', icon:'🌅', bg:'#E8F5E9', foods:[
-      { n:'Avena remojada en leche (nana — tarro prep mar. en la noche)', a:'40g avena cruda + 150ml leche desc.', b:'c' },
+      { n:'Avena remojada en leche (Edwin — tarro prep jue. en la noche)', a:'40g avena cruda + 150ml leche desc.', b:'c' },
       { n:'2 huevos duros (nana)', a:'día 5 — huevos aguantan 7 días', b:'p' },
       { n:'Nueces Florida Mariposa', a:'15g', b:'f' },
       { n:'Agua', a:'libre', b:'' },
@@ -203,7 +203,7 @@ const days = [
     ]},
     { type:'Almuerzo', time:'14–15h', icon:'🍽', bg:'#E3F2FD', foods:[
       { n:'Posta negra guisada (nana — descongelada desde sábado noche)', a:'150g', b:'p' },
-      { n:'2 tortillas maíz Saniito', a:'60g = ½C — sin cocción (arroz y papa del martes ya expiraron)', b:'c' },
+      { n:'6 mini tortillas maíz Saniito', a:'60g = ½C — sin cocción (arroz y papa del martes ya expiraron)', b:'c' },
       { n:'Ensalada colorida (betarraga, lechuga, tomate)', a:'libre', b:'' },
       { n:'Mandarina x2', a:'', b:'fr' },
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },
@@ -215,7 +215,7 @@ const days = [
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
       { n:'Atún Buen Mar al natural (lata)', a:'1 lata = 2P — sin cocción', b:'p' },
       { n:'1 huevo duro (nana)', a:'día 6 — sin cocción = 1P → total 3P', b:'p' },
-      { n:'2 tortillas maíz Saniito', a:'60g = ½C', b:'c' },
+      { n:'6 mini tortillas maíz Saniito', a:'60g = ½C', b:'c' },
       { n:'Lechuga + pepino + tomate', a:'libre', b:'' },
       { n:'Nueces Florida Mariposa', a:'15g', b:'f' },
     ], note:'Domingo liviano. Todo sin cocción.' },

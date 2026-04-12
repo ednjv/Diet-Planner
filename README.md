@@ -35,19 +35,20 @@ Mobile-first web app to follow a personalized nutritional plan from Benefit Heal
 Nana (Venezuelan housekeeper) comes **every Tuesday** for a single batch-cooking session (~2–2.5 hours). She cooks **everything for the week** — Edwin only plates/assembles.
 
 **Nana cooks (every Tuesday):**
-- Pollo mechado (5 portions × 150g)
-- Arroz basmati (400g dry → ~1kg cooked)
-- Tortilla de huevos con verduras (3 double portions — Mié/Jue/Vie cenas, **9 huevos exactos**, cortar en 6)
-- Huevos duros (12 eggs — last 7 days unpeeled)
-- Papas cocidas (7–8 medium — last 4–5 days)
-- Salmón al horno (400g — eaten Tuesday cena, day 1, most perishable)
-- Lentejas cocidas (1¾ cup dry — Mié almuerzo day 2 + Sáb almuerzo day 5; canned tarro used for Lun day 7)
-- Posta negra guisada (200g — **frozen**, thawed Saturday night for Sunday lunch)
+- Pollo mechado (700g pechuga → 5 portions × 150g, days 1–4)
+- Arroz basmati (400g dry → ~1kg cooked, days 1–5)
+- Reineta al horno (300g of 500g bag → 150g Mar cena + 150g Jue cena; freeze remaining 200g raw)
+- Tortilla de huevos con verduras (**9 huevos**, cut into **4** pieces → 2 pieces per cena × 2 cenas: Mié + Vie only)
+- Huevos duros (**11 unidades** — last 7 days unpeeled; 11 duros + 9 tortilla = 20 total from bandeja x30)
+- Papas cocidas (2 unidades medianas — **100g per serving** = 0.5C; Jue cena day 3 + Vie cena day 4)
+- Lentejas cocidas (1¾ cup dry — Mié almuerzo day 2 + Sáb almuerzo day 5; tarro Carozzi for Lun day 7)
+- Posta negra guisada (**exactly 200g** — if piece is larger, divide raw first, freeze excess; guised portion goes to freezer, thaw Saturday night for Sunday lunch)
 - Carne molida guisada (300g — optional pollo substitute 1–2x/week)
-- Avena remojada: 2 jars **Sunday night** (Mon + Wed); 2 jars **Tuesday night** (Thu + Sat)
+- Avena remojada: 2 jars **Sunday night** (Mon + Wed); 1 jar **Tuesday night** (Thu only)
 
 **Edwin does himself:**
-- Arms tuppers before leaving for work (previous night or morning)
+- Arms tuppers before leaving for work
+- Preps **Saturday overnight oats jar Thursday night** (4-day soak limit — nana's Tuesday jar would over-ferment by Saturday)
 - Thaws posta Saturday night for Sunday
 - All shopping
 
@@ -55,21 +56,21 @@ Nana (Venezuelan housekeeper) comes **every Tuesday** for a single batch-cooking
 
 ## Perishability logic (critical for meal scheduling)
 
-Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals are ordered so freshest food is eaten first.
+Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals ordered freshest-first.
 
 | Food | Max fridge days | Assigned days |
 |---|---|---|
-| Salmón al horno | 2–3 days | Martes cena (day 1) |
+| Reineta al horno | 3 days | Mar cena (day 1) + Jue cena (day 3) — day 3 is the hard limit |
 | Pollo mechado | 3–4 days | Mar–Vie almuerzos (days 1–4) |
-| Tortilla de huevos | 3–4 days | Mié–Vie cenas (days 2–4) |
-| Lentejas | 4–5 days | Miércoles almuerzo (day 2) |
-| Papas cocidas | 4–5 days | Jue–Vie cenas (days 3–4) |
-| Arroz basmati | 4–5 days | Mar–Sáb (days 1–5, last serving Sáb) |
-| Posta negra | frozen → thaw Sat | Domingo almuerzo (day 6) |
-| Huevos duros (unpeeled) | 7 days | All week, Lunes cena = last (day 7) |
-| Lata atún / tarro garbanzos | shelf stable | Lunes (day 7 — nothing fresh left) |
+| Tortilla de huevos | 3–4 days | Mié cena (day 2) + Vie cena (day 4) — NOT Jue (Jue has reineta) |
+| Papas cocidas | 4–5 days | Jue cena (day 3) + Vie cena (day 4) |
+| Lentejas | 4–5 days | Mié almuerzo (day 2) + Sáb almuerzo (day 5, limit) |
+| Arroz basmati | 4–5 days | Mar–Sáb (days 1–5, last serving Sáb cena) |
+| Posta negra | frozen → thaw Sat | Dom almuerzo (day 6) |
+| Huevos duros (unpeeled) | 7 days | All week; Lun cena = last (day 7) |
+| Atún lata / lentejas tarro | shelf stable | Lun (day 7 — nothing fresh survives) |
 
-**Rule:** Lunes (day 7) uses only shelf-stable or 7-day items. No cooked protein or cooked carbs from the previous Tuesday survive to Monday.
+**Rule:** Lunes (day 7) uses only shelf-stable or 7-day items. No cooked protein or cooked carbs from the previous Tuesday.
 
 ---
 
@@ -91,22 +92,32 @@ Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals are ordere
 ### Key rules
 - Legumbres = 1P + 1C per serving — do NOT add another carb that meal
 - No more than 4h between meals
-- 2L water/day
+- 2L water/day — only water (no coffee, no tea, no mate)
 - Red meat max 1–2x/week
-- Fish min 1–2x/week
+- Fish **min 1–2x/week** (plan covers: Mar cena reineta + Jue cena reineta)
 - Legumbres 2–3x/week
 - No alcohol, no processed foods, no added sugar
 - SOS: add 1 extra fruit portion if very hungry
 - 1 cup of home-cooked stew ≈ 1P + 1C
 
+### Critical portion rules (common mistakes)
+- **Tortillas de maíz mini:** 6 unidades (10g each) = 60g = ½C. NOT 2 unidades.
+- **Papa:** 100g per serving = ½C = half a medium potato. NEVER 200g.
+- **Nueces:** 15g = 5 unidades = ½A (desayuno only has 0.5A slot).
+- **Legumbres:** ¾ taza = 1P + 1C combined — no additional rice, potato, or tortilla that meal.
+- **Posta negra:** max 200g purchase; if piece is larger, divide raw and freeze excess immediately.
+
 ### Food restrictions
+- No naranja → replace with **mandarina (2 unidades = 1 fruta portion)**
 - No pasta
 - No arroz integral (only basmati — lower glycemic index)
+- No quinoa → replace with arroz basmati, papa, or tortillas maíz
 - No stevia
 - No mostaza
-- No peras (preference — replaced with mandarina throughout plan)
-- Prefer lentejas over garbanzos — nana makes one single batch of lentejas; canned lentejas (tarro) used only on Lunes day 7 when fresh batch doesn't last
+- No peras
 - No café, no té, no mate — only water
+- Prefer lentejas over garbanzos (nana makes one single batch of lentejas; tarro Carozzi for Lun day 7)
+- Avena: must be **traditional Quaker** (caja azul) — NOT instantánea (higher GI, disintegrates in overnight oats)
 
 ### Doctor's context
 - Goal is to teach healthy eating, not a strict diet.
@@ -125,6 +136,22 @@ Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals are ordere
 
 ---
 
+## Key brand confirmations (Lider app search names)
+
+| Item | Exact search term | Notes |
+|---|---|---|
+| Tortillas maíz | `Tortilla De Maíz Sin Glúten Mini Saniito` | Mini (10g c/u). 1 paquete 24 und = 1 semana |
+| Reineta | `Reineta Filetes Sin Piel Lider` | Bolsa congelada 500g. Nana usa 300g, freezes 200g raw |
+| Arroz | `Tucapel basmati` | 1 bolsa 1kg = suficiente |
+| Huevos | `bandeja x30` | Cintazul o equivalente. 20 para nana, 10 para Edwin |
+| Avena | `Quaker avena tradicional` | Caja azul — NO instantánea |
+| Leche tetrapak | `Soprole tetrapak 200ml` | ⚠️ CRÍTICO — 7 cajas/semana mínimo |
+| Yogurt (actual) | `Colun light` | Colun Light Sin Azúcar Sabor Frutilla 120g. Próxima semana: cambiar a Colun Skyr Natural |
+| Atún | `Buen Mar atún` | Solo "al natural" o "en agua" |
+| Aceite oliva | `Borges oliva extra virgen` | Si hay stock, no comprar |
+
+---
+
 ## Progress tracking
 
 Implemented in **Progreso** tab. Stores InBody measurements in localStorage (`diet_progress_v1`).  
@@ -139,7 +166,7 @@ Features: trend chart (SVG), history list with edit/delete, JSON export/import.
 index.html          Shell: HTML structure + all CSS
 js/
   data/
-    profile.js      Doctor's prescription, daily portions, rules, preferences
+    profile.js      Doctor's prescription, daily portions, rules, preferences, portionRules
     plan.js         Weekly meal plan (7 days × 5 meals)
     shop.js         Shopping list with brands and quantities
     nana.js         Batch cooking guide data

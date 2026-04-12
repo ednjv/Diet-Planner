@@ -6,21 +6,21 @@ const shopData = [
   { cat:'Proteínas', rows:[
     { p:'Pechuga de pollo sin piel', br:'Agrosuper Pechuga sin Hueso sin Piel — fresco', q:'1 kg', n:'Nana hace batch el martes. Buscar "Agrosuper pechuga" en Lider.' },
     { p:'Pechuga pavo laminada', br:'San Jorge Pechuga de Pavo Ahumada — sobre 200g', q:'200g', n:'Desayuno Lun + complemento almuerzos. Sección fiambrería. Buscar "San Jorge pavo".' },
-    { p:'Huevos', br:'Don Pollo Huevos Blancos — bandeja x30', q:'30 unidades', n:'El ítem que más se usa. Desayunos + tortilla nana + cenas. Buscar "Don Pollo bandeja".' },
-    { p:'Salmón fresco o reineta', br:'Sección pescadería Lider — salmón filete o reineta fresca', q:'400g', n:'Para cena Vie (y backup). Pedir sin piel. Reineta más económica.' },
+    { p:'Huevos', br:'Cintazul Mediano Blanco — bandeja x30 (o cualquier bandeja x30)', q:'30 unidades', n:'Nana usa 11 duros + 9 tortilla = 20. Restantes 10 para desayunos de Edwin. Buscar "bandeja x30" en Lider.' },
+    { p:'Reineta filetes sin piel (congelada)', br:'Reineta Filetes Sin Piel Lider — bolsa congelada 500g', q:'1 bolsa (500g)', n:'Nana hornea 300g el martes: 150g tupper Mar cena + 150g tupper Jue cena. Restante 200g al freezer crudo. Buscar "Reineta filetes" en Lider congelados.' },
     { p:'Atún al natural (lata)', br:'Buen Mar Atún al Natural en Agua — lata 160g', q:'3 latas', n:'Lun almuerzo (1 lata) + Dom cena (1 lata) + backup. Solo "al natural" o "en agua". Buscar "Buen Mar atún".' },
-    { p:'Posta negra (vacuno magro)', br:'Sección carnicería Lider — posta negra en un trozo', q:'200g', n:'Nana la guisa el martes y la congela. Tú la descongelas el sábado en la noche para el almuerzo del domingo.' },
+    { p:'Posta negra (vacuno magro)', br:'Sección carnicería Lider — pedir exactamente 200g en un trozo', q:'200g', n:'Si viene trozo grande (ej. 729g): dividir crudo antes de cocinar, congelar exceso en bolsas separadas. Nana guisa solo 200g y congela. Edwin descongela sábado noche para dom almuerzo.' },
     { p:'Carne molida magra (3–4% MG)', br:'Sección carnicería Lider — pedir "carne molida magra"', q:'300g', n:'Nana la guisa el martes como alternativa al pollo 1–2 veces en la semana.' },
     { p:'Lentejas secas', br:'Carozzi Lentejas — bolsa 500g', q:'1 bolsa', n:'Nana cocina batch grande el martes: cubre Mié almuerzo (día 2) y Sáb almuerzo (día 5, límite 5 días refri). Buscar "Carozzi lentejas".' },
     { p:'Lentejas cocidas (tarro)', br:'Carozzi Lentejas Cocidas — tarro 400g', q:'1 tarro', n:'Lun almuerzo (día 7) — lentejas frescas no duran 7 días, usar tarro. Solo escurrir, sin cocción. Buscar "Carozzi lentejas cocidas".' },
   ]},
 
   { cat:'Carbohidratos', rows:[
-    { p:'Arroz basmati', br:'Tucapel Basmati — bolsa 1 kg', q:'1.5 kg (2 bolsas)', n:'Base de TODOS los almuerzos y algunas cenas. Buscar "Tucapel basmati" en Lider.' },
-    { p:'Avena cruda tradicional', br:'Quaker Avena Tradicional — caja o bolsa 500g', q:'1 caja', n:'Avena remojada en leche para desayunos Lun, Mié, Jue y Sáb. Nana prepara tarros Dom y Mar en la noche. Buscar "Quaker avena tradicional".' },
+    { p:'Arroz basmati', br:'Tucapel Basmati — bolsa 1 kg', q:'1 bolsa (1 kg)', n:'400g seco = suficiente para toda la semana. Buscar "Tucapel basmati" en Lider.' },
+    { p:'Avena cruda tradicional', br:'Quaker Avena Tradicional — caja azul 500g (NO instantánea)', q:'1 caja', n:'IMPORTANTE: solo avena tradicional — la instantánea tiene mayor IG y se deshace en overnight oats. Nana prepara Dom y Mar en la noche (3 tarros). Edwin prepara tarro Sáb el jue en la noche. Buscar "Quaker avena tradicional".' },
     { p:'Pan integral molde', br:'Ideal Artesano Integral — bolsa', q:'1 bolsa', n:'Desayuno Mar, Vie, Dom. Máx 2 rebanadas = 1C. Verificar <155 kcal/porción en etiqueta. Buscar "Ideal Artesano Integral".' },
-    { p:'Papa corriente', br:'Sin marca — feria o granel Lider sección verduras', q:'1 unidad mediana', n:'Cena Vie únicamente — 100g (½ papa mediana = 0.5C). Jue cena ahora usa tortillas maíz.' },
-    { p:'Tortillas de maíz Saniito', br:'Saniito Tortillas de Maíz — paquete 8 und.', q:'2 paquetes (16 und)', n:'Lun cena (2), Mié cena (2), Jue cena (2), Dom almuerzo (2), Dom cena (2) = 10 total. Buscar exactamente "Saniito tortillas" en Lider.' },
+    { p:'Papa corriente', br:'Sin marca — feria o granel Lider sección verduras', q:'2 unidades medianas', n:'Cenas Jue y Vie — 100g por cena (½ papa mediana = 0.5C). Regla: nunca más de 100g por porción.' },
+    { p:'Tortillas de maíz mini Saniito', br:'Tortilla De Maíz Sin Glúten Mini Saniito — paquete 24 und. (240g)', q:'1 paquete (24 und / 240g)', n:'Son MINI (10g c/u). 6 mini = 60g = ½C. Usos: Lun cena + Mié cena + Dom almuerzo + Dom cena = 4 ocasiones × 6 = 24. 1 paquete exacto. Si no hay Saniito normal, buscar "Tortilla Maíz Sin Glúten Mini".' },
   ]},
 
   { cat:'Verduras (sin restricción)', rows:[
@@ -45,13 +45,12 @@ const shopData = [
   ]},
 
   { cat:'Lácteos', rows:[
-    { p:'Yogurt Skyr natural sin azúcar', br:'Colun Skyr Natural — individual 110g', q:'7 unidades', n:'Colación AM diaria. Más proteína que yogurt griego regular. Buscar "Colun Skyr" en Lider.' },
-    { p:'Yogurt natural descremado', br:'Colun Natural Descremado — 120g o Nestlé Natural sin azúcar', q:'3 unidades', n:'Para días en casa (Jue, Dom). Sin azúcar agregada.' },
-    { p:'Leche descremada tetrapak 200ml', br:'Soprole Descremada Tetrapak 200ml individual', q:'7 cajas', n:'Colación tarde en oficina. No necesita frío hasta abrir. Buscar "Soprole tetrapak 200ml".' },
+    { p:'Yogurt sin azúcar', br:'Colun Light Sin Azúcar Sabor Frutilla — 120g individual', q:'10 unidades', n:'Esta semana: Colun Light Frutilla (sin azúcar, cumple Lista 5). PRÓXIMA SEMANA: cambiar a Colun Skyr Natural (más proteína). Buscar "Colun light" en Lider.' },
+    { p:'Leche descremada tetrapak 200ml', br:'Soprole Descremada Tetrapak 200ml individual', q:'7 cajas mínimo', n:'⚠️ CRÍTICO — faltó esta semana. Sin esto: avena va con agua y no hay lácteo en colación tarde. 1 caja/día (colación PM + overnight oats). Buscar "Soprole tetrapak 200ml".' },
   ]},
 
   { cat:'Aceites y Grasas', rows:[
-    { p:'Palta', br:'Sin marca — feria o granel Lider', q:'5 unidades', n:'3 maduras + 2 verdes para que maduren en la semana. Desayunos + cenas.' },
+    { p:'Palta', br:'Sin marca — malla Hass o granel Lider', q:'5 unidades medianas', n:'Plan usa ~300g/semana (50g × 6 días). Si viene en malla (ej. 748g = 7 paltas pequeñas), usar toda la semana o aumentar porción a 70g. 3 maduras + 2 verdes para que maduren.' },
     { p:'Nueces mariposa', br:'Florida Nueces Mariposa — bolsa 200g', q:'200g', n:'Cenas + desayunos. Buscar "Florida nueces mariposa" en Lider. Bolsa dura 2–3 semanas.' },
     { p:'Almendras naturales', br:'Florida Almendras Naturales — bolsa 200g', q:'100g', n:'Desayuno Mié. Buscar "Florida almendras" en Lider.' },
     { p:'Semillas de chía', br:'Nutriseed Chía — bolsa 200g / o granel Lider', q:'200g', n:'Desayuno Jue. Bolsa dura meses.' },
