@@ -19,8 +19,8 @@ const shopData = [
     { p:'Arroz basmati', br:'Tucapel Basmati — bolsa 1 kg', q:'1.5 kg (2 bolsas)', n:'Base de TODOS los almuerzos y algunas cenas. Buscar "Tucapel basmati" en Lider.' },
     { p:'Avena cruda tradicional', br:'Quaker Avena Tradicional — caja o bolsa 500g', q:'1 caja', n:'Avena remojada en leche para desayunos Lun, Mié, Jue y Sáb. Nana prepara tarros Dom y Mar en la noche. Buscar "Quaker avena tradicional".' },
     { p:'Pan integral molde', br:'Ideal Artesano Integral — bolsa', q:'1 bolsa', n:'Desayuno Mar, Vie, Dom. Máx 2 rebanadas = 1C. Verificar <155 kcal/porción en etiqueta. Buscar "Ideal Artesano Integral".' },
-    { p:'Papa corriente', br:'Sin marca — feria o granel Lider sección verduras', q:'6 unidades medianas', n:'Cenas Lun, Jue + Dom almuerzo. 1 mediana ≈ 200g.' },
-    { p:'Tortillas de maíz Saniito', br:'Saniito Tortillas de Maíz — paquete 8 und.', q:'1 paquete', n:'Cenas Mié y Dom. Buscar exactamente "Saniito tortillas" en Lider.' },
+    { p:'Papa corriente', br:'Sin marca — feria o granel Lider sección verduras', q:'2 unidades medianas', n:'Cenas Jue y Vie únicamente — 100g por cena (½ papa mediana por porción = 0.5C).' },
+    { p:'Tortillas de maíz Saniito', br:'Saniito Tortillas de Maíz — paquete 8 und.', q:'2 paquetes (16 und)', n:'Lun cena (2), Mié cena (2), Dom almuerzo (4), Dom cena (2) = 10 total. Buscar exactamente "Saniito tortillas" en Lider.' },
   ]},
 
   { cat:'Verduras (sin restricción)', rows:[
@@ -40,8 +40,7 @@ const shopData = [
     { p:'Arándanos', br:"Driscoll's Arándanos — pack 125g (fresco o congelado Lider)", q:'5 packs (625g)', n:'Mejor fruta del plan. Bajo índice glicémico. Llevar en tupper. Mar AM + Lun almuerzo + Mié almuerzo + Jue almuerzo + Sáb PM. Buscar "Driscoll blueberry".' },
     { p:'Kiwi', br:'Sin marca — granel Lider', q:'6 unidades', n:'Colaciones Mar, Jue, Dom.' },
     { p:'Frutillas', br:'Sin marca — pack 750g temporada o congelado Lider', q:'1 pack 750g', n:'Mar almuerzo + Mié PM + Vie AM. Llevar en tupper al trabajo.' },
-    { p:'Mandarina', br:'Sin marca — bolsa malla feria o Lider', q:'10 unidades', n:'Fácil de pelar en oficina. Lun, Vie, Sáb, Dom.' },
-    { p:'Naranja', br:'Sin marca — granel Lider', q:'2 unidades', n:'Reemplaza la pera. Mié colación AM + Vie colación PM. Alta en fibra y vitamina C. Sin necesidad de tupper.' },
+    { p:'Mandarina', br:'Sin marca — bolsa malla feria o Lider', q:'14 unidades', n:'Fácil de pelar en oficina. Lun PM, Mié AM, Vie almuerzo + Vie PM, Sáb almuerzo, Dom almuerzo. 2 unidades por ocasión.' },
     { p:'Mango', br:'Sin marca — granel Lider (1 unidad semi maduro)', q:'1 unidad', n:'Solo Sáb colación. Comprar semi maduro.' },
   ]},
 

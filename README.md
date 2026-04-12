@@ -37,7 +37,7 @@ Nana (Venezuelan housekeeper) comes **every Tuesday** for a single batch-cooking
 **Nana cooks (every Tuesday):**
 - Pollo mechado (5 portions × 150g)
 - Arroz basmati (400g dry → ~1kg cooked)
-- Tortilla de huevos con verduras (3 double portions — Mié/Jue/Vie cenas)
+- Tortilla de huevos con verduras (3 double portions — Mié/Jue/Vie cenas, **9 huevos exactos**, cortar en 6)
 - Huevos duros (12 eggs — last 7 days unpeeled)
 - Papas cocidas (7–8 medium — last 4–5 days)
 - Salmón al horno (400g — eaten Tuesday cena, day 1, most perishable)
@@ -104,7 +104,7 @@ Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals are ordere
 - No arroz integral (only basmati — lower glycemic index)
 - No stevia
 - No mostaza
-- No peras (preference — replaced with naranja throughout plan)
+- No peras (preference — replaced with mandarina throughout plan)
 - Prefer lentejas over garbanzos — nana makes one single batch of lentejas; canned lentejas (tarro) used only on Lunes day 7 when fresh batch doesn't last
 - No café, no té, no mate — only water
 

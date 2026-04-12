@@ -8,7 +8,7 @@ const days = [
     { type:'Desayuno', time:'7–9h', icon:'🌅', bg:'#E8F5E9', foods:[
       { n:'Avena remojada en leche (nana — tarro prep dom. en la noche)', a:'40g avena cruda + 150ml leche desc.', b:'c' },
       { n:'Pechuga pavo laminada San Jorge', a:'100g (fiambrería — sin cocción)', b:'p' },
-      { n:'Nueces Florida Mariposa', a:'10 unidades (30g)', b:'f' },
+      { n:'Nueces Florida Mariposa', a:'5 unidades (15g)', b:'f' },
       { n:'Agua', a:'libre', b:'' },
     ], note:'Tarro del domingo en la noche — 1 día de remojo, listo para sacar del refri.' },
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', tupper:true, foods:[
@@ -74,7 +74,7 @@ const days = [
       { n:'Agua', a:'libre', b:'' },
     ], note:'Tarro del domingo en la noche — 3 días de remojo, todavía está bien.' },
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', tupper:true, foods:[
-      { n:'Naranja', a:'1 unidad (130g)', b:'fr' },
+      { n:'Mandarina x2', a:'2 unidades (120g)', b:'fr' },
       { n:'Yogurt Colun Skyr', a:'1 und. individual', b:'l' },
     ]},
     { type:'Almuerzo', time:'14–15h', icon:'🍽', bg:'#E3F2FD', tupper:true, foods:[
@@ -121,7 +121,7 @@ const days = [
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
       { n:'Tortilla de huevos (nana)', a:'2 porciones — día 3', b:'p' },
-      { n:'Papa cocida (nana)', a:'200g — día 3', b:'c' },
+      { n:'Papa cocida (nana)', a:'100g (½ porción = 0.5C) — día 3', b:'c' },
       { n:'Ensalada lechuga + tomate', a:'libre', b:'' },
       { n:'Nueces Florida Mariposa', a:'15g', b:'f' },
     ]},
@@ -147,12 +147,12 @@ const days = [
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },
     ]},
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', foods:[
-      { n:'Naranja', a:'1 unidad (130g)', b:'fr' },
+      { n:'Mandarina x2', a:'2 unidades (120g)', b:'fr' },
       { n:'Leche descremada', a:'200ml', b:'l' },
     ]},
     { type:'Cena', time:'20–21h', icon:'🌙', bg:'#EDE7F6', foods:[
       { n:'Tortilla de huevos (nana)', a:'2 porciones — día 4, última porción', b:'p' },
-      { n:'Papa cocida (nana)', a:'200g — día 4, última papa', b:'c' },
+      { n:'Papa cocida (nana)', a:'100g (½ porción = 0.5C) — día 4, última papa', b:'c' },
       { n:'Espárragos o porotos verdes', a:'libre', b:'' },
       { n:'Nueces Florida Mariposa', a:'15g', b:'f' },
     ], note:'Post-padel viernes. Última tortilla y última papa — se acaban justo hoy.' },
@@ -163,7 +163,7 @@ const days = [
     { type:'Desayuno', time:'7–9h', icon:'🌅', bg:'#E8F5E9', foods:[
       { n:'Avena remojada en leche (nana — tarro prep mar. en la noche)', a:'40g avena cruda + 150ml leche desc.', b:'c' },
       { n:'2 huevos duros (nana)', a:'día 5 — huevos aguantan 7 días', b:'p' },
-      { n:'Nueces Florida Mariposa', a:'30g', b:'f' },
+      { n:'Nueces Florida Mariposa', a:'15g', b:'f' },
       { n:'Agua', a:'libre', b:'' },
     ]},
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', foods:[
@@ -193,7 +193,7 @@ const days = [
   { name:'Dom', sport:null, ofic:false, meals:[
     { type:'Desayuno', time:'7–9h', icon:'🌅', bg:'#E8F5E9', foods:[
       { n:'2 huevos duros (nana)', a:'día 6', b:'p' },
-      { n:'Pan masa madre', a:'1–2 rebanadas', b:'c' },
+      { n:'Pan masa madre', a:'2 rebanadas (1C)', b:'c' },
       { n:'Palta', a:'50g', b:'f' },
       { n:'Agua', a:'libre', b:'' },
     ]},
@@ -203,7 +203,7 @@ const days = [
     ]},
     { type:'Almuerzo', time:'14–15h', icon:'🍽', bg:'#E3F2FD', foods:[
       { n:'Posta negra guisada (nana — descongelada desde sábado noche)', a:'150g', b:'p' },
-      { n:'2 tortillas maíz Saniito', a:'60g = ½C — sin cocción (arroz y papa del martes ya expiraron)', b:'c' },
+      { n:'4 tortillas maíz Saniito', a:'120g = 1C — sin cocción (arroz y papa del martes ya expiraron)', b:'c' },
       { n:'Ensalada colorida (betarraga, lechuga, tomate)', a:'libre', b:'' },
       { n:'Mandarina x2', a:'', b:'fr' },
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },

@@ -45,7 +45,7 @@ const nanaData = {
       title: 'Tortilla de huevos',
       icon: '🍳',
       badge: 'Cenas miércoles a viernes (3 porciones dobles)',
-      qty: '10–12 huevos, 2 zapallos italianos, 2 tazas espinaca, ½ cebolla, 1 pimentón rojo',
+      qty: '9 huevos exactos, 2 zapallos italianos, 2 tazas espinaca, ½ cebolla, 1 pimentón rojo',
       steps: [
         'Cortar en cubitos: zapallo italiano, cebolla y pimentón.',
         'Calentar sartén grande con aceite spray. Saltear las verduras a fuego medio 5–7 minutos hasta que ablanden.',
@@ -53,7 +53,7 @@ const nanaData = {
         'Batir los huevos con sal y pimienta. Verter sobre las verduras en la sartén.',
         'Bajar el fuego, poner tapa. Cocinar 10–12 minutos hasta que cuaje bien por arriba.',
         'No hay que darle vuelta. Si el centro queda crudo, meter la sartén al horno 2–3 minutos.',
-        'Enfriar y cortar en 4 partes iguales como una pizza.',
+        'Enfriar y cortar en 6 partes iguales (2 piezas por cena = 3P, para las 3 cenas: Mié, Jue, Vie). No cortar en 4.',
       ],
       storage: 'Las 3 porciones dobles en el refri tapadas. Él saca 1 porción doble por cena (Mié, Jue, Vie). Dura 3–4 días.',
       tip: 'Si no alcanza para los 3 días, preparar otra tortilla el jueves.',
@@ -76,16 +76,16 @@ const nanaData = {
     {
       title: 'Papas cocidas',
       icon: '🥔',
-      badge: 'Cenas Lun, Mar, Jue y almuerzo Dom',
-      qty: '7–8 papas medianas (aprox. 200g cada una)',
+      badge: 'Cenas Jue y Vie (100g por porción = 0.5C)',
+      qty: '2 papas medianas (aprox. 200g cada una → sirve 100g por cena)',
       steps: [
         'Lavar bien las papas. Pueden cocinarse con piel para que no se deshagan.',
         'Poner en una olla con agua fría y sal. Llevar a hervir.',
         'Cocinar 20–25 minutos a fuego medio hasta que estén blandas (pinchar con un tenedor — si entra fácil, listas).',
         'Escurrir y enfriar. Guardar enteras en el refri.',
       ],
-      storage: 'En el refri enteras con piel duran 4–5 días. Él saca la que necesita y la calienta o come fría.',
-      tip: 'Si las papas no alcanzan hasta el domingo, preparar 2–3 papas más el jueves.',
+      storage: 'En el refri enteras con piel duran 4–5 días. Para cena Jue y Vie: servir solo 100g por porción (media papa mediana). Guardar el resto.',
+      tip: 'Solo se necesitan para Jue y Vie cena — 100g cada vez. 2 papas medianas cubren exactamente las 2 cenas.',
     },
     {
       title: 'Posta negra guisada',
