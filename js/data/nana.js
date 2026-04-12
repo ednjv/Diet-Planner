@@ -81,9 +81,9 @@ const nanaData = {
       note: 'Brócoli y zanahoria: cocinar al vapor o saltear con aceite spray y sal. Guardar aparte en un recipiente. Edwin las agrega solo al plato. No mezclar con el pollo.',
     },
     {
-      title: 'Overnight oats (domingo en la noche)',
+      title: 'Avena remojada en leche (noche anterior)',
       icon: '🌾',
-      note: 'Los lunes y miércoles Edwin desayuna "overnight oats". La noche anterior (dom y mar), preparar 2 tarros o vasos: poner 40g de avena Quaker + 150ml de leche descremada en cada uno. Tapar y meter al refri. Edwin los agrega cosas por la mañana.',
+      note: 'Los lunes y miércoles el desayuno es avena remojada en leche fría. La noche anterior (domingo y martes), preparar 2 tarros o vasos: poner 40g de avena Quaker cruda + 150ml de leche descremada en cada uno. Tapar y meter al refri. No necesita cocción, a la mañana siguiente la avena ya está blanda y lista para comer.',
     },
     {
       title: 'Armado del tupper para el almuerzo',

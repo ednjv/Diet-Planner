@@ -5,11 +5,11 @@
 const days = [
   { name:'Lun', sport:'padel', ofic:true, meals:[
     { type:'Desayuno', time:'7–9h', icon:'🌅', bg:'#E8F5E9', foods:[
-      { n:'Overnight oats (prep noche anterior)', a:'40g avena + 150ml leche desc.', b:'c', tip:'nana prepara noche anterior en tarro' },
+      { n:'Avena remojada en leche (prep noche anterior)', a:'40g avena cruda + 150ml leche desc. en tarro — nana deja en refri', b:'c' },
       { n:'Pechuga pavo laminada', a:'100g', b:'p' },
       { n:'Nueces', a:'10 unidades (30g)', b:'f' },
-      { n:'Café o té sin azúcar', a:'libre', b:'' },
-    ], note:'Más rápido en mañana de oficina. Nana deja oats listos en el refri.' },
+      { n:'Agua o té sin azúcar', a:'libre', b:'' },
+    ], note:'La avena se remoja en leche desde la noche anterior, queda blanda y lista sin cocción. Nana deja el tarro en el refri.' },
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', tupper:true, foods:[
       { n:'Manzana verde', a:'1 mediana', b:'fr' },
       { n:'Yogurt Colun Skyr natural', a:'1 und. (110g)', b:'l' },
@@ -37,7 +37,7 @@ const days = [
       { n:'2 huevos revueltos', a:'2 unidades', b:'p' },
       { n:'Pan integral Ideal Artesano', a:'2 rebanadas (60g)', b:'c' },
       { n:'Palta', a:'50g', b:'f' },
-      { n:'Té o mate', a:'libre', b:'' },
+      { n:'Agua o mate', a:'libre', b:'' },
     ], note:'10 minutos. Pan tostado + huevos + palta.' },
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', tupper:true, foods:[
       { n:'Arándanos', a:'¾ taza (110g) en tupper pequeño', b:'fr' },
@@ -63,11 +63,11 @@ const days = [
 
   { name:'Mié', sport:null, ofic:true, meals:[
     { type:'Desayuno', time:'7–9h', icon:'🌅', bg:'#E8F5E9', foods:[
-      { n:'Overnight oats', a:'40g avena + 150ml leche desc.', b:'c' },
-      { n:'1 huevo + 3 claras', a:'batido encima del oats tibio', b:'p' },
+      { n:'Avena remojada en leche (prep noche anterior)', a:'40g avena cruda + 150ml leche desc. en tarro', b:'c' },
+      { n:'1 huevo + 3 claras', a:'batido encima de la avena', b:'p' },
       { n:'Almendras', a:'15g', b:'f' },
-      { n:'Café', a:'libre', b:'' },
-    ], note:'Segundo día de oats = nana deja preparado la noche anterior.' },
+      { n:'Agua o té sin azúcar', a:'libre', b:'' },
+    ], note:'Segundo día de avena remojada. Nana deja el tarro en el refri la noche del martes.' },
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', tupper:true, foods:[
       { n:'Pera', a:'1 unidad (100g)', b:'fr' },
       { n:'Yogurt Colun Skyr', a:'1 und. individual', b:'l' },
@@ -95,7 +95,7 @@ const days = [
       { n:'1 huevo + 3 claras revueltos', a:'', b:'p' },
       { n:'Avena cocida (porridge)', a:'40g', b:'c' },
       { n:'Semillas chía', a:'3 cdas (30g)', b:'f' },
-      { n:'Té o mate', a:'libre', b:'' },
+      { n:'Agua o mate', a:'libre', b:'' },
     ]},
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', foods:[
       { n:'Kiwi x2', a:'2 unidades', b:'fr' },
@@ -125,7 +125,7 @@ const days = [
       { n:'2 huevos enteros', a:'', b:'p' },
       { n:'Pan integral Ideal Artesano', a:'2 rebanadas', b:'c' },
       { n:'Palta', a:'50g', b:'f' },
-      { n:'Café', a:'libre', b:'' },
+      { n:'Agua', a:'libre', b:'' },
     ]},
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', foods:[
       { n:'Frutillas', a:'1¼ taza (200g)', b:'fr' },
@@ -155,7 +155,7 @@ const days = [
       { n:'2 huevos revueltos', a:'', b:'p' },
       { n:'Avena cocida', a:'40g', b:'c' },
       { n:'Nueces', a:'30g', b:'f' },
-      { n:'Café o té', a:'libre', b:'' },
+      { n:'Agua o té', a:'libre', b:'' },
     ]},
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', foods:[
       { n:'Mango', a:'½ unidad (100g)', b:'fr' },
@@ -185,7 +185,7 @@ const days = [
       { n:'2 huevos revueltos', a:'', b:'p' },
       { n:'Pan masa madre', a:'1–2 rebanadas', b:'c' },
       { n:'Palta', a:'50g', b:'f' },
-      { n:'Café', a:'libre', b:'' },
+      { n:'Agua', a:'libre', b:'' },
     ]},
     { type:'Colación', time:'10–11h', icon:'🍎', bg:'#FCE4EC', foods:[
       { n:'Kiwi x2', a:'100g', b:'fr' },
