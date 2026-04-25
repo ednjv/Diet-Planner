@@ -19,7 +19,7 @@ Mobile-first web app to follow a personalized nutritional plan from Benefit Heal
 |---|---|---|
 | Lun | Oficina | Padel after work |
 | Mar | Oficina | Fútbol (semanas alternas) |
-| Mié | Oficina | Tupper day + posible almuerzo calle (hamburguesa tradición) |
+| Mié | Oficina | SIEMPRE almuerzo en la calle — tradición de oficina (no tupper) |
 | Jue | Casa | More flexible — can heat food |
 | Vie | Mixto | Padel Vie o Sáb |
 | Sáb | Casa | Padel Vie o Sáb. Shopping day |
@@ -35,38 +35,33 @@ Mobile-first web app to follow a personalized nutritional plan from Benefit Heal
 Nana (Venezuelan housekeeper) comes **every Tuesday** for a single batch-cooking session (~2–2.5 hours). She cooks **everything for the week** — Edwin only plates/assembles.
 
 **Nana cooks (every Tuesday):**
-- Pollo mechado (700g pechuga → 5 portions × 150g, days 1–4)
-- Arroz basmati (400g dry → ~1kg cooked, days 1–5)
-- Reineta al horno (300g of 500g bag → 150g Mar cena + 150g Jue cena; freeze remaining 200g raw)
-- Tortilla de huevos con verduras (**9 huevos**, cut into **4** pieces → 2 pieces per cena × 2 cenas: Mié + Vie only)
-- Huevos duros (**11 unidades** — last 7 days unpeeled; 11 duros + 9 tortilla = 20 total from bandeja x30)
+- Pollo mechado (600g pechuga → 4 portions × 150g; Mar/Vie almuerzos + Vie cena; optional Jue almuerzo si no hay lentejas → 750g/5 portions)
+- Arroz basmati (**250g dry** → ~600g cooked; days 1/3/4/5 almuerzos + day 1/5 cenas; 400g if no-lentejas week)
+- Reineta al horno (**150g** of 500g bag → Jue cena only; freeze 350g raw for future weeks)
+- Tortilla de huevos con verduras (**9 huevos**, cut into **4** pieces ~125g each → 2 pieces **Mar cena** (day 1) + 2 pieces **Mié cena** (day 2); total ~500g)
+- Huevos duros (**20 unidades** — 20 duros + 9 tortilla = 29 of bandeja x30; if no lentejas on Sáb: 21 duros = full bandeja)
 - Papas cocidas (2 unidades medianas — **100g per serving** = 0.5C; Jue cena day 3 + Vie cena day 4)
-- Lentejas cocidas (1¾ cup dry — Mié almuerzo day 2 + Sáb almuerzo day 5; tarro Carozzi for Lun day 7)
-- Posta negra guisada (**exactly 200g** — if piece is larger, divide raw first, freeze excess; guised portion goes to freezer, thaw Saturday night for Sunday lunch)
+- Lentejas cocidas (**OPTIONAL** — 1½ cup/300g dry; if prepared: Jue almuerzo day 3 + Sáb almuerzo day 5; tarro Carozzi for Lun day 7)
+- Posta negra guisada (**exactly 200g** — if piece is larger, divide raw first, freeze excess; guised portion goes to freezer)
 - Carne molida guisada (300g — optional pollo substitute 1–2x/week)
-- Avena remojada: 1 jar **Sunday night** (Mon only); 1 jar **Tuesday night** (Thu only) — uses 150ml leche reconstituida desde polvo Colun (Edwin manages milk powder himself, nana only preps the oats jars)
+- Avena remojada: **2 jars Sunday night** (Mon + Wed); **1 jar Tuesday night** (Thu only)
 
 **Edwin does himself:**
 - Arms tuppers before leaving for work
-- Preps **Saturday overnight oats jar Thursday night** (4-day soak limit — nana's Tuesday jar would over-ferment by Saturday)
-- Thaws posta Saturday night for Sunday
+- Preps **Saturday overnight oats jar Thursday night** (4-day soak limit)
+- **Thaws posta Saturday night** for Sunday (not nana)
 - All shopping
 
 ---
 
-## Weekly exceptions
+## Wednesday office tradition (core schedule, not an exception)
 
-### Miércoles — tradición oficina
+Edwin **always** has Wednesday lunch in the street with coworkers. Fully integrated into the plan.
 
-Edwin has a weekly Wednesday lunch tradition with coworkers (hamburgers). This is a planned exception, not a cheat.
-
-- Hamburger **replaces** the Wednesday tupper almuerzo entirely — do not eat both
-- Order: no fries, no extra sauces (mayo/golf/ketchup), no double meat, water only
-- Estimated: ~600–700 kcal, counts as ~3P + 1C
-- Wednesday cena: **remove tortillas maíz** — protein + vegetables only (CHO already consumed at lunch)
-- Wednesday tupper: nana prepares it anyway — moves to Thursday as backup almuerzo if not eaten Wednesday (day 3 fridge limit is safe)
-- Frequency: maximum 1× per week
-- **Doctor:** to be disclosed at 30.04.2026 control for official integration into plan
+- No tupper on Wednesdays — nana does not prep one for that day
+- Restaurant: hamburger or equivalent. No fries, no extra sauces, no double meat, water only
+- Estimated: ~600–700 kcal ≈ 3P + 1C
+- Wednesday cena: **no Saniito** — tortilla de huevos (2 piezas) + ensalada libre + palta only (CHO already consumed at lunch)
 
 ---
 
@@ -76,15 +71,15 @@ Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals ordered fr
 
 | Food | Max fridge days | Assigned days |
 |---|---|---|
-| Reineta al horno | 3 days | Mar cena (day 1) + Jue cena (day 3) — day 3 is the hard limit |
-| Pollo mechado | 3–4 days | Mar–Vie almuerzos (days 1–4) |
-| Tortilla de huevos | 3–4 days | Mié cena (day 2) + Vie cena (day 4) — NOT Jue (Jue has reineta) |
+| Reineta al horno | 3 days | Jue cena (day 3) only — hard limit |
+| Pollo mechado | 3–4 days | Mar almuerzo (day 1), Jue almuerzo (day 3, if no lentejas), Vie almuerzo + cena (day 4 — last) |
+| Tortilla de huevos | 3–4 days | **Mar cena (day 1) + Mié cena (day 2)** — eat immediately after nana cooks |
 | Papas cocidas | 4–5 days | Jue cena (day 3) + Vie cena (day 4) |
-| Lentejas | 4–5 days | Mié almuerzo (day 2) + Sáb almuerzo (day 5, limit) |
-| Arroz basmati | 4–5 days | Mar–Sáb (days 1–5, last serving Sáb cena) |
-| Posta negra | frozen → thaw Sat | Dom almuerzo (day 6) |
-| Huevos duros (unpeeled) | 7 days | All week; Lun cena = last (day 7) |
-| Atún lata / lentejas tarro | shelf stable | Lun (day 7 — nothing fresh survives) |
+| Lentejas (optional) | 4–5 days | Jue almuerzo (day 3) + Sáb almuerzo (day 5, limit) — if nana prepared them |
+| Arroz basmati | 4–5 days | Mar almuerzo (day 1) + Jue/Vie/Sáb almuerzos + Mar/Sáb cenas |
+| Posta negra | frozen → Edwin thaws Sat night | Dom almuerzo (day 6) |
+| Huevos duros (unpeeled) | 7 days | All week; Lun = last (day 7) |
+| Lentejas tarro / shelf items | shelf stable | Lun (day 7 — nothing cooked survives) |
 
 **Rule:** Lunes (day 7) uses only shelf-stable or 7-day items. No cooked protein or cooked carbs from the previous Tuesday.
 
@@ -133,7 +128,10 @@ Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals ordered fr
 - No peras
 - No café, no té, no mate — only water
 - No leche tetrapak (not available locally)
-- Prefer lentejas over garbanzos (nana makes one single batch of lentejas; tarro Carozzi for Lun day 7)
+- Prefer lentejas over garbanzos (nana makes optional batch; tarro Carozzi for Lun day 7; when eating lentejas NO additional rice/carb that meal)
+- No atún at almuerzo (only allowed at Dom cena)
+- No pechuga pavo at almuerzo (only Lun desayuno)
+- Mango local ~500g — use 100g (⅕) per portion, store rest in fridge
 - Avena: must be **traditional Quaker** (caja azul) — NOT instantánea (higher GI, dissolves poorly in overnight oats)
 - **Leche descremada en polvo Colun 800g** for overnight oats at home (20g powder + water = 150ml reconstituted milk per jar) — monthly purchase
 - **Soprole Protein+ Frutilla 155g** for daily PM colación at 16h (replaces tetrapak) — 10g protein per unit, 7 units/week

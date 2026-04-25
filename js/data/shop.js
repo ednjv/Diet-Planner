@@ -5,22 +5,22 @@
 const shopData = [
   { cat:'Proteínas', rows:[
     { p:'Pechuga de pollo sin piel', br:'Agrosuper Pechuga sin Hueso sin Piel — fresco', q:'1 kg', n:'Nana hace batch el martes. Buscar "Agrosuper pechuga" en Lider.' },
-    { p:'Pechuga pavo laminada', br:'San Jorge Pechuga de Pavo Ahumada — sobre 200g', q:'200g', n:'Desayuno Lun + complemento almuerzos. Sección fiambrería. Buscar "San Jorge pavo".' },
+    { p:'Pechuga pavo laminada', br:'San Jorge Pechuga de Pavo Ahumada — sobre 100g', q:'100g', n:'Solo desayuno del lunes (100g = 2P). Ya no va en almuerzos. Sección fiambrería. Buscar "San Jorge pavo".' },
     { p:'Huevos', br:'Cintazul Mediano Blanco — bandeja x30 (o cualquier bandeja x30)', q:'30 unidades', n:'Nana usa 11 duros + 9 tortilla = 20. Restantes 10 para desayunos de Edwin. Buscar "bandeja x30" en Lider.' },
-    { p:'Reineta filetes sin piel (congelada)', br:'Reineta Filetes Sin Piel Lider — bolsa congelada 500g', q:'1 bolsa (500g)', n:'Nana hornea 300g el martes: 150g tupper Mar cena + 150g tupper Jue cena. Restante 200g al freezer crudo. Buscar "Reineta filetes" en Lider congelados.' },
-    { p:'Atún al natural (lata)', br:'Buen Mar Atún al Natural en Agua — lata 160g', q:'3 latas', n:'Lun almuerzo (1 lata) + Dom cena (1 lata) + backup. Solo "al natural" o "en agua". Buscar "Buen Mar atún".' },
+    { p:'Reineta filetes sin piel (congelada)', br:'Reineta Filetes Sin Piel Lider — bolsa congelada 500g', q:'1 bolsa (500g — rinde varias semanas)', n:'Nana hornea solo 150g el martes para Jue cena. Congela 350g crudo para semanas futuras. 1 bolsa rinde 3–4 semanas. Buscar "Reineta filetes" en Lider congelados.' },
+    { p:'Atún al natural (lata)', br:'Buen Mar Atún al Natural en Agua — lata 160g', q:'2 latas', n:'Dom cena (1 lata) + backup. Solo "al natural" o "en agua". Buscar "Buen Mar atún".' },
     { p:'Posta negra (vacuno magro)', br:'Sección carnicería Lider — pedir exactamente 200g en un trozo', q:'200g', n:'Si viene trozo grande (ej. 729g): dividir crudo antes de cocinar, congelar exceso en bolsas separadas. Nana guisa solo 200g y congela. Edwin descongela sábado noche para dom almuerzo.' },
     { p:'Carne molida magra (3–4% MG)', br:'Sección carnicería Lider — pedir "carne molida magra"', q:'300g', n:'Nana la guisa el martes como alternativa al pollo 1–2 veces en la semana.' },
-    { p:'Lentejas secas', br:'Carozzi Lentejas — bolsa 500g', q:'1 bolsa', n:'Nana cocina batch grande el martes: cubre Mié almuerzo (día 2) y Sáb almuerzo (día 5, límite 5 días refri). Buscar "Carozzi lentejas". Si Edwin come hamburguesa el miércoles, el tupper de lentejas del miércoles se consume el jueves como almuerzo de reemplazo. Esto no afecta la compra semanal.' },
+    { p:'Lentejas secas', br:'Carozzi Lentejas — bolsa 500g', q:'1 bolsa (dura varias semanas)', n:'OPCIONAL — nana prepara cuando tiene tiempo. Si las hace: para Jue almuerzo (día 3) y Sáb almuerzo (día 5, límite 5 días). Si no: Edwin usa arroz + huevos. Buscar "Carozzi lentejas". Bolsa dura varios ciclos semanales.' },
     { p:'Lentejas cocidas (tarro)', br:'Carozzi Lentejas Cocidas — tarro 400g', q:'1 tarro', n:'Lun almuerzo (día 7) — lentejas frescas no duran 7 días, usar tarro. Solo escurrir, sin cocción. Buscar "Carozzi lentejas cocidas".' },
   ]},
 
   { cat:'Carbohidratos', rows:[
-    { p:'Arroz basmati', br:'Tucapel Basmati — bolsa 1 kg', q:'1 bolsa (1 kg)', n:'400g seco = suficiente para toda la semana. Buscar "Tucapel basmati" en Lider.' },
+    { p:'Arroz basmati', br:'Tucapel Basmati — bolsa 1 kg', q:'1 bolsa (1 kg — dura ~4 semanas)', n:'250g seco por semana = suficiente. Miércoles almuerzo siempre en la calle, no se cocina arroz para ese día. Buscar "Tucapel basmati" en Lider.' },
     { p:'Avena cruda tradicional', br:'Quaker Avena Tradicional — caja azul 500g (NO instantánea)', q:'1 caja', n:'IMPORTANTE: solo avena tradicional — la instantánea tiene mayor IG y se deshace en overnight oats. Nana prepara Dom y Mar en la noche (3 tarros). Edwin prepara tarro Sáb el jue en la noche. Buscar "Quaker avena tradicional".' },
     { p:'Pan integral molde', br:'Ideal Artesano Integral — bolsa', q:'1 bolsa', n:'Desayuno Mar, Vie, Dom. Máx 2 rebanadas = 1C. Verificar <155 kcal/porción en etiqueta. Buscar "Ideal Artesano Integral".' },
     { p:'Papa corriente', br:'Sin marca — feria o granel Lider sección verduras', q:'2 unidades medianas', n:'Cenas Jue y Vie — 100g por cena (½ papa mediana = 0.5C). Regla: nunca más de 100g por porción.' },
-    { p:'Tortillas de maíz mini Saniito', br:'Tortilla De Maíz Sin Glúten Mini Saniito — paquete 24 und. (240g)', q:'1 paquete (24 und / 240g)', n:'Son MINI (10g c/u). 6 mini = 60g = ½C. Usos: Lun cena + Mié cena + Dom almuerzo + Dom cena = 4 ocasiones × 6 = 24. 1 paquete exacto. Si no hay Saniito normal, buscar "Tortilla Maíz Sin Glúten Mini".' },
+    { p:'Tortillas de maíz mini Saniito', br:'Tortilla De Maíz Sin Glúten Mini Saniito — paquete 24 und. (240g)', q:'1 paquete (24 und / 240g)', n:'Son MINI (10g c/u). 6 mini = 60g = ½C. Usos: Lun cena + Dom almuerzo + Dom cena = 3 ocasiones × 6 = 18 und. 1 paquete (24) sobran 6 de reserva. Mié cena ya no usa Saniito (siempre sin carbo por almuerzo en la calle). Si no hay Saniito, buscar "Tortilla Maíz Sin Glúten Mini".' },
   ]},
 
   { cat:'Verduras (sin restricción)', rows:[
@@ -41,7 +41,7 @@ const shopData = [
     { p:'Kiwi', br:'Sin marca — granel Lider', q:'6 unidades', n:'Colaciones Mar, Jue, Dom.' },
     { p:'Frutillas', br:'Sin marca — pack 750g temporada o congelado Lider', q:'1 pack 750g', n:'Mar almuerzo + Mié PM + Vie AM. Llevar en tupper al trabajo.' },
     { p:'Mandarina', br:'Sin marca — bolsa malla feria o Lider', q:'14 unidades', n:'Fácil de pelar en oficina. Lun PM, Mié AM, Vie almuerzo + Vie PM, Sáb almuerzo, Dom almuerzo. 2 unidades por ocasión.' },
-    { p:'Mango', br:'Sin marca — granel Lider (1 unidad semi maduro)', q:'1 unidad', n:'Solo Sáb colación. Comprar semi maduro.' },
+    { p:'Mango', br:'Sin marca — granel Lider (1 unidad semi maduro)', q:'1 unidad (~500g)', n:'Sáb colación: 100g (⅕ del mango). Los mangos locales pesan ~500g — cortar en 5 porciones, guardar el resto en tupper refri (dura 3–4 días cortado). Comprar semi maduro.' },
   ]},
 
   { cat:'Lácteos', rows:[

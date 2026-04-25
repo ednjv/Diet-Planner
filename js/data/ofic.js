@@ -2,7 +2,7 @@
 
 const oficTips = [
   {
-    title: 'Lo que llevas en la mochila (Lun–Mié)',
+    title: 'Lo que llevas en la mochila (Lun–Mar; Mié sin tupper)',
     items: [
       { t:'Bolsa térmica pequeña', s:'Imprescindible. Lider/Jumbo tienen por $5.000–8.000. Mantiene tupper + yogurt frío.' },
       { t:'Tupper hermético 750ml', s:'Para almuerzo nana. 1 solo compartimento está bien. Nana lo deja listo la noche anterior en el refri.' },
@@ -30,13 +30,11 @@ const oficTips = [
     ],
   },
   {
-    title: 'Miércoles — tradición hamburguesa',
+    title: 'Miércoles — tradición de oficina (SIEMPRE en la calle)',
     items: [
-      { t:'Una vez a la semana está OK', s:'Comer hamburguesa con el equipo no daña el progreso si el resto de la semana está bien. Es 1 de 35 comidas semanales — el 97% restante importa más.' },
-      { t:'Qué pedir en el restaurant', s:'Sin papas fritas → pide ensalada o sin acompañamiento. Sin salsas extra (mayo, salsa golf, ketchup). Sin doble carne. Sin bebida con azúcar → agua. Con esto: ~600-700 kcal total.' },
-      { t:'No lleves el tupper ese día', s:'El tupper de lentejas del miércoles queda en el refri de la casa. Aguanta hasta el jueves — lo comes al almuerzo del jueves en reemplazo si quieres, o lo descarta.' },
-      { t:'Ajuste de cena ese día', s:'Miércoles noche si comiste hamburguesa: solo tortilla de huevos + ensalada libre + palta. Sin tortillas de maíz. Ya consumiste el carbohidrato al almuerzo.' },
-      { t:'Díselo a la doctora el 30.04', s:'Mencionarle la tradición del miércoles. Ella puede integrarlo oficialmente al plan. Mejor que lo sepa a que lo ocultes — su objetivo es enseñarte a comer, no darte una dieta rígida.' },
+      { t:'Almuerzo siempre en la calle', s:'Tradición de oficina — siempre con el equipo. No llevar tupper. Está integrado al plan: 1 de 35 comidas semanales, el 97% restante importa más.' },
+      { t:'Qué pedir en el restaurant', s:'Sin papas fritas → pide ensalada o sin acompañamiento. Sin salsas extra (mayo, salsa golf, ketchup). Sin doble carne. Sin bebida con azúcar → agua. Con esto: ~600–700 kcal ≈ 3P + 1C.' },
+      { t:'Cena miércoles siempre sin carbo', s:'Tortilla de huevos (2 piezas) + ensalada libre + palta. Sin tortillas de maíz. Ya consumiste el carbohidrato al almuerzo.' },
     ],
   },
   {
