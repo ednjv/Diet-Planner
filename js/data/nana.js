@@ -61,17 +61,17 @@ const nanaData = {
     {
       title: 'Huevos duros',
       icon: '🥚',
-      badge: 'Desayunos, almuerzos y cenas toda la semana',
-      qty: '20 huevos duros (+ 9 para tortilla = 29–30 de la bandeja de 30)',
+      badge: 'Desayunos y cenas toda la semana (no en almuerzos)',
+      qty: '19 huevos duros (+ 9 para tortilla = 28 de la bandeja de 30)',
       steps: [
-        'Poner 20 huevos en una olla grande (o en dos tandas). Cubrir con agua fría.',
+        'Poner 19 huevos en una olla grande (o en dos tandas). Cubrir con agua fría.',
         'Llevar a hervir a fuego alto. Cuando rompa el hervor, bajar a fuego medio.',
         'Cocinar exactamente 10 minutos desde que hierve.',
         'Sacar los huevos y meter en un bowl con agua fría y hielo (o agua muy fría del grifo) por 5 minutos. Esto hace que sea fácil pelarlos.',
         'Guardar en el refri SIN pelar. Él los pela cuando los va a comer.',
       ],
       storage: 'Sin pelar en el refri duran 7 días. Pelarlos solo al momento de comer.',
-      tip: 'Hervir 20 huevos duros + 9 para la tortilla = 29 de la bandeja de 30. Si el sábado no hay lentejas, se usan 21 duros → toda la bandeja. Comprar 1 bandeja de 30 por semana es suficiente.',
+      tip: 'Hervir 19 huevos duros + 9 para la tortilla = 28 de la bandeja de 30. Sobran 2. Los huevos NO van en ningún almuerzo — solo desayunos y cenas. El sábado almuerzo usa atún + lentejas (no huevos). Comprar 1 bandeja de 30 por semana es suficiente.',
     },
     {
       title: 'Papas cocidas',
@@ -166,7 +166,7 @@ const nanaData = {
     {
       title: 'Orden sugerido para el martes',
       icon: '📋',
-      note: 'El miércoles Edwin SIEMPRE come en la calle — es tradición de oficina. No preparar tupper para el miércoles almuerzo. | 1. Meter los 20 huevos a hervir primero (10 min). 2. Mientras: remojar el arroz. 3. Poner el arroz a cocinar (250g seco). 4. Mientras el arroz: hervir el pollo (600g — o 750g si Jue también usa pollo). 5. Sellar la posta y poner a guisar (200g — si viene trozo grande, dividir crudo primero; Edwin descongela sábado en la noche, no la nana). 6. Mientras (opcional): cocinar lentejas (1½ taza seca — para Jue y Sáb). Si no hay tiempo o ganas, Edwin usa arroz + huevos. 7. Hornear la reineta (150g de la bolsa 500g, 180°C, 20 min — solo para Jue cena; congelar 350g crudo). 8. Desmechar el pollo y guisar. 9. Hacer la tortilla de huevos (9 huevos + verduras, ~500g total, cortar en 4 piezas — para Mar cena y Mié cena). 10. Al final: 2 papas cocidas (Jue cena + Vie cena). 11. Preparar 2 tarros overnight oats para lunes y miércoles; 1 tarro para jueves. 12. Congelar: 350g reineta cruda + exceso posta (si aplica). Todo en 2–2.5 horas máximo.',
+      note: 'El miércoles Edwin SIEMPRE come en la calle — es tradición de oficina. No preparar tupper para el miércoles almuerzo. | 1. Meter los 19 huevos a hervir primero (10 min). 2. Mientras: remojar el arroz. 3. Poner el arroz a cocinar (250g seco). 4. Mientras el arroz: hervir el pollo (600g — o 750g si Jue también usa pollo sin lentejas). 5. Sellar la posta y poner a guisar (200g — si viene trozo grande, dividir crudo primero; Edwin descongela sábado en la noche, no la nana). 6. Mientras (IMPORTANTE — preferir siempre): cocinar lentejas (1½ taza seca — para Jue almuerzo y Sáb almuerzo; el Sáb almuerzo usa atún + lentejas, no huevos). 7. Hornear la reineta (150g de la bolsa 500g, 180°C, 20 min — solo para Jue cena; congelar 350g crudo). 8. Desmechar el pollo y guisar. 9. Hacer la tortilla de huevos (9 huevos + verduras, ~500g total, cortar en 4 piezas — para Mar cena y Mié cena). 10. Al final: 2 papas cocidas (Jue cena + Vie cena). 11. Preparar 2 tarros overnight oats para lunes y miércoles; 1 tarro para jueves. 12. Congelar: 350g reineta cruda + exceso posta (si aplica). Todo en 2–2.5 horas máximo.',
     },
   ],
 };

@@ -58,13 +58,14 @@ const userProfile = {
     noPera:          true,  // Edwin no le gustan las peras — reemplazadas con mandarina (2 unidades = 1 porción)
     noNaranja:       true,  // reemplazar siempre con mandarina (2 unidades = 1 porción de fruta)
     noQuinoa:        true,  // reemplazar con arroz basmati, papa, o tortillas maíz
-    preferLentejas:  true,  // preferir lentejas sobre garbanzos en todo el plan
+    noHuevosAlmuerzo: true, // NUNCA huevos en el almuerzo — ni duros ni tortilla ni revueltos
+    preferLentejas:  true,  // preferir lentejas sobre garbanzos en todo el plan; agregar arroz basmati como alternativa donde haya lentejas
     noCafe:          true,
     noTe:            true,
     noMate:          true,
     drinks:          'Solo agua',
     nanaCooks: 'Martes (batch semanal — todo cocinado de una vez, dura mar→lun)',
-    nanaMakes: ['pollo mechado', 'arroz basmati', 'tortilla de huevos (Mié+Vie cenas)', 'huevos duros (11 unidades)', 'papas cocidas (2 unidades — Jue+Vie cenas)', 'posta negra guisada (freezer — máx 200g)', 'reineta al horno (300g — Mar+Jue cenas)', 'lentejas cocidas', 'carne molida guisada (opcional)', 'avena remojada (dom noche: 2 tarros Lun+Mié; mar noche: 1 tarro Jue)'],
+    nanaMakes: ['pollo mechado', 'arroz basmati', 'tortilla de huevos (Mar+Mié cenas)', 'huevos duros (19 unidades — solo desayunos y cenas, NUNCA almuerzos)', 'papas cocidas (2 unidades — Jue+Vie cenas)', 'posta negra guisada (freezer — máx 200g)', 'reineta al horno (150g — Jue cena)', 'lentejas cocidas (preferir siempre — Jue almuerzo + Sáb almuerzo)', 'carne molida guisada (opcional)', 'avena remojada (dom noche: 2 tarros Lun+Mié; mar noche: 1 tarro Jue)'],
     nanaDoesNot: 'Armado de tuppers — Edwin los arma él mismo antes de salir al trabajo. Tarro avena Sáb lo prepara Edwin el jue en la noche.',
     shopping:  'Sábado o Domingo en Lider (una compra semanal — usar app Lider, buscar por marca exacta)',
   },
@@ -84,7 +85,9 @@ const userProfile = {
     'El cuerpo entró en modo emergencia por ayuno intermitente + poca comida.',
     'Comiendo bien primero, después se agregará gym boutique.',
     'El plan actual establece la base. Los controles mensuales ajustan.',
-    'Nana cocina cada martes. Comida debe durar mar→lun (7 días). Orden del plan por perecibilidad: lo más fresco primero (salmón mar cena), lo más durable de último (huevos duros/latas lun).',
-    'Edwin arma sus propios tuppers. Lunes en oficina = solo productos no perecederos (atún lata, garbanzos tarro, huevos duros).',
+    'Nana cocina cada martes. Comida debe durar mar→lun (7 días). Orden del plan por perecibilidad: lo más fresco primero, lo más durable de último (huevos duros/latas lun).',
+    'Edwin arma sus propios tuppers. Lunes en oficina = solo productos no perecederos (atún lata + lentejas tarro Carozzi). NUNCA huevos en almuerzo — ni lunes ni ningún día.',
+    'Atún permitido en: Dom cena, Lun almuerzo (día 7), Sáb almuerzo (día 5). No en otros almuerzos ni cenas entre semana.',
+    'Dom almuerzo usa 12 tortillas mini Saniito (1C completo), no 6 (que sería solo ½C — insuficiente para almuerzo).',
   ],
 };

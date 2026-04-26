@@ -35,11 +35,12 @@ Mobile-first web app to follow a personalized nutritional plan from Benefit Heal
 Nana (Venezuelan housekeeper) comes **every Tuesday** for a single batch-cooking session (~2–2.5 hours). She cooks **everything for the week** — Edwin only plates/assembles.
 
 **Nana cooks (every Tuesday):**
-- Pollo mechado (600g pechuga → 4 portions × 150g; Mar/Vie almuerzos + Vie cena; optional Jue almuerzo si no hay lentejas → 750g/5 portions)
+- Pollo mechado (600g pechuga → 4 portions × 150g; Mar/Vie almuerzos + Vie cena; optional Jue almuerzo si no hay lentejas → 750g/5 portions. Jue con lentejas: pollo 100g + lentejas ¾ taza)
 - Arroz basmati (**250g dry** → ~600g cooked; days 1/3/4/5 almuerzos + day 1/5 cenas; 400g if no-lentejas week)
 - Reineta al horno (**150g** of 500g bag → Jue cena only; freeze 350g raw for future weeks)
+- Huevos **NUNCA en almuerzos** — solo desayunos y cenas
 - Tortilla de huevos con verduras (**9 huevos**, cut into **4** pieces ~125g each → 2 pieces **Mar cena** (day 1) + 2 pieces **Mié cena** (day 2); total ~500g)
-- Huevos duros (**20 unidades** — 20 duros + 9 tortilla = 29 of bandeja x30; if no lentejas on Sáb: 21 duros = full bandeja)
+- Huevos duros (**19 unidades** — 19 duros + 9 tortilla = 28 of bandeja x30; sobran 2)
 - Papas cocidas (2 unidades medianas — **100g per serving** = 0.5C; Jue cena day 3 + Vie cena day 4)
 - Lentejas cocidas (**OPTIONAL** — 1½ cup/300g dry; if prepared: Jue almuerzo day 3 + Sáb almuerzo day 5; tarro Carozzi for Lun day 7)
 - Posta negra guisada (**exactly 200g** — if piece is larger, divide raw first, freeze excess; guised portion goes to freezer)
@@ -75,7 +76,7 @@ Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals ordered fr
 | Pollo mechado | 3–4 days | Mar almuerzo (day 1), Jue almuerzo (day 3, if no lentejas), Vie almuerzo + cena (day 4 — last) |
 | Tortilla de huevos | 3–4 days | **Mar cena (day 1) + Mié cena (day 2)** — eat immediately after nana cooks |
 | Papas cocidas | 4–5 days | Jue cena (day 3) + Vie cena (day 4) |
-| Lentejas (optional) | 4–5 days | Jue almuerzo (day 3) + Sáb almuerzo (day 5, limit) — if nana prepared them |
+| Lentejas (optional) | 4–5 days | Jue almuerzo (day 3) + Sáb almuerzo (day 5, limit) — if nana prepared them. Sáb también acepta tarro Carozzi como backup |
 | Arroz basmati | 4–5 days | Mar almuerzo (day 1) + Jue/Vie/Sáb almuerzos + Mar/Sáb cenas |
 | Posta negra | frozen → Edwin thaws Sat night | Dom almuerzo (day 6) |
 | Huevos duros (unpeeled) | 7 days | All week; Lun = last (day 7) |
@@ -112,7 +113,8 @@ Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals ordered fr
 - 1 cup of home-cooked stew ≈ 1P + 1C
 
 ### Critical portion rules (common mistakes)
-- **Tortillas de maíz mini:** 6 unidades (10g each) = 60g = ½C. NOT 2 unidades.
+- **Tortillas de maíz mini:** 6 unidades (10g each) = 60g = ½C. 12 unidades = 1C (para almuerzo). NOT 2 unidades.
+- **Dom almuerzo:** usar 12 tortillas mini (1C), NO 6 (eso sería solo ½C — insuficiente para el almuerzo).
 - **Papa:** 100g per serving = ½C = half a medium potato. NEVER 200g.
 - **Nueces:** 15g = 5 unidades = ½A (desayuno only has 0.5A slot).
 - **Legumbres:** ¾ taza = 1P + 1C combined — no additional rice, potato, or tortilla that meal.
@@ -129,8 +131,10 @@ Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals ordered fr
 - No café, no té, no mate — only water
 - No leche tetrapak (not available locally)
 - Prefer lentejas over garbanzos (nana makes optional batch; tarro Carozzi for Lun day 7; when eating lentejas NO additional rice/carb that meal)
-- No atún at almuerzo (only allowed at Dom cena)
+- No huevos en el almuerzo — **NUNCA** (ni duros, ni tortilla, ni revueltos)
+- Atún: permitido en Dom cena, Lun almuerzo (día 7) y Sáb almuerzo (día 5) — únicos días sin proteína fresca. No en otros almuerzos ni cenas entre semana.
 - No pechuga pavo at almuerzo (only Lun desayuno)
+- Legumbres (lentejas): siempre mostrar arroz basmati como alternativa de CHO en el plan
 - Mango local ~500g — use 100g (⅕) per portion, store rest in fridge
 - Avena: must be **traditional Quaker** (caja azul) — NOT instantánea (higher GI, dissolves poorly in overnight oats)
 - **Leche descremada en polvo Colun 800g** for overnight oats at home (20g powder + water = 150ml reconstituted milk per jar) — monthly purchase
@@ -160,7 +164,7 @@ Nana cooks Tuesday. Food must last Tuesday → Monday (7 days). Meals ordered fr
 | Tortillas maíz | `Tortilla De Maíz Sin Glúten Mini Saniito` | Mini (10g c/u). 1 paquete 24 und = 1 semana |
 | Reineta | `Reineta Filetes Sin Piel Lider` | Bolsa congelada 500g. Nana usa 300g, freezes 200g raw |
 | Arroz | `Tucapel basmati` | 1 bolsa 1kg = suficiente |
-| Huevos | `bandeja x30` | Cintazul o equivalente. 20 para nana, 10 para Edwin |
+| Huevos | `bandeja x30` | Cintazul o equivalente. Nana usa 28 (19 duros + 9 tortilla); sobran 2 |
 | Avena | `Quaker avena tradicional` | Caja azul — NO instantánea |
 | Leche en polvo (oats) | `Colun descremada polvo` | 800g — compra mensual, no semanal |
 | Yogurt PM (Protein+) | `Soprole Protein` | 7 unidades × 155g — compra semanal |

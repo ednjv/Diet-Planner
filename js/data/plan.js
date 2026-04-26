@@ -16,12 +16,12 @@ const days = [
       { n:'Yogurt Colun Skyr natural', a:'1 und. (110g)', b:'l' },
     ]},
     { type:'Almuerzo', time:'14–15h', icon:'🍽', bg:'#E3F2FD', tupper:true, foods:[
-      { n:'2 huevos duros (nana)', a:'día 7 — 2P sin cocción', b:'p' },
+      { n:'Atún Buen Mar al natural (lata)', a:'1 lata = 2P — sin cocción, shelf stable', b:'p' },
       { n:'Lentejas Carozzi cocidas (tarro)', a:'¾ taza (150g) = 1P+1C — solo escurrir, sin cocción', b:'p' },
       { n:'Arándanos', a:'¾ taza (110g)', b:'fr' },
       { n:'Ensalada libre (lechuga, tomate, pepino)', a:'libre', b:'' },
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },
-    ], note:'Sin cocción: todo de tarro o duros. Día 7 — solo productos que aguantan 7 días.' },
+    ], note:'Día 7 — todo shelf-stable: atún lata (2P) + lentejas tarro (1P+1C) = 3P+1C ✓. Atún permitido en Lun almuerzo (único día sin proteína fresca ni huevos). | Alt CHO: no aplica (arroz del martes ya expiró — usar siempre lentejas tarro).' },
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', tupper:true, foods:[
       { n:'Mandarina', a:'2 unidades', b:'fr' },
       { n:'Yoghurt Soprole Protein+ Frutilla (155g)', a:'155g individual', b:'l' },
@@ -111,7 +111,7 @@ const days = [
       { n:'Coliflor + brócoli (nana)', a:'libre', b:'' },
       { n:'Arándanos', a:'¾ taza (110g)', b:'fr' },
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },
-    ], note:'OPCIONAL: si nana preparó lentejas esta semana, reemplazar pollo + arroz por ¾ taza (150g) lentejas + 2 huevos duros (2P) — las lentejas ya cuentan como 1P+1C, no agregar arroz.' },
+    ], note:'OPCIONAL lentejas: si nana preparó, usar ¾ taza lentejas (1P+1C) + pollo 100g (2P) = 3P+1C total. Sin arroz — lentejas ya aportan el CHO. | Alt sin lentejas: pollo 150g (3P) + arroz basmati 120g (1C) como está arriba.' },
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', foods:[
       { n:'Manzana verde', a:'1 mediana', b:'fr' },
       { n:'Yoghurt Soprole Protein+ Frutilla (155g)', a:'155g individual', b:'l' },
@@ -168,12 +168,12 @@ const days = [
       { n:'Yogurt Colun Skyr', a:'1 und.', b:'l' },
     ]},
     { type:'Almuerzo', time:'14–15h', icon:'🍽', bg:'#E3F2FD', foods:[
-      { n:'3 huevos duros (nana)', a:'día 5 — 3P sin cocción', b:'p' },
-      { n:'Arroz basmati cocido (nana)', a:'120g (¾ taza) — día 5, último día del arroz', b:'c' },
+      { n:'Atún Buen Mar al natural (lata)', a:'1 lata = 2P — sin cocción', b:'p' },
+      { n:'Lentejas nana (día 5, último día) o tarro Carozzi', a:'¾ taza (150g) = 1P+1C — sin cocción', b:'p' },
       { n:'Pimentón + zanahoria', a:'libre', b:'' },
       { n:'Mandarina x2', a:'2 unidades (120g)', b:'fr' },
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },
-    ], note:'No usar pollo — ya expiró (día 4 límite). | OPCIONAL: si nana preparó lentejas, reemplazar arroz + 1 huevo duro por lentejas ¾ taza (150g) + 2 huevos duros — lentejas = 1P+1C, no agregar arroz.' },
+    ], note:'No usar pollo (expiró día 4). Sin huevos en almuerzo. Proteína: atún (2P) + lentejas (1P+1C) = 3P+1C ✓. Si lentejas nana ya no quedan, usar tarro Carozzi. | Alt CHO: si usas arroz basmati en lugar de lentejas, lentejas aportan 1P que queda sin cubrir — preferir siempre lentejas.' },
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', foods:[
       { n:'Arándanos', a:'¾ taza (110g)', b:'fr' },
       { n:'Yoghurt Soprole Protein+ Frutilla (155g)', a:'155g individual', b:'l' },
@@ -200,11 +200,11 @@ const days = [
     ]},
     { type:'Almuerzo', time:'14–15h', icon:'🍽', bg:'#E3F2FD', foods:[
       { n:'Posta negra guisada (Edwin descongela sábado en la noche)', a:'150g', b:'p' },
-      { n:'6 mini tortillas maíz Saniito', a:'60g = ½C — sin cocción (arroz y papa del martes ya expiraron)', b:'c' },
+      { n:'12 mini tortillas maíz Saniito', a:'120g = 1C — sin cocción (arroz y papa del martes ya expiraron)', b:'c' },
       { n:'Ensalada colorida (betarraga, lechuga, tomate)', a:'libre', b:'' },
-      { n:'Mandarina x2', a:'', b:'fr' },
+      { n:'Mandarina x2', a:'2 unidades (120g)', b:'fr' },
       { n:'Aceite oliva Borges', a:'2 cdtas', b:'f' },
-    ], note:'Arroz y papa cocinados el martes ya no son seguros al día 6. Tortilla maíz como carbo.' },
+    ], note:'Arroz y papa del martes ya no son seguros al día 6. Usar 12 tortillas mini = 1C completo (no 6 — eso sería solo ½C, insuficiente para almuerzo).' },
     { type:'Colación', time:'16h', icon:'🍊', bg:'#FCE4EC', foods:[
       { n:'Manzana verde', a:'1 mediana', b:'fr' },
       { n:'Yoghurt Soprole Protein+ Frutilla (155g)', a:'155g individual', b:'l' },
